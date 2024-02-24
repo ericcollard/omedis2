@@ -12,11 +12,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $this->call(UsersTableSeeder::class);
+        $this->call(DataTypesTableSeeder::class);
+        $this->call(UnitsTableSeeder::class);
+        $this->call(AttributeListsTableSeeder::class);
+        $this->call(AttributeListValuesTableSeeder::class);
+        $this->call(AttributesTableSeeder::class);
+        $this->call(HistoriesTableSeeder::class);
+        $this->call(ProductsTableSeeder::class);
+        $this->call(VariantsTableSeeder::class);
+        $this->call(VariantAttributesTableSeeder::class);
+        $this->call(OdooModelsTableSeeder::class);
+        $this->call(OdooProductValuesTableSeeder::class);
+        $this->call(OdooVariantValuesTableSeeder::class);
+        $this->call(ParametersTableSeeder::class);
     }
 }
