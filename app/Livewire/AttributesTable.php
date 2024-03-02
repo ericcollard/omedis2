@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Log;
+use Livewire\Attributes\On;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Models\Attribute;
@@ -28,6 +29,10 @@ class AttributesTable extends DataTableComponent
         $this->setHideReorderColumnUnlessReorderingEnabled();
         $this->setReorderEnabled();
         $this->setDefaultSort('sort', 'asc');
+        $this->setConfigurableAreas([
+            'toolbar-left-start' => ['livewire.datatables.custom-buttons', ['param1' =>'pappp']]
+        ]);
+
     }
 
 
@@ -62,9 +67,7 @@ class AttributesTable extends DataTableComponent
                 ->label(
                     fn ($row, Column $column) => view('livewire.datatables.action-column')->with(
                         [
-                            'duplicateLink' => route('attribute.duplicate',$row),
-                            'editLink' => route('attribute.edit',$row),
-                            'deleteLink' => route('attribute.destroy',$row),
+                            'rowId' => $row->id
                         ]
                     )
                 )->html(),
@@ -97,4 +100,5 @@ class AttributesTable extends DataTableComponent
 
         return Excel::download(new AttributesExport($items), 'attributes.xlsx');
     }
+
 }

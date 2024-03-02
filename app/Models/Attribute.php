@@ -23,6 +23,10 @@ class Attribute extends Mymodel
         'sort'
     ];
 
+    protected $casts = [
+        'required' => 'bool',
+    ];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -42,6 +46,7 @@ class Attribute extends Mymodel
     {
         return $this->belongsTo(AttributeList::class);
     }
+
 
     public function applyLogic()
     {
