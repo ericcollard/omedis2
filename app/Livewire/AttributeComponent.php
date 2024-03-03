@@ -54,6 +54,10 @@ class AttributeComponent extends Component
 
     }
 
+    public function attribute_list_id_update() {
+        log::debug('update');
+    }
+
     public function store()
     {
         log::debug('store');
@@ -114,10 +118,6 @@ class AttributeComponent extends Component
         $this->name = $attribute->name;
         $this->odoo_name = $attribute->odoo_name;
         $this->comment = $attribute->comment;
-        /*if ($attribute->required === true)
-            $this->required = true;
-        else
-            $this->required = false;*/
         $this->required = $attribute->required;
         $this->attribute_list_id = $attribute->attribute_list_id;
         $this->unit_id = $attribute->unit_id;
