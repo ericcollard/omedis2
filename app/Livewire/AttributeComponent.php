@@ -51,11 +51,6 @@ class AttributeComponent extends Component
         {
             if ( $value == '' ) data_set($this, $name, null);
         }
-
-    }
-
-    public function attribute_list_id_update() {
-        log::debug('update');
     }
 
     public function store()
@@ -77,11 +72,13 @@ class AttributeComponent extends Component
         if ($this->id)
         {
             $attribute = Attribute::findOrFail($this->id);
+            $this->authorize('update', $attribute);
             $attribute->update($data);
             session()->flash('flash.banner', 'Attribute updated!');
         }
         else
         {
+            $this->authorize('create', Attribute::class);
             Attribute::create($data);
             session()->flash('flash.banner', 'Attribute created!');
         }
@@ -105,6 +102,7 @@ class AttributeComponent extends Component
     {
         log::debug('Create fired ');
         $this->modalTitle = "Create attribute";
+        $this->required = false;
         $this->showModal();
     }
 
@@ -131,6 +129,9 @@ class AttributeComponent extends Component
     {
         $this->modalTitle = "Duplicate attribute";
         $attribute1 = Attribute::findOrFail($id);
+
+        $this->authorize('create', Attribute::class);
+
         $attribute = $attribute1->replicate()->fill([
             'name' => $attribute1->name." Copy"
         ]);
@@ -152,6 +153,7 @@ class AttributeComponent extends Component
     public function onDeleteFired($id)
     {
         $attribute = Attribute::findOrFail($id);
+        $this->authorize('delete', $attribute);
         $attribute->delete();
         $request = request();
         $request->session()->flash('flash.banner', 'Attribute deleted!');

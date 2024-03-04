@@ -88,4 +88,12 @@ class User extends Authenticatable
         }
         return false;
     }
+    public function isContributor()
+    {
+        if ($this->hasRole('ROLE_CONTRIBUTOR')) {
+            return true;
+        }
+        return false;
+    }
+
 }
