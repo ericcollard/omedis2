@@ -20,18 +20,18 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/', [MainController::class, 'home'])->name('home');
+Route::get('/dashboard', function () {  return view('dashboard');   })->name('dashboard');
+Route::get('/attributes', AttributeComponent::class)->name('attributes');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
 
-    Route::get('/', [MainController::class, 'home'])->name('home');
+
     Route::get('/test', [MainController::class, 'test'])->name('test');
-    Route::get('/dashboard', function () {  return view('dashboard');   })->name('dashboard');
-
-    Route::get('/attributes', AttributeComponent::class)->name('attributes');
-
 
 
 });

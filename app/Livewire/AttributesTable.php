@@ -4,15 +4,12 @@ namespace App\Livewire;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Log;
-use Livewire\Attributes\On;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Models\Attribute;
 use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
 use App\Exports\AttributesExport;
 use Maatwebsite\Excel\Facades\Excel;
-use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class AttributesTable extends DataTableComponent
 {
@@ -46,6 +43,11 @@ class AttributesTable extends DataTableComponent
 
     public function columns(): array
     {
+        $showOdoo = false;
+        if (auth()->check())
+        {
+            $showOdoo = auth()->user()->isAdmin();
+        }
         return [
             Column::make('Order', 'sort')
                 ->sortable()
@@ -56,7 +58,7 @@ class AttributesTable extends DataTableComponent
             BooleanColumn::make("Required", "required")
                 ->sortable()->excludeFromColumnSelect(),
             Column::make("Odoo name", "odoo_name")
-                ->sortable()->searchable()->hideIf(! auth()->user()->isAdmin()),
+                ->sortable()->searchable()->hideIf(! $showOdoo),
             Column::make("Attribute List", "attributeList.name")
                 ->sortable()->searchable(),
             Column::make("Data type", "dataType.name")
