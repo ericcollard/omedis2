@@ -17,7 +17,8 @@ class AttributeListValue extends Mymodel
         'comment',
         'attribute_list_id',
         'user_id',
-        'odoo_name'
+        'odoo_name',
+        'sort'
     ];
 
     public static function boot()

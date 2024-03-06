@@ -17,21 +17,9 @@ class AttributeList extends Mymodel
         'name',
         'comment',
         'user_id',
+        'sort'
     ];
-    public static function boot()
-    {
-        parent::boot();
-        static::creating(function($model)
-        {
-            $user = Auth::user();
-            $model->user_id = $user->getAuthIdentifier();
-        });
-        static::updating(function($model)
-        {
-            $user = Auth::user();
-            $model->user_id = $user->getAuthIdentifier();
-        });
-    }
+
 
     public function user(): BelongsTo
     {
@@ -63,9 +51,28 @@ class AttributeList extends Mymodel
 
     public function applyLogic()
     {
-
         // mise en forme nom
         $this->name = Str::of($this->name)->slug('-');
     }
 
+    public function save(array $options = [])
+    {
+        $this->applyLogic();
+        return parent::save($options);
+    }
+
+    public function getSamples()
+    {
+        $values = $this->attributeListValues()->take(6)->get();
+        $valuesTxt = "";
+        foreach ($values as $value)
+        {
+            if (strlen($valuesTxt) > 0)
+                $valuesTxt.= ", ";
+            $valuesTxt.= $value->name;
+        }
+
+        $valuesTxt = substr($valuesTxt,0,50)." ...";
+        return $valuesTxt;
+    }
 }

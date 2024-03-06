@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('comment')->nullable();
             $table->integer('user_id')->default(1);
+            $table->integer('sort')->default(0);
             $table->timestamps();
         });
     }

@@ -19,6 +19,10 @@
                     <x-nav-link href="{{ route('attributes') }}" :active="request()->routeIs('attributes')">
                         Attributes
                     </x-nav-link>
+                    <x-nav-link href="{{ route('attribute-lists') }}" :active="request()->routeIs('attribute-lists')">
+                        AttributeLists
+                    </x-nav-link>
+
                     <x-nav-link href="{{ route('test') }}" :active="request()->routeIs('test')">
                         Test
                     </x-nav-link>

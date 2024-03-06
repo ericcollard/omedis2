@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('attribute_list_id')->constrained('attribute_lists')->cascadeOnDelete();
             $table->integer('user_id')->default(1);
             $table->string('odoo_name')->nullable();
+            $table->integer('sort')->default(0);
             $table->timestamps();
         });
     }

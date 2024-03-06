@@ -4,6 +4,8 @@ namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
 use App\Models\Attribute;
+use App\Models\AttributeList;
+use App\Policies\AttributeListPolicy;
 use App\Policies\AttributePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -16,6 +18,8 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         Attribute::class => AttributePolicy::class,
+        AttributeList::class => AttributeListPolicy::class,
+        AttributeListValue::class => AttributeListValuePolicy::class,
     ];
 
     /**

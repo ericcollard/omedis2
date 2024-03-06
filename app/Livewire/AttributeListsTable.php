@@ -2,23 +2,22 @@
 
 namespace App\Livewire;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\URL;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\Attribute;
+use App\Models\AttributeList;
 use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
 use App\Exports\AttributesExport;
 use Maatwebsite\Excel\Facades\Excel;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
-class AttributesTable extends DataTableComponent
+class AttributeListsTable extends DataTableComponent
 {
 
     public function builder(): Builder
     {
-        return Attribute::query(); // Select some things
+        return AttributeList::query(); // Select some things
     }
 
     public function configure(): void
@@ -44,20 +43,14 @@ class AttributesTable extends DataTableComponent
         if (!Auth()->user()->isAdmin() and !Auth()->user()->isContributor() ) {
             abort(403);
         }
-
         foreach ($items as $item) {
-            Attribute::find($item[$this->getPrimaryKey()])->update(['sort' => (int)$item[$this->getDefaultReorderColumn()]]);
+            AttributeList::find($item[$this->getPrimaryKey()])->update(['sort' => (int)$item[$this->getDefaultReorderColumn()]]);
         }
     }
 
 
     public function columns(): array
     {
-        $showOdoo = false;
-        if (auth()->check())
-        {
-            $showOdoo = auth()->user()->isAdmin();
-        }
         return [
             Column::make('Order', 'sort')
                 ->sortable()
@@ -65,21 +58,11 @@ class AttributesTable extends DataTableComponent
                 ->excludeFromColumnSelect(),
             Column::make("Name", "name")
                 ->sortable()->searchable()->excludeFromColumnSelect(),
-            BooleanColumn::make("Required", "required")
-                ->sortable()->excludeFromColumnSelect(),
-            Column::make("Odoo name", "odoo_name")
-                ->sortable()->searchable()->hideIf(! $showOdoo),
-            Column::make("Attribute List id", "attributeList.id")
-                ->hideIf(true),
-            LinkColumn::make('AttributeList')
-                ->title(fn($row) => $row['attributeList.name'])
-                ->location(fn($row) => "/attribute-list-values/".$row['attributeList.id']),
-            Column::make("Attribute List id", "attributeList.name")
-                ->hideIf(true),
-            Column::make("Data type", "dataType.name")
-                ->sortable()->searchable(),
-            Column::make("Unit", "unit.name")
-                ->sortable()->searchable(),
+            Column::make("Samples")
+                ->label(
+                    fn($row, Column $column) => "<a href='".URL::route('attribute-list-values',['attributeList' => $row])."'>".$row->getSamples()."</a>"
+                )
+                ->html(),
             Column::make('Action')
                 ->label(
                     fn ($row, Column $column) => view('livewire.datatables.action-column')->with(
@@ -90,7 +73,7 @@ class AttributesTable extends DataTableComponent
                 )->html(),
             Column::make("Comment", "comment")
                 ->format( fn($value, $row, Column $column) => $value)
-                ->html()->sortable()->collapseAlways(),
+                ->html()->collapseAlways(),
             Column::make("Created by", "user.name")
                 ->sortable()->collapseAlways(),
             Column::make("Updated at", "updated_at")
