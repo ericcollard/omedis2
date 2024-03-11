@@ -11,6 +11,10 @@
             <livewire:show-breadcrumb :items="$breadcrumb_items" />
         @endpush
 
+        <p class="mb-4 text-sm">This table is listing all the datas that can be used in an OMEDIS complient dataset. There is no required order
+        for columns (or data line in xlm file), but each column has to be headed with the corresponding attribute name (ie.NAME). Column aving
+        REQUIRED set to True are mandatory in each OMEDIS dataset.</p>
+
         <livewire:attributes-table />
 
     </div>

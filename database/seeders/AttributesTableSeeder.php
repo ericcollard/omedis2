@@ -14,12 +14,12 @@ class AttributesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('attributes')->delete();
-
+        
         \DB::table('attributes')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'name' => 'brand',
@@ -30,11 +30,11 @@ class AttributesTableSeeder extends Seeder
                 'data_type_id' => 1,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 1,
+                'sort' => 3,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:00',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'name' => 'season',
@@ -45,11 +45,11 @@ class AttributesTableSeeder extends Seeder
                 'data_type_id' => 9,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 3,
+                'sort' => 10,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-14 10:39:46',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'name' => 'ean',
@@ -60,28 +60,29 @@ class AttributesTableSeeder extends Seeder
                 'data_type_id' => 2,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 5,
+                'sort' => 9,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:16',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'name' => 'sku',
-                'comment' => 'SKU code : unique identifier for one product variant for brand internal use.
+                'comment' => '<p>SKU code : unique identifier for one product variant for brand internal use.</p>
+<p>
 This code has to be unique for one product, and has to change each time the product is changing technically (even if only graphics).
-It will be used by programs for price updates',
+It will be used by programs for price updates</p>',
                 'required' => 1,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 4,
+                'sort' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:14',
+                'updated_at' => '2024-03-11 13:53:24',
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'name' => 'name',
@@ -96,26 +97,27 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'data_type_id' => 2,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 6,
+                'sort' => 2,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:20',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'name' => 'category',
-                'comment' => 'Commercial category for product classification',
+                'comment' => '<p>Commercial category for product classification</p>
+<p>This information will be used for website and commercial analysis</p>',
                 'required' => 1,
                 'attribute_list_id' => 2,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 7,
+                'sort' => 5,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:22',
+                'updated_at' => '2024-03-11 13:52:50',
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 7,
                 'name' => 'description-long-fr',
@@ -126,11 +128,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'data_type_id' => 7,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 8,
+                'sort' => 11,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:26',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 8,
                 'name' => 'description-short-fr',
@@ -141,11 +143,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'data_type_id' => 7,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 9,
+                'sort' => 12,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:27',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 9,
                 'name' => 'pictures',
@@ -156,11 +158,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'data_type_id' => 8,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 10,
+                'sort' => 13,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:30',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 10,
                 'name' => 'wholesale-price',
@@ -172,11 +174,11 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 6,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 11,
+                'sort' => 6,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:35',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 11,
                 'name' => 'retail-price',
@@ -187,11 +189,11 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 6,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 12,
+                'sort' => 7,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:40',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 12,
                 'name' => 'weight',
@@ -202,11 +204,11 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 5,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 15,
+                'sort' => 8,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:38:01',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 13,
                 'name' => 'size-1',
@@ -219,9 +221,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'odoo_name' => NULL,
                 'sort' => 16,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:38:04',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 14,
                 'name' => 'size-2',
@@ -234,9 +236,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'odoo_name' => NULL,
                 'sort' => 17,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:38:07',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            14 =>
+            14 => 
             array (
                 'id' => 15,
                 'name' => 'size-3',
@@ -249,9 +251,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'odoo_name' => NULL,
                 'sort' => 18,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:38:10',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            15 =>
+            15 => 
             array (
                 'id' => 16,
                 'name' => 'discount-b2c',
@@ -265,9 +267,9 @@ Mainly used for price update during promotional periods.',
                 'odoo_name' => NULL,
                 'sort' => 19,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:38:14',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            16 =>
+            16 => 
             array (
                 'id' => 17,
                 'name' => 'discount-b2b',
@@ -277,13 +279,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 16,
                 'data_type_id' => 6,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => NULL,
                 'sort' => 21,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            17 =>
+            17 => 
             array (
                 'id' => 18,
                 'name' => 'var-size-m',
@@ -292,13 +294,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 2,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Taille (m)',
                 'sort' => 22,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            18 =>
+            18 => 
             array (
                 'id' => 19,
                 'name' => 'var-size-cm',
@@ -307,13 +309,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 3,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Taille (cm)',
                 'sort' => 23,
                 'created_at' => '2023-09-28 21:16:38',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            19 =>
+            19 => 
             array (
                 'id' => 20,
                 'name' => 'var-size-mm',
@@ -322,13 +324,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 4,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Taille (mm)',
                 'sort' => 24,
                 'created_at' => '2023-09-28 21:17:49',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            20 =>
+            20 => 
             array (
                 'id' => 21,
                 'name' => 'var-surface-m2',
@@ -337,13 +339,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 7,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Surface (m2)',
                 'sort' => 25,
                 'created_at' => '2023-09-28 21:18:58',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            21 =>
+            21 => 
             array (
                 'id' => 22,
                 'name' => 'var-surface-cm2',
@@ -352,13 +354,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 20,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Surface (cm2)',
                 'sort' => 26,
                 'created_at' => '2023-09-28 21:19:38',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            22 =>
+            22 => 
             array (
                 'id' => 23,
                 'name' => 'var-volume-l',
@@ -367,13 +369,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 9,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Volume (L)',
                 'sort' => 27,
                 'created_at' => '2023-09-28 21:21:44',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            23 =>
+            23 => 
             array (
                 'id' => 24,
                 'name' => 'var-size-ft',
@@ -382,13 +384,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 12,
                 'data_type_id' => 2,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Taille (pieds)',
                 'sort' => 28,
                 'created_at' => '2023-09-28 21:22:35',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            24 =>
+            24 => 
             array (
                 'id' => 25,
                 'name' => 'var-size-inch',
@@ -401,9 +403,9 @@ This can be used to store client specific discount, volume discount, year discou
             'odoo_name' => 'Taille (pouces)',
                 'sort' => 29,
                 'created_at' => '2023-09-28 21:23:03',
-                'updated_at' => '2024-02-17 16:59:42',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            25 =>
+            25 => 
             array (
                 'id' => 26,
                 'name' => 'var-boot-size-fr',
@@ -412,13 +414,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 4,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Pointure (Fr)',
                 'sort' => 31,
                 'created_at' => '2023-09-28 21:24:04',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            26 =>
+            26 => 
             array (
                 'id' => 27,
                 'name' => 'var-boot-size-uk',
@@ -427,13 +429,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Pointure (Uk)',
                 'sort' => 32,
                 'created_at' => '2023-09-28 21:26:02',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            27 =>
+            27 => 
             array (
                 'id' => 28,
                 'name' => 'var-boot-size-us',
@@ -442,13 +444,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Pointure (Us)',
                 'sort' => 33,
                 'created_at' => '2023-09-28 21:27:29',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            28 =>
+            28 => 
             array (
                 'id' => 29,
                 'name' => 'var-boot-size-mondo',
@@ -457,13 +459,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Pointure (mondo)',
                 'sort' => 34,
                 'created_at' => '2023-09-28 21:28:38',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            29 =>
+            29 => 
             array (
                 'id' => 30,
                 'name' => 'var-item-nb',
@@ -472,13 +474,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 4,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Repère',
                 'sort' => 35,
                 'created_at' => '2023-09-28 21:39:35',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            30 =>
+            30 => 
             array (
                 'id' => 31,
                 'name' => 'var-weight-kg',
@@ -487,13 +489,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 5,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => NULL,
                 'sort' => 36,
                 'created_at' => '2023-09-28 21:40:34',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            31 =>
+            31 => 
             array (
                 'id' => 32,
                 'name' => 'var-weight-g',
@@ -502,13 +504,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => NULL,
                 'unit_id' => 6,
                 'data_type_id' => 5,
-                'user_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Poids (g)',
                 'sort' => 37,
                 'created_at' => '2023-09-28 21:41:12',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            32 =>
+            32 => 
             array (
                 'id' => 33,
                 'name' => 'var-color',
@@ -517,13 +519,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => 1,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Couleur',
                 'sort' => 38,
                 'created_at' => '2023-09-28 21:41:56',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            33 =>
+            33 => 
             array (
                 'id' => 34,
                 'name' => 'var-size-wear-eu',
@@ -532,13 +534,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => 5,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Taille Wear',
                 'sort' => 39,
                 'created_at' => '2023-09-28 21:42:35',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            34 =>
+            34 => 
             array (
                 'id' => 35,
                 'name' => 'var-size-wear-us',
@@ -547,13 +549,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => 7,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Taille Wear',
                 'sort' => 40,
                 'created_at' => '2023-09-28 21:43:43',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            35 =>
+            35 => 
             array (
                 'id' => 36,
                 'name' => 'var-size-wear-uk',
@@ -562,13 +564,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => 6,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Taille Wear',
                 'sort' => 41,
                 'created_at' => '2023-09-28 21:44:26',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            36 =>
+            36 => 
             array (
                 'id' => 37,
                 'name' => 'var-size-wear-int',
@@ -577,13 +579,13 @@ This can be used to store client specific discount, volume discount, year discou
                 'attribute_list_id' => 4,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Taille Wear',
                 'sort' => 42,
                 'created_at' => '2023-09-28 21:45:10',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            37 =>
+            37 => 
             array (
                 'id' => 38,
                 'name' => 'uom',
@@ -594,11 +596,11 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 13,
+                'sort' => 14,
                 'created_at' => '2023-10-04 12:28:07',
-                'updated_at' => '2024-02-08 17:37:48',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            38 =>
+            38 => 
             array (
                 'id' => 39,
                 'name' => 'logistic-qty',
@@ -611,26 +613,26 @@ id uom us "unit", quantity by carton',
                 'data_type_id' => 4,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 14,
+                'sort' => 15,
                 'created_at' => '2023-10-04 12:30:46',
-                'updated_at' => '2024-02-08 17:37:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            39 =>
+            39 => 
             array (
                 'id' => 40,
                 'name' => 'supplier',
-                'comment' => '<p>name of the supplier company</p>',
+                'comment' => '<p> This name has to be the one of the supplier, but not the one of Brand<br/>Exemple : "Boards and More" but not "Duotone".</p>',
                 'required' => 1,
                 'attribute_list_id' => 9,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
                 'user_id' => 1,
                 'odoo_name' => NULL,
-                'sort' => 2,
+                'sort' => 4,
                 'created_at' => '2023-10-12 21:10:56',
-                'updated_at' => '2024-02-08 17:37:02',
+                'updated_at' => '2024-03-11 13:51:49',
             ),
-            40 =>
+            40 => 
             array (
                 'id' => 41,
                 'name' => 'var-size-dble',
@@ -639,13 +641,13 @@ id uom us "unit", quantity by carton',
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
-                'user_id' => 2,
+                'user_id' => 1,
                 'odoo_name' => 'Taille double',
                 'sort' => 30,
                 'created_at' => '2024-01-04 13:51:49',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
-            41 =>
+            41 => 
             array (
                 'id' => 43,
                 'name' => 'discount-b2b-pc',
@@ -658,10 +660,10 @@ id uom us "unit", quantity by carton',
                 'odoo_name' => NULL,
                 'sort' => 20,
                 'created_at' => '2024-02-08 17:35:29',
-                'updated_at' => '2024-02-08 17:39:01',
+                'updated_at' => '2024-03-11 13:49:33',
             ),
         ));
-
-
+        
+        
     }
 }

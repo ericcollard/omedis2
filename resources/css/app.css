@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+    @apply text-blue-600
+}
+a:hover {
+    @apply text-blue-800
+}
+a:visited {
+    @apply text-blue-600
+}
+
 [x-cloak] {
     display: none !important;
 }

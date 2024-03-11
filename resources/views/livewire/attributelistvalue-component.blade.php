@@ -12,7 +12,7 @@
             <livewire:show-breadcrumb :items="$breadcrumb_items" />
         @endpush
 
-        <h2 class = 'mb-2'>List of values for the {{ $attributeList->name }} attribute list.</h2>
+        <h2 class = 'mb-2'><b>{{ strtoupper($attributeList->name) }}</b> attribute list. List of existing values :</h2>
 
         <livewire:attribute-list-values-table :attributeList="$attributeList"/>
 
