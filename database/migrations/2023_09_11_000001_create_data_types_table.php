@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('comment')->nullable();
             $table->string('validation_str');
             $table->integer('user_id')->default(1);
+            $table->integer('sort')->default(0);
             $table->timestamps();
         });
     }

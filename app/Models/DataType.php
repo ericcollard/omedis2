@@ -22,6 +22,7 @@ class DataType extends Mymodel
         'comment',
         'user_id',
         'validation_str',
+        'sort'
     ];
 
     public static function boot()
