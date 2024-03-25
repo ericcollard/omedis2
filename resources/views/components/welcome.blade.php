@@ -1,16 +1,40 @@
-<div class="p-6 lg:p-8 bg-white border-b border-gray-200">
-    <x-application-logo class="block h-12 w-auto" />
+<div class=" grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+    <div>
+        <div class="flex items-center">
+            <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Outdoor Market Electronic Data Interchange Standard
+            </h1>
+        </div>
+        <img src="{{ asset('storage/omedis-principe.png') }}" class="w-48 h-auto md:w-80 md:h-auto md:rounded-none mx-auto"/>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            OMEDIS is defining the industry standard in Commercial
+            Product Data Exchange between suppliers and retailers. Thanks to this standard, partners can speed up,
+            securing and making reliable information exchanges. <strong>LET'S SPEAK THE SAME LANGAGE !</strong>
+        </p>
+    </div>
 
-    <h1 class="mt-8 text-2xl font-medium text-gray-900">
-        Welcome to your Jetstream application!
-    </h1>
+    <div>
+        <div class="flex items-center">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Save time, save money, increase business
+            </h2>
+        </div>
 
-    <p class="mt-6 text-gray-500 leading-relaxed">
-        Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
-        to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe
-        you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel
-        ecosystem to be a breath of fresh air. We hope you love it.
-    </p>
+        <ul class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            <li><i class="fa-regular fa-star fa-2xs"></i> Dramatically reduce time sped for Data Entry</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Increase data reliability</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Reduce price update delay</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Enhance product visibility on e-commerce website</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Speed up business</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Increasing efficiency for both instore and online business</li>
+
+        </ul>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            Spending hours in data entry has definitely no added value. By speed up and securing product data update, let's focuse on service, advice and b2c trade
+        </p>
+    </div>
+
+
 </div>
 
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
