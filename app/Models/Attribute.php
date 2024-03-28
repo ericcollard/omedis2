@@ -191,7 +191,7 @@ class Attribute extends Mymodel
         }
         $validationRules = array_merge($validationRules,$additionnalRules);
 
-        log:debug($validationRules);
+        //log:debug($validationRules);
         return $validationRules;
     }
 

@@ -107,7 +107,12 @@ class ImportHelpers
             ->update(['report' => null]);
     }
 
-    public static function registerError($lineID,$message)
+    public static function normalizeSeparator2SemiColumn($value)
+    {
+        return str_replace(',',';',$value);
+    }
+
+    public static function registerError($lineID,$message,$attributeName,$value)
     {
         $existing_text = DB::table('product_bulk_import')
             ->where('id', $lineID)->select('report')->first();
@@ -117,7 +122,7 @@ class ImportHelpers
         else
             $final_text = '';
 
-        $final_text = $final_text.$message;
+        $final_text = $final_text.$message.'#'.$attributeName.'#'.$value;
 
         $affected = DB::table('product_bulk_import')
             ->where('id','=' ,$lineID)
@@ -138,8 +143,8 @@ class ImportHelpers
             foreach ($invalids as $invalid)
             {
                 $lineId = ((array)$invalid)['id'];
-                $error_report = 'Required attribute '.$attribute.' not filled';
-                ImportHelpers::registerError($lineId,$error_report);
+                $error_report = 'Required attribute <strong>'.$attribute.'</strong> not filled';
+                ImportHelpers::registerError($lineId,$error_report,$attribute,'');
             }
 
         }
@@ -184,10 +189,8 @@ class ImportHelpers
         log::debug('Products detected and sorted');
     }
 
-    public static function checkValues()
+    public static function checkAttributesValues()
     {
-        $errors = '';
-
         foreach (Attribute::all() as $attribute)
         {
             // validateur
@@ -212,7 +215,7 @@ class ImportHelpers
                     $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
                     foreach ($fieldsWithErrorMessagesArray as $fieldName => $fieldWithErrorMessagesArray) {
                         foreach ($fieldWithErrorMessagesArray as $fieldWithErrorMessage) {
-                            self::registerError($value->id,$fieldWithErrorMessage);
+                            self::registerError($value->id,$fieldWithErrorMessage,$attribute->name,$value->{$attribute->name});
                             //log::debug($fieldWithErrorMessage);
                         }
                     }
@@ -220,26 +223,83 @@ class ImportHelpers
             }
        }
 
-        return $errors;
+
+
+        // variantes d'un produit toutes différentes et définissant des vraies variantes
+    }
+    public static function checkUnicityOfValues()
+    {
+        // champs qui doivent être uniques
+        $unicityCecklList = ['sku','ean'];
+        foreach ($unicityCecklList as $attributeName)
+        {
+            $nonUniqueValues = DB::table('product_bulk_import')
+                ->select($attributeName)
+                ->groupBy($attributeName)
+                ->havingRaw('count('.$attributeName.') > 1')
+                ->whereNotNull($attributeName)
+                ->get()->pluck($attributeName);
+            log::debug($attributeName);
+
+            foreach ($nonUniqueValues as $nonUniqueValue)
+            {
+                $ids = DB::table('product_bulk_import')
+                    ->select('id')
+                    ->where($attributeName,'=',$nonUniqueValue)
+                    ->get()->pluck('id');
+                log::debug($ids);
+                foreach ($ids as $id)
+                {
+                    $message = 'The '.$attributeName.' attribute has to be unique.';
+                    self::registerError($id,$message,$attributeName,$nonUniqueValue);
+                }
+            }
+        }
+    }
+
+
+    public static function getErrors()
+    {
+        $errors_str = '';
+        $items = DB::table('product_bulk_import')
+            ->select('id','line_number',DB::raw("CONCAT(ifnull(brand,''),' ',ifnull(name,''),' ',ifnull(season,'')) as full_name"),'report')
+            ->orderBy('line_number','asc')
+            ->whereNotNull('report')
+            ->get();
+        foreach ($items as $item)
+        {
+            $errors_array = explode('|',$item->report);
+            $line_number = $item->line_number;
+            foreach ($errors_array as $single_error)
+            {
+                $single_error_array = explode('#',$single_error);
+                $errors_str.= '<p>';
+                $errors_str.= 'Line #'.$line_number.' ('.$item->full_name.') - '.$single_error_array[0];
+                if (strlen($single_error_array[2]) > 0)
+                    $errors_str.= " - Value = <span class='text-red-500'>".$single_error_array[2]."</span>";
+                $errors_str.= '</p>';
+            }
+
+        }
+        return $errors_str;
     }
 
     public static function checkImportedData()
     {
-        //self::registerError(2,'test');
-
-        //return '';
         self::resetError();
         self::checkMandatoryAttributes();
         self::detectProductsAndSort();
-        self::checkValues();
-        $errors= "";
+        self::checkAttributesValues();
+        self::checkUnicityOfValues();
+        $errors = self::getErrors();
+        if (strlen($errors) == 0)
+            $errors = '<p>File conform to OMEDIS without error.</p>';
+        else
+            $errors = '<p>File not conform to OMEDIS.</p><p>Errors found :</p>'.$errors;
         return $errors;
     }
 
-    public static function normalizeSeparator2SemiColumn($value)
-    {
-        return str_replace(',',';',$value);
-    }
+
 
 
 }
