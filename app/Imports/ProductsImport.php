@@ -21,7 +21,7 @@ class ProductsImport implements ToCollection, WithHeadingRow
     */
     public function collection(Collection $rows)
     {
-        ImportHelpers::initialize_table();
+        ImportHelpers::truncate_table();
 
         log::debug('Inserting data');
 
@@ -47,6 +47,7 @@ class ProductsImport implements ToCollection, WithHeadingRow
 
             $data = [];
             $data['user_id'] = ImportHelpers::getCurrentUserIdOrAbort();
+            $data['line_number'] = $key+1;
             foreach ($row as $attribute_name => $value) {
                 $data[$attribute_name] = $value;
             }

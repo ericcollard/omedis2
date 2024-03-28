@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 use Maatwebsite\Excel\Facades\Excel;
 
 class MainController extends Controller
@@ -39,11 +41,54 @@ class MainController extends Controller
 
     public function my_test() {
 
-        Excel::import(new ProductsImport, 'sample.csv', 'public');
-        //ProductsXmlImport::process('sample.xml', 'public');
+        $errors = '';
+        /*
+        $data = ['category' => 'watersports-kitesurf-board-surf1'];
+        $rules['category'][] = Rule::exists('attribute_list_values', 'name')
+            ->where('attribute_list_id', 2);
+        $rules['category'][] = 'max:10';
+        $rules['category'][] = 'uppercase';
 
-        //ImportHelpers::initialize_table();
+        log::debug($rules);
+        log::debug($data);
+        $validator = Validator::make($data, $rules)->stopOnFirstFailure(false);
+        if ($validator->fails()) {
+            log::debug($validator->messages()->get('*'));
+            var_dump($validator->messages()->get('*'));
+        }
 
-        return view('my_test');
+*/
+        /*
+        if (preg_match("(^\d+'(([0-9]|1[01])?)$)", "5'1")) {
+            $errors=  "A match was found.";
+        } else {
+            $errors=  "A match was not found.";
+        }
+        */
+
+
+        $errors = ImportHelpers::checkImportedData();
+
+        return view('done',compact('errors'));
     }
+
+    public function import_init() {
+        ImportHelpers::initialize_table();
+        return view('done');
+    }
+
+    public function import_csv() {
+        ImportHelpers::bulkImport('sample.csv', 'public');
+        return view('done');
+    }
+    public function import_xml() {
+        ImportHelpers::bulkImport('sample.xml', 'public');
+        return view('done');
+    }
+    public function import_xls() {
+        ImportHelpers::bulkImport('test.xlsx', 'public');
+        return view('done');
+    }
+
+
 }

@@ -17,7 +17,7 @@ class ProductsXmlImport
     public static function process($filePath,$disk)
     {
         // lecture de la structure products/product/variant/attribute
-        ImportHelpers::initialize_table();
+        ImportHelpers::truncate_table();
 
         // attributes authorized
         $attributes_array = Attribute::select('name')->get()->pluck('name')->toArray();
@@ -29,6 +29,7 @@ class ProductsXmlImport
         $inputfilepath = Storage::disk($disk)->path($filePath);
         $reader->open($inputfilepath);
         $product_counter = 0;
+        $variant_counter = 0;
         $current_user_id = ImportHelpers::getCurrentUserIdOrAbort();
         while ($reader->read()) {
             if ($reader->nodeType == XMLReader::ELEMENT && $reader->name === 'product') {
@@ -47,8 +48,10 @@ class ProductsXmlImport
                         $inner2Reader = new XMLReader();
                         $inner2Reader->xml($inner2XML);
                         $productData = [];
+                        $variant_counter++;
                         $productData['product_id'] = $product_counter;
                         $productData['user_id'] = $current_user_id;
+                        $productData['line_number'] = $variant_counter;
                         while ($inner2Reader->read()) {
                             if ($inner2Reader->nodeType == XMLReader::ELEMENT && $inner2Reader->name != 'variant') {
                                 //log::debug($inner2Reader->name);
@@ -75,6 +78,17 @@ class ProductsXmlImport
                 $innerReader->close();
             }
         }
+
+        if ($product_counter == 0)
+        {
+            abort(500, "Error in the input file ! No 'product' tag detected.");
+        }
+        if ($variant_counter == 0)
+        {
+            abort(500, "Error in the input file ! No 'variant' tag detected.");
+        }
+        $reader->close();
+
     }
 
 }

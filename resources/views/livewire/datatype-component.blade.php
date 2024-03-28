@@ -36,6 +36,7 @@
                         <div class="mb-5">
                             <x-label for="validation_str" value="validation_str" />
                             <x-input type="text" wire:model="validation_str" name="validation_str"  class="block w-full"/>
+                            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">If using | in regex, escape it with \</p>
                             <x-input-error for="validation_str"  class="block w-full"/>
                         </div>
                     </div>

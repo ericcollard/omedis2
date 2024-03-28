@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use App\Rules\urllist;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 
 class Attribute extends Mymodel
 {
@@ -167,4 +169,32 @@ class Attribute extends Mymodel
         }
         return $name;
     }
+
+    public function getValidationRule() {
+        if ($this->dataType->name == 'selection') {
+            $validationRules[] = Rule::exists('attribute_list_values', 'name')
+                ->where('attribute_list_id', $this->attribute_list_id);
+        }
+        $validationRules[] = ($this->required == 1) ? 'required' : 'nullable';
+
+        // gestion du pipe dans les regex (echappé avec u backslash)
+        $ruleStr = str_replace('\|','¥',$this->dataType->validation_str);
+        $additionnalRules = explode('|', $ruleStr);
+        for ($i = 0; $i < count($additionnalRules); $i++) {
+            $additionnalRules[$i] = str_replace('¥','|',$additionnalRules[$i]);
+        }
+
+        if (in_array('urllist',$additionnalRules))
+        {
+            $key = array_search('urllist',$additionnalRules);
+            $additionnalRules[$key] = new urllist;
+        }
+        $validationRules = array_merge($validationRules,$additionnalRules);
+
+        log:debug($validationRules);
+        return $validationRules;
+    }
+
+
+
 }
