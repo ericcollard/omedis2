@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+<product>
+  <variant>
+    <brand>duotone</brand>
+    <supplier>boards-and-more</supplier>
+    <season>2024</season>
+    <ean>914578541121</ean>
+    <sku>42400-28154-37</sku>
+    <name>SUPER_HERO</name>
+    <category>watersports-windsurf-sail-wave</category>
+    <description-long-fr>Windsurf sail : variant dependent price</description-long-fr>
+    <pictures>https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png</pictures>
+    <wholesale-price>742.56</wholesale-price>
+    <retail-price>989.99</retail-price>
+    <weight>4.8</weight>
+    <var-surface-m2>3.7</var-surface-m2>
+  </variant>
+  <variant>
+    <brand>duotone</brand>
+    <supplier>boards-and-more</supplier>
+    <season>2024</season>
+    <ean>914578541122</ean>
+    <sku>42400-28154-42</sku>
+    <name>SUPER_HERO</name>
+    <category>watersports-windsurf-sail-wave</category>
+    <description-long-fr>Windsurf sail : variant dependent price</description-long-fr>
+    <pictures>https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png</pictures>
+    <wholesale-price>752.56</wholesale-price>
+    <retail-price>1005.99</retail-price>
+    <weight>4.9</weight>
+    <var-surface-m2>4.2</var-surface-m2>
+  </variant>
+  <variant>
+    <brand>duotone</brand>
+    <supplier>boards-and-more</supplier>
+    <season>2024</season>
+    <ean>914578541123</ean>
+    <sku>42400-28154-47</sku>
+    <name>SUPER_HERO</name>
+    <category>watersports-windsurf-sail-wave</category>
+    <description-long-fr>Windsurf sail : variant dependent price</description-long-fr>
+    <pictures>https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png</pictures>
+    <wholesale-price>762.56</wholesale-price>
+    <retail-price>1105.99</retail-price>
+    <weight>5</weight>
+    <var-surface-m2>4.7</var-surface-m2>
+  </variant>
+  <variant>
+    <brand>duotone</brand>
+    <supplier>boards-and-more</supplier>
+    <season>2024</season>
+    <ean>914578541124</ean>
+    <sku>42400-28154-50</sku>
+    <name>SUPER_HERO</name>
+    <category>watersports-windsurf-sail-wave</category>
+    <description-long-fr>Windsurf sail : variant dependent price</description-long-fr>
+    <pictures>https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png</pictures>
+    <wholesale-price>782.56</wholesale-price>
+    <retail-price>1205.99</retail-price>
+    <weight>5.1</weight>
+    <var-surface-m2>5</var-surface-m2>
+  </variant>
+  </product>
+  <product>
+  <variant>
+    <brand>fone</brand>
+    <supplier>f-one</supplier>
+    <ean>814578545487</ean>
+    <sku>77244-0103-52</sku>
+    <name>MITU PRO CARBON</name>
+    <category>watersports-kitesurf-board-surf</category>
+    <description-long-fr>Kite surf board : variant independant price</description-long-fr>
+    <wholesale-price>890.12</wholesale-price>
+    <retail-price>1699.99</retail-price>
+    <weight>5.4</weight>
+    <var-size-ft>5&apos;2</var-size-ft>
+  </variant>
+  <variant>
+    <brand>fone</brand>
+    <supplier>f-one</supplier>
+    <ean>814578545488</ean>
+    <sku>77244-0103-54</sku>
+    <name>MITU PRO CARBON</name>
+    <category>watersports-kitesurf-board-surf</category>
+    <description-long-fr>Kite surf board : variant independant price</description-long-fr>
+    <wholesale-price>890.12</wholesale-price>
+    <retail-price>1699.99</retail-price>
+    <weight>5.4</weight>
+    <var-size-ft>5&apos;4</var-size-ft>
+  </variant>
+  <variant>
+    <brand>fone</brand>
+    <supplier>f-one</supplier>
+    <ean>814578545489</ean>
+    <sku>77244-0103-56</sku>
+    <name>MITU PRO CARBON</name>
+    <category>watersports-kitesurf-board-surf</category>
+    <description-long-fr>Kite surf board : variant independant price</description-long-fr>
+    <wholesale-price>890.12</wholesale-price>
+    <retail-price>1699.99</retail-price>
+    <weight>5.4</weight>
+    <var-size-ft>5&apos;6</var-size-ft>
+  </variant>
+  <variant>
+    <brand>fone</brand>
+    <supplier>f-one</supplier>
+    <ean>814578545410</ean>
+    <sku>77244-0103-58</sku>
+    <name>MITU PRO CARBON</name>
+    <category>watersports-kitesurf-board-surf</category>
+    <description-long-fr>Kite surf board : variant independant price</description-long-fr>
+    <wholesale-price>890.12</wholesale-price>
+    <retail-price>1699.99</retail-price>
+    <weight>5.4</weight>
+    <var-size-ft>5&apos;8</var-size-ft>
+  </variant>
+  </product>
+  <product>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589754</ean>
+    <sku>MVT457_D_01_S</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dw311e7a10/images/recadre/MVT457_D_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>s</var-size-wear-int>
+    <var-color>green</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589755</ean>
+    <sku>MVT457_D_01_M</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dw311e7a10/images/recadre/MVT457_D_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>m</var-size-wear-int>
+    <var-color>green</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589756</ean>
+    <sku>MVT457_D_01_L</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dw311e7a10/images/recadre/MVT457_D_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>l</var-size-wear-int>
+    <var-color>green</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589757</ean>
+    <sku>MVT457_D_01_XL</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dw311e7a10/images/recadre/MVT457_D_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>xl</var-size-wear-int>
+    <var-color>green</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589764</ean>
+    <sku>MVT457_C_01_S</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dwa458390e/images/recadre/MVT457_C_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>s</var-size-wear-int>
+    <var-color>blue</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589765</ean>
+    <sku>MVT457_C_01_S</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dwa458390e/images/recadre/MVT457_C_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>m</var-size-wear-int>
+    <var-color>blue</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589766</ean>
+    <sku>MVT457_C_01_S</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dwa458390e/images/recadre/MVT457_C_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>l</var-size-wear-int>
+    <var-color>blue</var-color>
+  </variant>
+  <variant>
+    <brand>picture</brand>
+    <supplier>picture-organic-clothing</supplier>
+    <season>2024</season>
+    <ean>714578589767</ean>
+    <sku>MVT457_C_01_S</sku>
+    <name>NAIKOON JKT</name>
+    <category>snowsport-allround-tecnical-wear-jacket-men</category>
+    <description-long-fr>Snowboard Jkt: double variant index (color + size)</description-long-fr>
+    <pictures>https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dwa458390e/images/recadre/MVT457_C_01.jpg</pictures>
+    <wholesale-price>190.42</wholesale-price>
+    <retail-price>400</retail-price>
+    <weight>2.1</weight>
+    <var-size-wear-int>xl</var-size-wear-int>
+    <var-color>blue</var-color>
+  </variant>
+  </product>
+  <product>
+  <variant>
+    <brand>vola</brand>
+    <supplier>vola</supplier>
+    <ean>57884211454</ean>
+    <sku>11051</sku>
+    <name>Outils pour chants Pro</name>
+    <category>snowsport-ski-tunning-tools</category>
+    <description-long-fr>Ski maintenance tool : no variant product</description-long-fr>
+    <pictures>http://img.vola.fr/articles/9a1fbe1a78b74854e8d9c82164e28512b2a765f3.png_750x608_max.png</pictures>
+    <wholesale-price>52.56</wholesale-price>
+    <retail-price>89.99</retail-price>
+    <weight>0.125</weight>
+  </variant>
+  </product>
+  <product>
+  <variant>
+    <brand>vola</brand>
+    <supplier>vola</supplier>
+    <ean>57884211455</ean>
+    <sku>11132</sku>
+    <name>Edgerazor</name>
+    <category>snowsport-ski-tunning-tools</category>
+    <description-long-fr>Ski maintenance tool : no variant product</description-long-fr>
+    <pictures>http://img.vola.fr/articles/5c87372aa070909c9412c968520cf1ea2fd13b5c.png_750x608_max.png</pictures>
+    <wholesale-price>32.56</wholesale-price>
+    <retail-price>59.99</retail-price>
+    <weight>0.115</weight>
+  </variant>
+  </product>
+</products>
