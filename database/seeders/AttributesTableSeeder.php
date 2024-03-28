@@ -151,7 +151,7 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
             array (
                 'id' => 9,
                 'name' => 'pictures',
-                'comment' => '<p>Product picture links, semicolon separated, no space or special character except _ and -, most important first. We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format. We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically.</p>',
+                'comment' => '<p>Product picture links, no space or special character except _ and -, most important first. We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format. We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically.</p>',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
@@ -160,7 +160,7 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'odoo_name' => NULL,
                 'sort' => 13,
                 'created_at' => NULL,
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-27 18:14:26',
             ),
             9 => 
             array (
@@ -383,12 +383,12 @@ This can be used to store client specific discount, volume discount, year discou
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 12,
-                'data_type_id' => 2,
+                'data_type_id' => 12,
                 'user_id' => 1,
             'odoo_name' => 'Taille (pieds)',
                 'sort' => 28,
                 'created_at' => '2023-09-28 21:22:35',
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-27 23:32:53',
             ),
             24 => 
             array (
@@ -398,12 +398,12 @@ This can be used to store client specific discount, volume discount, year discou
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 11,
-                'data_type_id' => 2,
+                'data_type_id' => 13,
                 'user_id' => 1,
             'odoo_name' => 'Taille (pouces)',
                 'sort' => 29,
                 'created_at' => '2023-09-28 21:23:03',
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-28 00:23:30',
             ),
             25 => 
             array (
@@ -514,7 +514,8 @@ This can be used to store client specific discount, volume discount, year discou
             array (
                 'id' => 33,
                 'name' => 'var-color',
-                'comment' => '<p>Color - Variant index attribute</p>',
+                'comment' => '<p>Color - Variant index attribute</p>
+<p>The color attribute is representing the main (dominent) color for the variant. You can\'t provide a color set for one variant</p>',
                 'required' => 0,
                 'attribute_list_id' => 1,
                 'unit_id' => NULL,
@@ -523,7 +524,7 @@ This can be used to store client specific discount, volume discount, year discou
                 'odoo_name' => 'Couleur',
                 'sort' => 38,
                 'created_at' => '2023-09-28 21:41:56',
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-15 16:16:59',
             ),
             33 => 
             array (
@@ -640,12 +641,12 @@ id uom us "unit", quantity by carton',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
-                'data_type_id' => 2,
+                'data_type_id' => 14,
                 'user_id' => 1,
                 'odoo_name' => 'Taille double',
                 'sort' => 30,
                 'created_at' => '2024-01-04 13:51:49',
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-28 00:30:21',
             ),
             41 => 
             array (
@@ -655,12 +656,12 @@ id uom us "unit", quantity by carton',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
-                'data_type_id' => 5,
+                'data_type_id' => 11,
                 'user_id' => 1,
                 'odoo_name' => NULL,
                 'sort' => 20,
                 'created_at' => '2024-02-08 17:35:29',
-                'updated_at' => '2024-03-11 13:49:33',
+                'updated_at' => '2024-03-27 22:48:03',
             ),
         ));
         

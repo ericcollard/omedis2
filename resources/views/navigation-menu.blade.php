@@ -82,6 +82,9 @@
                                 <x-dropdown-link href="{{ route('import_xml') }}">
                                     XML
                                 </x-dropdown-link>
+                                <x-dropdown-link href="{{ route('upload_datafile') }}">
+                                    Upload
+                                </x-dropdown-link>
                                 <x-dropdown-link href="{{ route('my_test') }}">
                                     test
                                 </x-dropdown-link>

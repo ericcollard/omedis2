@@ -36,6 +36,14 @@ return [
             'throw' => false,
         ],
 
+        'datafile' => [
+            'driver' => 'local',
+            'root' => storage_path('app/datafile'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

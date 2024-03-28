@@ -393,9 +393,27 @@ class ImportHelpers
                     $errors_str.= " - Value = <span class='text-red-500'>".$single_error_array[2]."</span>";
                 $errors_str.= '</p>';
             }
-
         }
         return $errors_str;
+    }
+
+    public static function getReport()
+    {
+        $report_str = '';
+        $cnt_products = DB::table('product_bulk_import')
+            ->selectRaw(DB::raw("CONCAT(brand,' ',name,' ',ifnull(season,'')) as full_name"))
+            ->distinct()
+            ->get()->pluck('full_name');
+        $cnt_variants = DB::table('product_bulk_import')
+            ->distinct('line_number')
+            ->count();
+        $report_str.= '<p class="mt-4">Number of products detected : '.count($cnt_products).'</p>';
+        $report_str.= '<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">';
+        foreach ($cnt_products as $product_name)
+            $report_str.='<li>'.$product_name.'</li>';
+        $report_str.= '</ul>';
+        $report_str.= '<p class="mt-4">Number of variants detected : '.$cnt_variants.'</p>';
+        return $report_str;
     }
 
     public static function checkImportedData()
@@ -407,11 +425,8 @@ class ImportHelpers
         self::checkUnicityOfValues();
         self::checkVariantAttributes();
         $errors = self::getErrors();
-        if (strlen($errors) == 0)
-            $errors = '<p>File conform to OMEDIS without error.</p>';
-        else
-            $errors = '<p>File not conform to OMEDIS.</p><p>Errors found :</p>'.$errors;
-        return $errors;
+        $result = self::getReport();
+        return [ 'errors' => $errors, 'result' => $result];
     }
 
 

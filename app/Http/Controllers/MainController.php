@@ -41,33 +41,8 @@ class MainController extends Controller
 
     public function my_test() {
 
-        $errors = '';
-        /*
-        $data = ['category' => 'watersports-kitesurf-board-surf1'];
-        $rules['category'][] = Rule::exists('attribute_list_values', 'name')
-            ->where('attribute_list_id', 2);
-        $rules['category'][] = 'max:10';
-        $rules['category'][] = 'uppercase';
-
-        log::debug($rules);
-        log::debug($data);
-        $validator = Validator::make($data, $rules)->stopOnFirstFailure(false);
-        if ($validator->fails()) {
-            log::debug($validator->messages()->get('*'));
-            var_dump($validator->messages()->get('*'));
-        }
-
-*/
-        /*
-        if (preg_match("(^\d+'(([0-9]|1[01])?)$)", "5'1")) {
-            $errors=  "A match was found.";
-        } else {
-            $errors=  "A match was not found.";
-        }
-        */
-
-
-        $errors = ImportHelpers::checkImportedData();
+        $errors = '<p><i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i> blabla</p>';
+        $errors .= '<p><i class="fa-solid fa-circle-check text-green-400 text-xl"></i> blabla</p>';
 
         return view('done',compact('errors'));
     }

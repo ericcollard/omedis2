@@ -29,6 +29,7 @@ class ProductsImport implements ToCollection, WithHeadingRow
         {
             if ($key == 0)
             {
+                log::debug($row);
                 // check validity of attributes names
                 log::debug('Check validity of attributes names in the input file');
                 foreach ($row as $attribute_name => $value)

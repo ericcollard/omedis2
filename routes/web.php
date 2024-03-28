@@ -7,6 +7,7 @@ use App\Livewire\AttributeListComponent;
 use App\Livewire\AttributeListValueComponent;
 use App\Livewire\DataTypeComponent;
 use App\Livewire\UnitComponent;
+use App\Livewire\UploadDataFile;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,7 @@ Route::get('/import_csv', [MainController::class, 'import_csv'])->name('import_c
 Route::get('/import_xls', [MainController::class, 'import_xls'])->name('import_xls');
 Route::get('/import_xml', [MainController::class, 'import_xml'])->name('import_xml');
 Route::get('/import_init', [MainController::class, 'import_init'])->name('import_init');
+Route::get('/upload_datafile', UploadDataFile::class)->name('upload_datafile');
 
 Route::middleware([
     'auth:sanctum',
