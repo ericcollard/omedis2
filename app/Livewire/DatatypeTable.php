@@ -2,8 +2,6 @@
 
 namespace App\Livewire;
 
-namespace App\Livewire;
-
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
@@ -15,7 +13,7 @@ use App\Exports\AttributesExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
-class DataTypeTable extends DataTableComponent
+class DatatypeTable extends DataTableComponent
 {
 
     public function builder(): Builder
