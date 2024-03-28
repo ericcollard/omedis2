@@ -47,7 +47,7 @@ class ImportHelpers
             $table->integer('product_id')->nullable();
             $table->integer('line_number')->nullable();
             $table->integer('order')->nullable();
-            $table->string('report')->nullable();
+            $table->string('report',1000)->nullable();
             $attributes = Attribute::all();
             foreach ($attributes as $attribute)
             {
@@ -59,6 +59,10 @@ class ImportHelpers
                     case 'integer':
                     case 'year':
                     case 'float':
+                    case 'inch':
+                    case 'feet':
+                    case 'double':
+                    case 'percent':
                     case 'money':
                         $table->string($attribute->name)->nullable();
                         break;
@@ -222,11 +226,10 @@ class ImportHelpers
                 }
             }
        }
+        log::debug('Individual attributes value checked');
 
-
-
-        // variantes d'un produit toutes différentes et définissant des vraies variantes
     }
+
     public static function checkUnicityOfValues()
     {
         // champs qui doivent être uniques
@@ -239,7 +242,7 @@ class ImportHelpers
                 ->havingRaw('count('.$attributeName.') > 1')
                 ->whereNotNull($attributeName)
                 ->get()->pluck($attributeName);
-            log::debug($attributeName);
+            //log::debug($attributeName);
 
             foreach ($nonUniqueValues as $nonUniqueValue)
             {
@@ -247,14 +250,125 @@ class ImportHelpers
                     ->select('id')
                     ->where($attributeName,'=',$nonUniqueValue)
                     ->get()->pluck('id');
-                log::debug($ids);
+                //log::debug($ids);
                 foreach ($ids as $id)
                 {
                     $message = 'The '.$attributeName.' attribute has to be unique.';
                     self::registerError($id,$message,$attributeName,$nonUniqueValue);
                 }
             }
+            log::debug('Unicity checked for '.$attributeName);
         }
+    }
+
+    public static function checkVariantAttributes()
+    {
+        // variantes d'un produit toutes différentes et définissant des vraies variantes
+        $var_attributes = Attribute::where('name','like','var%')
+            ->select('name')
+            ->get()
+            ->pluck('name');
+        //log::debug($var_attributes);
+        $select_list = [];
+        foreach($var_attributes as $var_attribute)
+        {
+            $select_list[] = DB::raw('sum(if(`'.$var_attribute.'` is null,0,1)) as `'.$var_attribute.'`');
+        }
+
+        // pour chaque produit
+        $product_ids = DB::table('product_bulk_import')
+            ->select('product_id')
+            ->distinct()
+            ->whereNotNull('product_id')
+            ->orderBy('product_id')
+            ->get()->pluck('product_id');
+
+        foreach ($product_ids as $product_id)
+        {
+            // recherche des attributs non nuls définissant la variante
+            $variant_attributes = [];
+            $product_tags = DB::table('product_bulk_import')
+                ->select(                    $select_list                )
+                ->where('product_id','=',$product_id)
+                ->get();
+            foreach($product_tags[0] as $key => $value)
+            {
+                if ($product_tags[0]->{$key} > 0)
+                    $variant_attributes[] = $key;
+            }
+            //log::debug($variant_attributes);
+
+            if (count($variant_attributes) > 0)
+            {
+                // analyse des valeurs
+                $select_mix_str = '';
+                if (count($variant_attributes) > 1)
+                {
+                    foreach($variant_attributes as $variant_attribute) {
+                        if (strlen($select_mix_str) > 0)
+                            $select_mix_str = $select_mix_str . ',\'-\',';
+                        $select_mix_str = $select_mix_str . 'ifnull(`' . $variant_attribute . '`,\'#\')';
+                    }
+                    $select_mix_str = 'concat('.$select_mix_str.')';
+                }
+                else
+                {
+                    $select_mix_str = 'ifnull(`' . $variant_attributes[0] . '`,\'#\')';
+                }
+
+                //log::debug($select_mix_str);
+
+                // recherche des attributs nuls
+                $products_variant_attributes_mix = DB::table('product_bulk_import')
+                    ->select('id',DB::raw($select_mix_str.' as mix'))
+                    ->where('product_id','=',$product_id)
+                    ->whereRaw($select_mix_str." like '%#%'")
+                    ->get();
+                //log::debug($products_variant_attributes_mix);
+
+                if (count($products_variant_attributes_mix) > 0)
+                {
+                    foreach($products_variant_attributes_mix as $products_variant_attributes_mix_item) {
+                        $message = 'At least one variant attribute is empty.';
+                        $local_value = str_replace('#','empty',$products_variant_attributes_mix_item->mix);
+                        self::registerError($products_variant_attributes_mix_item->id,
+                            $message,'mix',$local_value);
+                    }
+                }
+
+                // recherche des variantes non distinctes
+                $products_variant_non_unique = DB::table('product_bulk_import')
+                    ->select(DB::raw('count(*) as cnt'),DB::raw($select_mix_str.' as mix'))
+                    ->where('product_id','=',$product_id)
+                    ->whereRaw($select_mix_str." not like '%#%'")
+                    ->groupBy('mix')
+                    ->havingRaw('count(*) > 1')
+                    ->get();
+                //log::debug('products_variant_non_unique');
+                //log::debug($products_variant_non_unique);
+                if (count($products_variant_non_unique) > 0)
+                {
+                    foreach($products_variant_non_unique as $products_variant_non_unique_item) {
+                        $mix = str_replace('"','\"',$products_variant_non_unique_item->mix);
+                        $cnt = $products_variant_non_unique_item->cnt;
+
+                        $lines_variant_non_unique = DB::table('product_bulk_import')
+                            ->select('id',DB::raw($select_mix_str.' as mix'))
+                            ->where('product_id','=',$product_id)
+                            ->whereRaw($select_mix_str. '= "'.$mix.'"')
+                            ->get();
+                        //log::debug('lines_variant_non_unique');
+                        //log::debug($lines_variant_non_unique);
+                        foreach($lines_variant_non_unique as $lines_variant_non_unique_item) {
+                            $message = 'At least two identical variants (same attributes value).';
+                            self::registerError($lines_variant_non_unique_item->id,
+                                $message,'mix',$lines_variant_non_unique_item->mix);
+                        }
+                    }
+                }
+            }
+        }
+        log::debug('Variant attribute sets checked (not null and unique)');
     }
 
 
@@ -291,6 +405,7 @@ class ImportHelpers
         self::detectProductsAndSort();
         self::checkAttributesValues();
         self::checkUnicityOfValues();
+        self::checkVariantAttributes();
         $errors = self::getErrors();
         if (strlen($errors) == 0)
             $errors = '<p>File conform to OMEDIS without error.</p>';
