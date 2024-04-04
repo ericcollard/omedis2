@@ -9,13 +9,15 @@ class Sender extends Component
 {
     public $message;
 
-    public function render()
-    {
-        return view('livewire.sender');
-    }
+
 
     public function trigger()
     {
         TriggerEvent::dispatch($this->message);
+    }
+
+    public function render()
+    {
+        return view('livewire.sender');
     }
 }

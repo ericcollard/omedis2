@@ -76,7 +76,7 @@ class AttributeListValueComponent extends Component
         $this->reset();
         session()->flash('flash.bannerStyle', 'success');
 
-        $this->redirectRoute('attribute-list-values',['attributeList' => $this->attributeList]);
+        $this->redirectRoute('attribute-lists');
 
     }
 

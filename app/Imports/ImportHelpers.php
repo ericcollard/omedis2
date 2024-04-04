@@ -266,6 +266,30 @@ class ImportHelpers
         }
     }
 
+    public static function getProductsIds()
+    {
+        // pour chaque produit
+        return DB::table('product_bulk_import')
+            ->select('product_id')
+            ->distinct()
+            ->whereNotNull('product_id')
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->orderBy('product_id')
+            ->get()->pluck('product_id');
+    }
+
+    public static function getVariantsId($product_id)
+    {
+        // pour chaque produit
+        return DB::table('product_bulk_import')
+            ->select('id')
+            ->distinct()
+            ->where('product_id','=',$product_id)
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->get()->pluck('id');
+    }
+
+
     public static function checkVariantAttributes()
     {
         // variantes d'un produit toutes différentes et définissant des vraies variantes
@@ -281,15 +305,7 @@ class ImportHelpers
         }
 
         // pour chaque produit
-        $product_ids = DB::table('product_bulk_import')
-            ->select('product_id')
-            ->distinct()
-            ->whereNotNull('product_id')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
-            ->orderBy('product_id')
-            ->get()->pluck('product_id');
-
-        foreach ($product_ids as $product_id)
+        foreach (self::getProductsIds() as $product_id)
         {
             // recherche des attributs non nuls définissant la variante
             $variant_attributes = [];
@@ -408,7 +424,7 @@ class ImportHelpers
         return $errors_str;
     }
 
-    public static function getReport()
+    public static function getReport($limit = 3)
     {
         $report_str = '';
         $cnt_products = DB::table('product_bulk_import')
@@ -422,8 +438,17 @@ class ImportHelpers
             ->count();
         $report_str.= '<p class="mt-4">Number of products detected : '.count($cnt_products).'</p>';
         $report_str.= '<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">';
+        $counter = 1;
         foreach ($cnt_products as $product_name)
+        {
             $report_str.='<li>'.$product_name.'</li>';
+            if ($counter == $limit-1) {
+                $report_str.='<li>...</li>';
+                break;
+            }
+            $counter++;
+        }
+
         $report_str.= '</ul>';
         $report_str.= '<p class="mt-4">Number of variants detected : '.$cnt_variants.'</p>';
         return $report_str;
@@ -437,9 +462,6 @@ class ImportHelpers
         self::checkAttributesValues();
         self::checkUnicityOfValues();
         self::checkVariantAttributes();
-        $errors = self::getErrors();
-        $result = self::getReport();
-        return [ 'errors' => $errors, 'result' => $result];
     }
 
 

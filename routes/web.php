@@ -6,6 +6,7 @@ use App\Livewire\AttributeComponent;
 use App\Livewire\AttributeListComponent;
 use App\Livewire\AttributeListValueComponent;
 use App\Livewire\DataTypeComponent;
+use App\Livewire\Test;
 use App\Livewire\UnitComponent;
 use App\Livewire\UploadDataFile;
 use Illuminate\Support\Facades\Route;

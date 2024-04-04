@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Imports\ImportHelpers;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -29,7 +30,14 @@ class Product extends Model
                 $odooProductValue->delete();
             }
         });
+    }
 
+    public static function truncate()
+    {
+        $products = self::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->get();
+        foreach ($products as $product)
+            $product->delete();
     }
 
     public function variants(): HasMany

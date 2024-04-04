@@ -1,0 +1,2 @@
+<p>Receiver : {{ $message }}</p>
+

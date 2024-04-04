@@ -195,6 +195,74 @@ class Attribute extends Mymodel
         return $validationRules;
     }
 
+    public function getVariantAttributeValueData($bulk_value,$target_variant_id)
+    {
+        if (!$bulk_value)
+            abort(500, "Null bulk_value for ".$this->name);
+
+        $variantAttributeValueArr = [];
+        $variantAttributeValueArr['variant_id'] = $target_variant_id;
+        $variantAttributeValueArr['attribute_id'] = $this->id;
+
+        switch ($this->dataType->name) {
+            case "selection":
+                $value_id = AttributeListValue::where('name', '=',$bulk_value)
+                    ->where('attribute_list_id',$this->attribute_list_id)
+                    ->pluck('id')->first();
+                $variantAttributeValueArr['value_int'] = $value_id;
+                break;
+            case "string":
+                $variantAttributeValueArr['value_str'] = (string)$bulk_value;
+                break;
+            case "text":
+                $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
+                break;
+            case "integer":
+                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
+                break;
+            case "float":
+                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
+                break;
+            case "money":
+                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
+                break;
+            case "boolean":
+                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
+                break;
+            case "year":
+                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
+                break;
+            case "url":
+                $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
+                break;
+            case "feet":
+                $parts = explode('"',$bulk_value);
+                $feet = $parts[0];
+                $inches = '0';
+                if (count($parts)>1)
+                    $inches = $parts[1];
+                $variantAttributeValueArr['value_txt'] = $feet.'"'.$inches;
+                break;
+            case "inch":
+                $parts = explode("'",$bulk_value);
+                $inches = $parts[0];
+                $dec = '0';
+                if (count($parts)>1)
+                    $dec = $parts[1];
+                $variantAttributeValueArr['value_txt'] = $inches."'".$dec;
+                break;
+            case "double":
+                $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
+                break;
+            case "percent":
+                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
+                break;
+            default:
+                abort(500, "loadValue : dataType ".$this->dataType->name." non pris en charge");
+        }
+
+        return $variantAttributeValueArr;
+    }
 
 
 }
