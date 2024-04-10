@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Carbon\Carbon;
 
 class Product extends Model
 {
@@ -18,7 +19,6 @@ class Product extends Model
         'id',
         'user_id',
     ];
-
     public static function boot()
     {
         parent::boot();
@@ -278,5 +278,26 @@ class Product extends Model
             $data[$odooProductValue->odooModel->name] = $odooProductValue->value;
         }
         return $data;
+    }
+
+    public static function getReport($limit = 3)
+    {
+        $report_str = '';
+        $cnt_products = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->count();
+        $cnt_variants = Variant::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->count();
+
+        $last_update_ts = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+        ->latest('updated_at')->first();
+        if ($last_update_ts)
+            $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');
+        else
+            $last_update = 'nc.';
+
+        $report_str.= '<p class="mt-4">Dernière mise à jour : '.$last_update.'</p>';
+        $report_str.= '<p class="mt-4">Number of products detected : '.$cnt_products.'</p>';
+        $report_str.= '<p class="mt-4">Number of variants detected : '.$cnt_variants.'</p>';
+        return $report_str;
     }
 }

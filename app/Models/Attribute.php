@@ -204,6 +204,12 @@ class Attribute extends Mymodel
         $variantAttributeValueArr['variant_id'] = $target_variant_id;
         $variantAttributeValueArr['attribute_id'] = $this->id;
 
+        // correction des numériques avec virgule
+        if (str_contains($this->dataType->validation_str,'numeric') and str_contains($bulk_value,','))
+        {
+            $bulk_value = str_replace(',', '.', $bulk_value);
+        }
+
         switch ($this->dataType->name) {
             case "selection":
                 $value_id = AttributeListValue::where('name', '=',$bulk_value)

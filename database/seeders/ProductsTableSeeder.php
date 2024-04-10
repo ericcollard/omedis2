@@ -18,6 +18,15 @@ class ProductsTableSeeder extends Seeder
 
         \DB::table('products')->delete();
         
+        \DB::table('products')->insert(array (
+            0 => 
+            array (
+                'id' => 18,
+                'user_id' => '1',
+                'created_at' => '2024-04-07 17:32:39',
+                'updated_at' => '2024-04-07 17:32:39',
+            ),
+        ));
         
         
     }

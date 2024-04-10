@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Imports\ImportHelpers;
 use App\Jobs\IngestData;
+use App\Models\Product;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -20,6 +21,7 @@ class UploadDataFile extends Component
     public $process_result = '';
     public $ingest_result = '';
     public $ingest_data = '';
+    public $formatted_product_data = '';
 
     public function ingest()
     {
@@ -58,7 +60,9 @@ class UploadDataFile extends Component
     public function render()
     {
         $errors = ImportHelpers::getErrors();
+        $warnings = ImportHelpers::getErrors('warning');
         $result = ImportHelpers::getReport(4);
+        $this->formatted_product_data = Product::getReport();
         if ($this->localFile)
         {
             if (strlen($errors) == 0) {
@@ -66,6 +70,9 @@ class UploadDataFile extends Component
             }
             else {
                 $errors_str = '<p><i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i> Damned !! Your file is not conform to OMEDIS.</p><p class="mt-4">Errors found :</p>'.$errors;
+            }
+            if (strlen($warnings) > 0) {
+                $errors_str = $errors_str.'<p><i class="fa-solid fa-triangle-exclamation text-yellow-600 text-xl"></i> Warning !! These elements should be corrected.</p>'.$warnings;
             }
             $this->process_result = $errors_str.$result;
         }

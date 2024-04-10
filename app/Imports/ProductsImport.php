@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Attribute;
+use Carbon\Carbon;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -49,6 +50,8 @@ class ProductsImport implements ToCollection, WithHeadingRow
             $data = [];
             $data['user_id'] = ImportHelpers::getCurrentUserIdOrAbort();
             $data['line_number'] = $key+1;
+            $data['created_at'] = Carbon::now();
+            $data['updated_at'] = Carbon::now();
             foreach ($row as $attribute_name => $value) {
                 $data[$attribute_name] = $value;
             }

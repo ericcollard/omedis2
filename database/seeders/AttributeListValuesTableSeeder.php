@@ -10785,6 +10785,30 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 08:45:31',
                 'updated_at' => '2024-02-14 08:45:31',
             ),
+            397 => 
+            array (
+                'id' => 11465,
+                'name' => 'la-chaussette-de-france',
+                'comment' => '',
+                'attribute_list_id' => 3,
+                'user_id' => 1,
+                'odoo_name' => 'LA CHAUSSETTE DE FRANCE',
+                'sort' => 0,
+                'created_at' => '2024-04-07 14:42:02',
+                'updated_at' => '2024-04-07 14:42:02',
+            ),
+            398 => 
+            array (
+                'id' => 11466,
+                'name' => 'tismail',
+                'comment' => '',
+                'attribute_list_id' => 9,
+                'user_id' => 1,
+                'odoo_name' => 'Tismail',
+                'sort' => 0,
+                'created_at' => '2024-04-07 14:42:17',
+                'updated_at' => '2024-04-07 14:43:26',
+            ),
         ));
         
         

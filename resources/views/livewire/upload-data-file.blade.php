@@ -108,7 +108,6 @@
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                 This OMEDIS tool is integrating uploaded data in the OMEDIS database.
                             </p>
-                            {!! $ingest_data !!}
                         </div>
 
                         <div>
@@ -140,18 +139,30 @@
 
                     </div>
 
-                    <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
-
+                    <div class="bg-gray-200 bg-opacity-25 grid grid-cols-2 md:grid-cols-2  gap-4 p-4 bg-grey">
                         <div>
-                            <h2 id="p7" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Results</h2>
-                            <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                {!! $ingest_result !!}
+                            <div class=" grid grid-cols-1 md:grid-cols-1 bg-white gap-4 p-4 sm:rounded-lg">
+                                <div>
+                                    <h2 class="font-semibold text-gray-500 " >Bulk Import DataTable</h2>
+                                    <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                        {!! $ingest_data !!}
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div>
+                            <div class=" grid grid-cols-1 md:grid-cols-1 bg-white gap-4 p-4 sm:rounded-lg">
+                                <div>
+                                    <h2 class="font-semibold text-gray-500 " >Formatted Product DataTable</h2>
+                                    <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                        {!! $formatted_product_data !!}
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 

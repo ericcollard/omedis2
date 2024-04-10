@@ -43,12 +43,14 @@ class IngestData implements ShouldQueue
             ]);
             //log::debug('produit créé : '.$product->id);
 
+            $variant_cnt = 0;
             foreach (ImportHelpers::getVariantsId($product_id) as $id)
             {
                 $variant = Variant::create([
                     'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
                     'product_id' => $product->id
                 ]);
+                $variant_cnt++;
                 //log::debug('variante créé : '.$variant->id);
 
                 $product_fields = DB::table('product_bulk_import')
@@ -67,6 +69,27 @@ class IngestData implements ShouldQueue
 
                         $variantAttribute = VariantAttributes::create($data);
                         //log::debug('valeur attribut créé : '.$variantAttribute->id);
+
+                        // alimantation des champs produit
+                        if ($variant_cnt == 1)
+                        {
+                            switch ($attribute->name)
+                            {
+                                case 'name':
+                                    $product->name = $value;
+                                    break;
+                                case 'season':
+                                    $product->season = $value;
+                                    break;
+                                case 'brand':
+                                    $product->brand = $value;
+                                    break;
+                                case 'category':
+                                    $product->category = $value;
+                                    break;
+                            }
+                            $product->save();
+                        }
                     }
 
                 }

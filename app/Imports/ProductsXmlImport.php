@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Attribute;
+use Carbon\Carbon;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -52,6 +53,8 @@ class ProductsXmlImport
                         $productData['product_id'] = $product_counter;
                         $productData['user_id'] = $current_user_id;
                         $productData['line_number'] = $variant_counter;
+                        $productData['created_at'] = Carbon::now();
+                        $productData['updated_at'] = Carbon::now();
                         while ($inner2Reader->read()) {
                             if ($inner2Reader->nodeType == XMLReader::ELEMENT && $inner2Reader->name != 'variant') {
                                 //log::debug($inner2Reader->name);

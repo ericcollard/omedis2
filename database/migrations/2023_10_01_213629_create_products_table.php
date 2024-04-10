@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('user_id')->constrained('users');
+            $table->string('name')->nullable();
+            $table->string('season')->nullable();
+            $table->string('brand')->nullable();
+            $table->string('category')->nullable();
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Attribute;
+use Carbon\Carbon;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -48,6 +49,7 @@ class ImportHelpers
             $table->integer('line_number')->nullable();
             $table->integer('order')->nullable();
             $table->string('report',1000)->nullable();
+            $table->string('warning',1000)->nullable();
             $attributes = Attribute::all();
             foreach ($attributes as $attribute)
             {
@@ -116,13 +118,14 @@ class ImportHelpers
         return str_replace(',',';',$value);
     }
 
-    public static function registerError($lineID,$message,$attributeName,$value)
+    public static function registerError($lineID,$message,$attributeName,$value,$field = 'report')
     {
-        $existing_text = DB::table('product_bulk_import')
-            ->where('id', $lineID)->select('report')->first();
 
-        if ($existing_text->report)
-            $final_text =$existing_text->report.'|';
+        $existing_text = DB::table('product_bulk_import')
+            ->where('id', $lineID)->select($field)->first();
+
+        if ($existing_text->{$field})
+            $final_text =$existing_text->{$field}.'|';
         else
             $final_text = '';
 
@@ -130,7 +133,7 @@ class ImportHelpers
 
         $affected = DB::table('product_bulk_import')
             ->where('id','=' ,$lineID)
-            ->update(['report' => $final_text]);//DB::raw( "concat(ifnull(errors,''),'".$message."')")
+            ->update([$field => $final_text]);//DB::raw( "concat(ifnull(errors,''),'".$message."')")
     }
 
     public static function checkMandatoryAttributes()
@@ -214,6 +217,11 @@ class ImportHelpers
             foreach ($values as $value) {
                 //log::debug('ligne à valider :');
                 //log::debug((array)$value);
+                if (str_contains($attribute->dataType->validation_str,'numeric') and str_contains($value->{$attribute->name},','))
+                {
+                    self::registerError($value->id,'The numeric decimal separator should be "." instead of ","',$attribute->name,$value->{$attribute->name},'warning');
+                    $value->{$attribute->name} = str_replace(',', '.', $value->{$attribute->name});
+                }
                 $data = [$attribute->name => $value->{$attribute->name}];
                 $validator = Validator::make($data, $validationRules)->stopOnFirstFailure(false);
 
@@ -288,7 +296,6 @@ class ImportHelpers
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
             ->get()->pluck('id');
     }
-
 
     public static function checkVariantAttributes()
     {
@@ -397,19 +404,18 @@ class ImportHelpers
         log::debug('Variant attribute sets checked (not null and unique)');
     }
 
-
-    public static function getErrors()
+    public static function getErrors($field = 'report')
     {
         $errors_str = '';
         $items = DB::table('product_bulk_import')
-            ->select('id','line_number',DB::raw("CONCAT(ifnull(brand,''),' ',ifnull(name,''),' ',ifnull(season,'')) as full_name"),'report')
+            ->select('id','line_number',DB::raw("CONCAT(ifnull(brand,''),' ',ifnull(name,''),' ',ifnull(season,'')) as full_name"),$field)
             ->orderBy('line_number','asc')
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
-            ->whereNotNull('report')
+            ->whereNotNull($field)
             ->get();
         foreach ($items as $item)
         {
-            $errors_array = explode('|',$item->report);
+            $errors_array = explode('|',$item->{$field});
             $line_number = $item->line_number;
             foreach ($errors_array as $single_error)
             {
@@ -436,6 +442,16 @@ class ImportHelpers
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
             ->distinct('line_number')
             ->count();
+
+        $last_update_ts = DB::table('product_bulk_import')
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->latest('updated_at')->first();
+        if ($last_update_ts)
+            $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');
+        else
+            $last_update='nc.';
+
+        $report_str.= '<p class="mt-4">Dernière mise à jour : '.$last_update.'</p>';
         $report_str.= '<p class="mt-4">Number of products detected : '.count($cnt_products).'</p>';
         $report_str.= '<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">';
         $counter = 1;

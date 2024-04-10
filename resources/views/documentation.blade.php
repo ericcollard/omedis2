@@ -10,14 +10,6 @@
         <livewire:show-breadcrumb :items="$breadcrumb_items" />
     @endpush
 
-    <div class="py-12">
-        <div class=" grid grid-cols-2">
-            <div><livewire:sender /></div>
-            <div><livewire:receiver /></div>
-        </div>
-
-
-    </div>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
