@@ -10809,6 +10809,30 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-07 14:42:17',
                 'updated_at' => '2024-04-07 14:43:26',
             ),
+            399 => 
+            array (
+                'id' => 11467,
+                'name' => 'windsurfer',
+                'comment' => '',
+                'attribute_list_id' => 3,
+                'user_id' => 1,
+                'odoo_name' => 'WINDSURFER',
+                'sort' => 0,
+                'created_at' => '2024-04-10 12:18:23',
+                'updated_at' => '2024-04-10 12:18:23',
+            ),
+            400 => 
+            array (
+                'id' => 11468,
+                'name' => 'watersports-windsurf-windsurfer',
+                'comment' => '',
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Windsurfer',
+                'sort' => 0,
+                'created_at' => '2024-04-10 12:19:02',
+                'updated_at' => '2024-04-10 12:19:02',
+            ),
         ));
         
         

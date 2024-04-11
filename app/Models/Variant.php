@@ -38,6 +38,7 @@ class Variant extends Model
     {
         return $this->hasMany(VariantAttributes::class);
     }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -243,6 +244,18 @@ class Variant extends Model
             }
         }
         return $data;
+    }
+
+    public function toString() {
+        $html = '';
+        foreach ($this->variantAttributes()->get() as $variantAttribute)
+        {
+            if (!in_array($variantAttribute->attribute->name,['brand','season','name','category']))
+            {
+                $html.= $variantAttribute->toString().' / ';
+            }
+        }
+        return $html;
     }
 
 }

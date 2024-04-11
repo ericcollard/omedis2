@@ -6,6 +6,7 @@ use App\Livewire\AttributeComponent;
 use App\Livewire\AttributeListComponent;
 use App\Livewire\AttributeListValueComponent;
 use App\Livewire\DataTypeComponent;
+use App\Livewire\ProductComponent;
 use App\Livewire\Test;
 use App\Livewire\UnitComponent;
 use App\Livewire\UploadDataFile;
@@ -44,6 +45,7 @@ Route::middleware([
 
     Route::get('/upload_datafile', UploadDataFile::class)->name('upload_datafile');
     Route::get('/test', [MainController::class, 'test'])->name('test');
+    Route::get('/products', ProductComponent::class)->name('products');
 
 
 });

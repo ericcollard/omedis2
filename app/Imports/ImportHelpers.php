@@ -291,9 +291,9 @@ class ImportHelpers
         // pour chaque produit
         return DB::table('product_bulk_import')
             ->select('id')
-            ->distinct()
             ->where('product_id','=',$product_id)
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->orderBy('wholesale-price')
             ->get()->pluck('id');
     }
 

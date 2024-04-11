@@ -52,6 +52,28 @@ class HistoriesTableSeeder extends Seeder
                 'created_at' => '2024-04-07 14:43:26',
                 'updated_at' => '2024-04-07 14:43:26',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'windsurfer\',comment: \'\',attribute_list_id: \'3\',odoo_name: \'WINDSURFER\',sort: \'\'',
+                'created_at' => '2024-04-10 12:18:23',
+                'updated_at' => '2024-04-10 12:18:23',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'watersports-windsurf-windsurfer\',comment: \'\',attribute_list_id: \'2\',odoo_name: \'Tous / Windsurf / Windsurfer\',sort: \'\'',
+                'created_at' => '2024-04-10 12:19:02',
+                'updated_at' => '2024-04-10 12:19:02',
+            ),
         ));
         
         

@@ -18,6 +18,7 @@ class Product extends Model
     protected $fillable = [
         'id',
         'user_id',
+        'sort'
     ];
     public static function boot()
     {
@@ -44,6 +45,7 @@ class Product extends Model
     {
         return $this->hasMany(Variant::class);
     }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -299,5 +301,36 @@ class Product extends Model
         $report_str.= '<p class="mt-4">Number of products detected : '.$cnt_products.'</p>';
         $report_str.= '<p class="mt-4">Number of variants detected : '.$cnt_variants.'</p>';
         return $report_str;
+    }
+
+    public function getVariantsAbstarct()
+    {
+        $html = '<ul>';
+        $loc = $this->variants()->get();
+        foreach ($loc as $variant)
+        {
+            $html.= '<li>'.$variant->toString().'</li>';
+        }
+        $html.= '</ul>';
+        return $html;
+    }
+
+    public static function selectFromId($id)
+    {
+
+        $product = Product::find($id);
+        $product->selected= true;
+        $product->save();
+    }
+
+    public static function selectAll()
+    {
+        DB::table('products')->update(array('selected' => true));
+
+    }
+
+    public static function deselectAll()
+    {
+        DB::table('products')->update(array('selected' => false));
     }
 }

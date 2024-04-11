@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('season')->nullable();
             $table->string('brand')->nullable();
             $table->string('category')->nullable();
+            $table->integer('sort')->default(0);
+            $table->boolean('selected')->default(0);
             $table->timestamps();
         });
     }
