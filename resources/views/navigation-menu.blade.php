@@ -68,27 +68,22 @@
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Import tasks') }}
                             </div>
+                            @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
                             <x-dropdown-link href="{{ route('import_init') }}">
                                 Initialize
-                            </x-dropdown-link>
-                            <x-dropdown-link href="{{ route('import_csv') }}">
-                                CSV
-                            </x-dropdown-link>
-                            <x-dropdown-link href="{{ route('import_xls') }}">
-                                XLSX
-                            </x-dropdown-link>
-                            <x-dropdown-link href="{{ route('import_xml') }}">
-                                XML
-                            </x-dropdown-link>
-                            <x-dropdown-link href="{{ route('upload_datafile') }}">
-                                Upload
                             </x-dropdown-link>
                             <x-dropdown-link href="{{ route('my_test') }}">
                                 test
                             </x-dropdown-link>
+                            @endif
+                            <x-dropdown-link href="{{ route('upload_datafile') }}">
+                                Upload
+                            </x-dropdown-link>
+
                         </x-slot>
                     </x-dropdown>
 
+                    @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
                     <x-dropdown align="left" width="120">
                         <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
@@ -108,8 +103,12 @@
                             <x-dropdown-link href="{{ route('products') }}">
                                 Products
                             </x-dropdown-link>
+                            <x-dropdown-link href="/api/products">
+                                API/index
+                            </x-dropdown-link>
                         </x-slot>
                     </x-dropdown>
+                    @endif
 
                 </div>
             </div>

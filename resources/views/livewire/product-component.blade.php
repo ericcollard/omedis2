@@ -5,7 +5,7 @@
         @push('breadcrumb')
             @php(
             $breadcrumb_items = [
-                        ['title' => 'Products', 'url' => '/datatypes'],
+                        ['title' => 'Products', 'url' => route('products')],
                     ]
             )
             <livewire:show-breadcrumb :items="$breadcrumb_items" />

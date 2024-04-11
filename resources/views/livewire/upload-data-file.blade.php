@@ -3,7 +3,7 @@
     @push('breadcrumb')
         @php(
         $breadcrumb_items = [
-                    ['title' => 'Upload', 'url' => '/upload_datafile'],
+                    ['title' => 'Upload', 'url' => route('upload_datafile')],
                 ]
         )
         <livewire:show-breadcrumb :items="$breadcrumb_items" />
@@ -27,7 +27,6 @@
                     </div>
 
                     <div>
-
                         <form wire:submit="save">
 
                             <div
@@ -92,10 +91,9 @@
                 </div>
         </div>
 
+        @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
 
-
-    <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class=" grid grid-cols-1 md:grid-cols-2  gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
 
@@ -166,3 +164,77 @@
                 </div>
             </div>
 
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
+                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                    <div class=" grid grid-cols-1 md:grid-cols-2  gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+
+                        <div>
+                            <div class="flex items-center">
+                                <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    Convert to Odoo data
+                                </h1>
+                            </div>
+                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                This OMEDIS tool is integrating uploaded data in the OMEDIS database.
+                            </p>
+                        </div>
+
+                        <div>
+
+                            <form wire:submit="convert">
+
+                                <label for="uploadFile3"
+                                       class="bg-gray-800 hover:bg-gray-700 text-white text-sm px-4 py-2.5 outline-none rounded w-max cursor-pointer mx-auto block font-[sans-serif]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 fill-white inline" viewBox="0 0 32 32">
+                                        <path
+                                            d="M23.75 11.044a7.99 7.99 0 0 0-15.5-.009A8 8 0 0 0 9 27h3a1 1 0 0 0 0-2H9a6 6 0 0 1-.035-12 1.038 1.038 0 0 0 1.1-.854 5.991 5.991 0 0 1 11.862 0A1.08 1.08 0 0 0 23 13a6 6 0 0 1 0 12h-3a1 1 0 0 0 0 2h3a8 8 0 0 0 .75-15.956z"
+                                            data-original="#000000" />
+                                        <path
+                                            d="M20.293 19.707a1 1 0 0 0 1.414-1.414l-5-5a1 1 0 0 0-1.414 0l-5 5a1 1 0 0 0 1.414 1.414L15 16.414V29a1 1 0 0 0 2 0V16.414z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    Convert
+                                    <input type="submit" id='uploadFile3' class="hidden" />
+                                </label>
+                            </form>
+
+                            <div class="font-[sans-serif] max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 text-sm ">
+                                <div  class="flex items-center justify-between w-full">
+                                    <livewire:receiver-component />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bg-gray-200 bg-opacity-25 grid grid-cols-2 md:grid-cols-2  gap-4 p-4 bg-grey">
+                        <div>
+                            <div class=" grid grid-cols-1 md:grid-cols-1 bg-white gap-4 p-4 sm:rounded-lg">
+                                <div>
+                                    <h2 class="font-semibold text-gray-500 " >Formatted Product DataTable</h2>
+                                    <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                        {!! $formatted_product_data !!}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class=" grid grid-cols-1 md:grid-cols-1 bg-white gap-4 p-4 sm:rounded-lg">
+                                <div>
+                                    <h2 class="font-semibold text-gray-500 " >Odoo Data</h2>
+                                    <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                        {!! $odoo_data !!}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        @endif
+
+    </div>

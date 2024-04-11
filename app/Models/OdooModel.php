@@ -52,6 +52,8 @@ class OdooModel extends Model
 
     public function format_value($input_value)
     {
+        if (is_null($input_value))
+            return '-99999';
         switch ($this->type) {
             case "string":
                 return $input_value;

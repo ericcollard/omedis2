@@ -45,4 +45,12 @@ class OdooProductValue extends Model
         }
 
     }
+
+    public function toString()
+    {
+        $html = '';
+        $html .= '<strong>'.$this->odooModel->name.'</strong>';
+        $html .= ': '.$this->value;
+        return $html;
+    }
 }

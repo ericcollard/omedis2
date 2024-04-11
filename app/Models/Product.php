@@ -18,8 +18,13 @@ class Product extends Model
     protected $fillable = [
         'id',
         'user_id',
-        'sort'
+        'sort',
+        'season',
+        'brand',
+        'category',
+        'selected'
     ];
+
     public static function boot()
     {
         parent::boot();
@@ -60,18 +65,62 @@ class Product extends Model
         return $this->hasMany(OdooProductValue::class);
     }
 
-    public function toString($summary = 0)
+    public function toString($summary = 0,$odoo = 0)
     {
-        $html = "";
-        $MainAttributes = Attribute::whereIn('name',['brand','season','name'])->get();
-        foreach ($MainAttributes as $key => $MainAttribute)
+        $html = '';
+        if ($odoo == 0)
         {
-            $variantAttribute = $this->variants[0]->variantAttributes->where('attribute_id',$MainAttribute->id)->first();
-            if (strlen($html) > 0)
-                $html .= " - ";
-            if ($variantAttribute)
-                $html .=$variantAttribute->toString($summary);
+            // Extraction des données standard
+            $MainAttributes = Attribute::whereIn('name',['brand','season','name'])->get();
+            foreach ($MainAttributes as $key => $MainAttribute)
+            {
+                $variantAttribute = $this->variants[0]->variantAttributes->where('attribute_id',$MainAttribute->id)->first();
+                if (strlen($html) > 0)
+                    $html .= " - ";
+                if ($variantAttribute)
+                    $html .=$variantAttribute->toString($summary);
+            }
         }
+        else
+        {
+            // Extraction des données odoo
+            $html .= '<h3>Template data</h3>';
+            $html .= '<div class="grid grid-cols-2 gap-4">';
+            $html .= '<div>';
+            $html .= '<ul>';
+            foreach ($this->odooProductValues()->get() as $odooProductValue)
+            {
+                $html .= '<li class="ml-4">';
+                $html.= $odooProductValue->toString();
+                $html .= '</li>';
+            }
+            $html .= '</ul>';
+            $html .= '</div>';
+            $html .= '<div>';
+            $pictures = $this->getOdooProductValue('main_picture');
+            if ($pictures)
+                $html .= '<img src="'.$pictures.'" style="height:200px">';
+            $html .= '</div>';
+            $html .= '</div>';
+
+            $html .= '<h3>Variants</h3>';
+            $html .= '<ul>';
+            foreach ($this->variants()->get() as $variant)
+            {
+                $html .= '<li class="ml-4">';
+                $html .= '<h4>Variant data</h4>';
+                $html .= '<div class="grid grid-cols-2 gap-4">';
+                $html .= '<div>';
+                $html.= $variant->toString($odoo);
+                $html .= '</div>';
+                $html .= '<div>'.$variant->toString($odoo,1).'</div>';
+                $html .= '</div>';
+                $html .= '</li>';
+            }
+            $html .= '</ul>';
+
+        }
+
         return $html;
     }
 
@@ -140,6 +189,7 @@ class Product extends Model
         }
 
         $first_variant = $this->variants()->first();
+        $variant_cnt = $this->variants()->count();
 
         // partie product_template
 
@@ -219,7 +269,7 @@ class Product extends Model
         $value = $this->getVariantsMinAttributeValue('retail-price');
         if ($value) {
             $value = $value / 1.2;
-            OdooProductValue::createFromModel('product_retail_ht', $this->id, $variantAttributeValue);
+            OdooProductValue::createFromModel('product_retail_ht', $this->id, $value);
         }
 
         //Prix discount HT = prix mini des variantes, si chaque variante a un prix promo
@@ -235,9 +285,20 @@ class Product extends Model
             }
         }
 
-        //Photos
-        $variantAttributeValue = $first_variant->getVariantAttributeValue('pictures');
-        if ($variantAttributeValue) {
+        //Photos > transférée sur le produit template si il y en a au moins 1
+        $pictureSets = DB::table('variant_attributes')
+            ->select('value_txt')
+            ->join('variants','variant_attributes.variant_id','=','variants.id')
+            ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
+            ->where('variants.product_id','=',$this->id)
+            ->where('attributes.name','=','pictures')
+            ->distinct()->get();
+        $nb_pictures = count($pictureSets);
+
+        if ($nb_pictures > 0)
+        {
+            // on prend le premier
+            $variantAttributeValue = $pictureSets[0]->value_txt;
             $picturePathArr = explode(';',$variantAttributeValue);
             $mainPict = "";
             $additionnalPict = "";
@@ -254,6 +315,7 @@ class Product extends Model
             if (strlen($additionnalPict) > 0)
                 OdooProductValue::createFromModel('alternative_pictures', $this->id, $additionnalPict);
         }
+
 
         //Route
         OdooProductValue::createFromModel('route', $this->id, 'Acheter');
@@ -299,7 +361,31 @@ class Product extends Model
 
         $report_str.= '<p class="mt-4">Dernière mise à jour : '.$last_update.'</p>';
         $report_str.= '<p class="mt-4">Number of products detected : '.$cnt_products.'</p>';
+        $products = Product::limit($limit)->get();
+        $report_str.= '<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">';
+        foreach ($products as $product)
+        {
+            $report_str.= '<li>'.$product->toString(1,0).'</li>';
+        }
+        $report_str.= '<li>...</li>';
+        $report_str.= '</ul>';
         $report_str.= '<p class="mt-4">Number of variants detected : '.$cnt_variants.'</p>';
+        return $report_str;
+    }
+
+    public static function getOdooReport()
+    {
+        $report_str = 'Dernière conversion odoo: ';
+        $last_update_ts = DB::table('odoo_variant_values')
+            ->select('odoo_variant_values.updated_at')
+            ->join('variants', 'variants.id', '=', 'odoo_variant_values.variant_id')
+            ->where('variants.user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->latest('odoo_variant_values.updated_at')->first();
+        if ($last_update_ts)
+            $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');
+        else
+            $last_update = 'nc.';
+        $report_str .= $last_update;
         return $report_str;
     }
 
@@ -309,7 +395,7 @@ class Product extends Model
         $loc = $this->variants()->get();
         foreach ($loc as $variant)
         {
-            $html.= '<li>'.$variant->toString().'</li>';
+            $html.= '<li class="ml-4">'.$variant->toString().'</li>';
         }
         $html.= '</ul>';
         return $html;

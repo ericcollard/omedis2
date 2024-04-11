@@ -10,6 +10,8 @@ use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Builder;
+use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
+use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class ProductsTable extends DataTableComponent
 {
@@ -49,11 +51,7 @@ class ProductsTable extends DataTableComponent
                 ->sortable()
                 ->collapseOnMobile()
                 ->excludeFromColumnSelect(),
-            Column::make("Selected", "selected")
-                ->format(
-                    fn($value, $row, Column $column) => (($row->selected == 0) ? '<i class="fa-solid fa-ban text-red-400 text-xl"></i>' : '<i class="fa-solid fa-circle-check text-green-400 text-xl"></i>')
-                )
-                ->html(),
+            BooleanColumn::make("Selected", "selected"),
             Column::make("Name", "name")
                 ->sortable()->searchable()->excludeFromColumnSelect(),
             Column::make("Season", "season")
@@ -67,6 +65,9 @@ class ProductsTable extends DataTableComponent
                     fn($row, Column $column) => $row->getVariantCount()
                 )
                 ->html(),
+            LinkColumn::make('Odoo')
+                ->title(fn($row) => 'See')
+                ->location(fn($row) => route('product_odoo_data', $row->id)),
             Column::make('Variants')
                 ->label(
                     fn($row, Column $column) => $row->getVariantsAbstarct()

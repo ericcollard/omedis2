@@ -65,6 +65,17 @@ class Variant extends Model
         return null;
     }
 
+    public function getVariantOdooAttributeValue($attribute_name)
+    {
+        $attribute = OdooModel::where('name', $attribute_name)->first();
+        $variantAttributeObj = $this->odooVariantValues()->where('odoo_model_id',$attribute->id)->first();
+        if ($variantAttributeObj)
+        {
+            return $variantAttributeObj->value;
+        }
+        return null;
+    }
+
     public function getVariantAttributeValueFromId($attribute_id)
     {
         $variantAttributeObj = $this->variantAttributes()->where('attribute_id',$attribute_id)->first();
@@ -246,15 +257,43 @@ class Variant extends Model
         return $data;
     }
 
-    public function toString() {
+    public function toString($odoo = 0,$image = 0) {
         $html = '';
-        foreach ($this->variantAttributes()->get() as $variantAttribute)
+        if ($odoo == 0)
         {
-            if (!in_array($variantAttribute->attribute->name,['brand','season','name','category']))
+            // Extraction des données standard
+            foreach ($this->variantAttributes()->get() as $variantAttribute)
             {
-                $html.= $variantAttribute->toString().' / ';
+                if (!in_array($variantAttribute->attribute->name,['brand','season','name','category']))
+                {
+                    $html.= $variantAttribute->toString().' / ';
+                }
             }
         }
+        else
+        {
+            if ($image == 0)
+            {
+                // Extraction des données odoo
+                $html .= '<ul>';
+                foreach ($this->odooVariantValues()->get() as $odooVariantValue)
+                {
+                    $html .= '<li class="ml-4">';
+                    $html.= $odooVariantValue->toString();
+                    $html .= '</li>';
+                }
+                $html .= '</ul>';
+            }
+            else
+            {
+                $pictures = $this->getVariantOdooAttributeValue('variant_picture');
+                if ($pictures)
+                {
+                    $html .= '<img src="'.$pictures.'" style="height:200px">';
+                }
+            }
+        }
+
         return $html;
     }
 

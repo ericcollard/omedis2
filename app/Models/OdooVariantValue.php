@@ -43,6 +43,23 @@ class OdooVariantValue extends Model
         return $data;
     }
 
+    public function toString()
+    {
+        $html = '';
+        if ($this->odooModel->name == 'attribute')
+        {
+            $html .= '<strong>'.'attribute_'.$this->attribute_name.'</strong>';
+        }
+        else
+        {
+            $html .= '<strong>'.$this->odooModel->name.'</strong>';
+        }
+        $html .= ': '.$this->value;
+        return $html;
+    }
+
+
+
     public static function createFromModel($odoo_model_name, $variant_id, $value, $attribute_name = null)
     {
         $odooModel = OdooModel::where('name', $odoo_model_name)->first();

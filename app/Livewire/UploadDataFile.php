@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Imports\ImportHelpers;
+use App\Jobs\ConvertData2Odoo;
 use App\Jobs\IngestData;
 use App\Models\Product;
 use Exception;
@@ -22,12 +23,20 @@ class UploadDataFile extends Component
     public $ingest_result = '';
     public $ingest_data = '';
     public $formatted_product_data = '';
+    public $odoo_data = '';
 
     public function ingest()
     {
         log::debug('ingest');
         IngestData::dispatch();
         $this->ingest_result = '<p>Ingestion ended</p>';
+    }
+
+    public function convert()
+    {
+        log::debug('convert');
+        ConvertData2Odoo::dispatch();
+        log::debug('convert ended');
     }
 
     public function save()
@@ -63,6 +72,7 @@ class UploadDataFile extends Component
         $warnings = ImportHelpers::getErrors('warning');
         $result = ImportHelpers::getReport(4);
         $this->formatted_product_data = Product::getReport();
+        $this->odoo_data = Product::getOdooReport();
         if ($this->localFile)
         {
             if (strlen($errors) == 0) {

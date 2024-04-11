@@ -6,6 +6,8 @@ use App\Imports\ImportHelpers;
 use App\Imports\ProductsImport;
 use App\Imports\ProductsXmlImport;
 use App\Models\Attribute;
+use App\Models\Product;
+use App\Models\Variant;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -44,6 +46,16 @@ class MainController extends Controller
         $errors = '<p><i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i> blabla</p>';
         $errors .= '<p><i class="fa-solid fa-circle-check text-green-400 text-xl"></i> blabla</p>';
 
+        $pictures = DB::table('variant_attributes')
+            ->select('value_txt')
+            ->join('variants','variant_attributes.variant_id','=','variants.id')
+            ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
+            ->where('variants.product_id','=',132)
+            ->where('attributes.name','=','pictures')
+            ->distinct()->get();
+        $cnt = count($pictures);
+        var_dump($cnt);
+
         return view('done',compact('errors'));
     }
 
@@ -63,6 +75,11 @@ class MainController extends Controller
     public function import_xls() {
         ImportHelpers::bulkImport('test.xlsx', 'public');
         return view('done');
+    }
+
+    public function product_odoo_data($product_id) {
+        $product = Product::findOrFail($product_id);
+        return view('product-odoo-data',compact('product'));
     }
 
 

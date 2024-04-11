@@ -40,6 +40,7 @@ class IngestData implements ShouldQueue
 
             $product = Product::create([
                 'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
+                'selected' => 1,
             ]);
             //log::debug('produit créé : '.$product->id);
 
