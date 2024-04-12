@@ -61,7 +61,20 @@ class UploadDataFile extends Component
             $this->localFile = $fileName;
             ImportHelpers::checkImportedData();
         }  catch (Exception $e) {
-            abort(404, "Impossible to open ".$fileRelPath." file");
+            switch ($e->getStatusCode())
+            {
+                case 404:
+                    abort(404, "Impossible to open ".$fileRelPath." file");
+                    break;
+                case 500:
+                    //abort(500, $e->getMessage());
+                    $errors_str = '<p><i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i> Damned !! Your file is not conform to OMEDIS.</p><p class="mt-4">Errors found :</p>'.$e->getMessage();
+                    $this->process_result =$errors_str;
+                    break;
+                default:
+                    abort(500, "Oups ... unknown exception code : ".$e->getCode());
+            }
+
         }
 
     }
