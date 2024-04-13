@@ -5,7 +5,7 @@
         @push('breadcrumb')
             @php(
             $breadcrumb_items = [
-                        ['title' => 'Attribute List Values', 'url' => ''],
+                        ['title' => 'Attribute Lists', 'url' => route('attribute-lists')],
                         ['title' => $attributeList->name, 'url' => '/attribute-list-values/'.$attributeList->id],
                     ]
             )

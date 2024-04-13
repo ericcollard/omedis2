@@ -13,6 +13,7 @@ class DataTypeComponent extends Component
 
     public $showingModal = false;
     public $modalTitle = "";
+    public $currentUrl;
 
     public $listeners = [
         'hideMe' => 'hideModal'
@@ -30,6 +31,11 @@ class DataTypeComponent extends Component
     public $validation_str;
 
     public $comment;
+
+    public function mount()
+    {
+        $this->currentUrl = url()->current();
+    }
 
     public function store()
     {
@@ -134,6 +140,17 @@ class DataTypeComponent extends Component
 
     public function hideModal(){
         $this->showingModal = false;
+    }
+
+    #[On('import-items')]
+    public function onImportFired()
+    {
+        log::debug('onImportFired'.$this->currentUrl);
+        $return = str_replace('/','+',$this->currentUrl);
+        $this->redirectRoute('upload_valuelist',[
+            'table_name' => 'data_types',
+            'incoming_url' => $return
+        ]);
     }
 
 }

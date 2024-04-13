@@ -14,6 +14,7 @@ class AttributeListValueComponent extends Component
 
     public $showingModal = false;
     public $modalTitle = "";
+    public $currentUrl;
 
     public $listeners = [
         'hideMe' => 'hideModal'
@@ -44,6 +45,7 @@ class AttributeListValueComponent extends Component
     public function mount(AttributeList $attributeList)
     {
         $this->attributeList = $attributeList;
+        $this->currentUrl = url()->current();
     }
 
     public function store()
@@ -150,6 +152,18 @@ class AttributeListValueComponent extends Component
 
     public function hideModal(){
         $this->showingModal = false;
+    }
+
+    #[On('import-items')]
+    public function onImportFired()
+    {
+        log::debug('onImportFired'.$this->currentUrl);
+        $return = str_replace('/','+',$this->currentUrl);
+        $this->redirectRoute('upload_valuelist',[
+            'table_name' => 'attribute_list_values',
+            'incoming_url' => $return,
+            'default_value' => 'attribute_list_id='.$this->attributeList->id
+        ]);
     }
 
 }

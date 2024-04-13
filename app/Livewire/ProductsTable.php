@@ -25,7 +25,7 @@ class ProductsTable extends DataTableComponent
         $this->setReorderEnabled();
         $this->setDefaultSort('sort', 'asc');
         $this->setConfigurableAreas([
-            'toolbar-left-start' => ['livewire.datatables.custom-buttons', ['param1' =>'pappp']]
+            'toolbar-left-start' => ['livewire.datatables.custom-buttons-select', ['param1' =>'pappp']]
         ]);
     }
 

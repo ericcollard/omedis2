@@ -1,4 +1,3 @@
-
     @push('pagetitle', 'Upload')
     @push('breadcrumb')
         @php(

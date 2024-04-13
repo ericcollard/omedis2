@@ -10,6 +10,7 @@ use App\Livewire\DataTypeComponent;
 use App\Livewire\ProductComponent;
 use App\Livewire\UnitComponent;
 use App\Livewire\UploadDataFile;
+use App\Livewire\UploadValueList;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,6 +41,8 @@ Route::middleware([
 ])->group(function () {
 
     Route::get('/upload_datafile', UploadDataFile::class)->name('upload_datafile');
+    Route::get('/upload_valuelist/{table_name}/{incoming_url}/{default_value?}', UploadValueList::class)->name('upload_valuelist');
+
     Route::get('/test', [MainController::class, 'test'])->name('test');
     Route::get('/products', ProductComponent::class)->name('products');
     Route::get('/product_odoo_data/{product_id}', [MainController::class, 'product_odoo_data'])->name('product_odoo_data');
