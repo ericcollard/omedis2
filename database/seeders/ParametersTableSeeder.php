@@ -14,21 +14,21 @@ class ParametersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('parameters')->delete();
-        
+
         \DB::table('parameters')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'version',
-                'value' => '0.7',
+                'value' => '2.0',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }
