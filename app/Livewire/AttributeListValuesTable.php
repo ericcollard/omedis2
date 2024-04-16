@@ -2,24 +2,28 @@
 
 namespace App\Livewire;
 
+use App\Exports\AttributeListValuesExport;
+use App\Exports\AttributesExport;
+use App\Models\AttributeListValue;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Log;
+use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\AttributeListValue;
-use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
-use App\Exports\AttributesExport;
-use Maatwebsite\Excel\Facades\Excel;
 
 class AttributeListValuesTable extends DataTableComponent
 {
 
-    public $attributeList;
+    public $attributeListId;
 
     public function builder(): Builder
     {
-        return AttributeListValue::query()
-            ->where('attribute_list_id','=',$this->attributeList->id); // Select some things
+        log::debug('builder>'.$this->attributeListId);
+        if ($this->attributeListId)
+            return AttributeListValue::query()
+            ->where('attribute_list_id','=',$this->attributeListId); // Select some things
+        else
+            return AttributeListValue::query();
     }
 
     public function configure(): void
@@ -102,7 +106,7 @@ class AttributeListValuesTable extends DataTableComponent
 
         $this->clearSelected();
 
-        return Excel::download(new AttributesExport($items), 'attributes.xlsx');
+        return Excel::download(new AttributeListValuesExport($items), 'attributelistvalues.xlsx');
     }
 
 }

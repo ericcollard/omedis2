@@ -2,16 +2,13 @@
 
 namespace App\Livewire;
 
+use App\Exports\AttributesExport;
+use App\Exports\UnitsExport;
+use App\Models\Unit;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\URL;
+use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\Unit;
-use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
-use App\Exports\AttributesExport;
-use Maatwebsite\Excel\Facades\Excel;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class UnitsTable extends DataTableComponent
 {
@@ -100,7 +97,7 @@ class UnitsTable extends DataTableComponent
 
         $this->clearSelected();
 
-        return Excel::download(new AttributesExport($items), 'units.xlsx');
+        return Excel::download(new UnitsExport($items), 'units.xlsx');
     }
 
 }

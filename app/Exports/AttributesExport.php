@@ -2,11 +2,11 @@
 
 namespace App\Exports;
 
-use App\Models\Attribute;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
+use function auth;
 
 class AttributesExport implements FromCollection, WithHeadings
 {
@@ -57,7 +57,7 @@ class AttributesExport implements FromCollection, WithHeadings
             ->leftJoin('units', 'attributes.unit_id', '=', 'units.id')
             ->leftJoin('data_types', 'attributes.data_type_id', '=', 'data_types.id')
             ->select($selectList)
-            ->orderBy('sort')
+            ->orderBy('attributes.sort')
             ->get();
 
         log::debug($itemsCollection);

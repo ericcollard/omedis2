@@ -2,15 +2,13 @@
 
 namespace App\Livewire;
 
-use Illuminate\Support\Facades\URL;
+use App\Exports\AttributesExport;
+use App\Models\AttributeList;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\URL;
+use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\AttributeList;
-use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
-use App\Exports\AttributesExport;
-use Maatwebsite\Excel\Facades\Excel;
 
 class AttributeListsTable extends DataTableComponent
 {
@@ -60,7 +58,7 @@ class AttributeListsTable extends DataTableComponent
                 ->sortable()->searchable()->excludeFromColumnSelect(),
             Column::make("Samples")
                 ->label(
-                    fn($row, Column $column) => "<a href='".URL::route('attribute-list-values',['attributeList' => $row])."'>".$row->getSamples()."</a>"
+                    fn($row, Column $column) => "<a href='".URL::route('attribute-list-values',['attributeListId' => $row->id])."'>".$row->getSamples()."</a>"
                 )
                 ->html(),
             Column::make('Action')

@@ -6,15 +6,15 @@
             @php(
             $breadcrumb_items = [
                         ['title' => 'Attribute Lists', 'url' => route('attribute-lists')],
-                        ['title' => $attributeList->name, 'url' => '/attribute-list-values/'.$attributeList->id],
+                        ['title' => 'values for '.$attributeListName.' list', 'url' => '/attribute-list-values/'.$attributeListId],
                     ]
             )
             <livewire:show-breadcrumb :items="$breadcrumb_items" />
         @endpush
 
-        <h2 class = 'mb-2'><b>{{ strtoupper($attributeList->name) }}</b> attribute list. List of existing values :</h2>
+        <h2 class = 'mb-2'><b>{{ $attributeListName }}</b> attribute list. List of existing values :</h2>
 
-        <livewire:attribute-list-values-table :attributeList="$attributeList"/>
+        <livewire:attribute-list-values-table :attributeListId="$attributeListId"/>
 
     </div>
 

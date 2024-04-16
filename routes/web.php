@@ -25,9 +25,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'home'])->name('home');
+Route::get('/doc_gs_supplier', [MainController::class, 'doc_gs_supplier'])->name('doc_gs_supplier');
+Route::get('/doc_gs_retailer', [MainController::class, 'doc_gs_retailer'])->name('doc_gs_retailer');
 Route::get('/attributes', AttributeComponent::class)->name('attributes');
 Route::get('/attribute-lists', AttributeListComponent::class)->name('attribute-lists');
-Route::get('/attribute-list-values/{attributeList}', AttributeListValueComponent::class)->name('attribute-list-values');
+Route::get('/attribute-list-values/{attributeListId?}', AttributeListValueComponent::class)->name('attribute-list-values');
 Route::get('/units', UnitComponent::class)->name('units');
 Route::get('/datatypes', DataTypeComponent::class)->name('datatypes');
 Route::get('/containers', [MainController::class, 'containers'])->name('containers');

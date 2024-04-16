@@ -2,16 +2,13 @@
 
 namespace App\Livewire;
 
+use App\Exports\AttributesExport;
+use App\Exports\DatatypesExport;
+use App\Models\DataType;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\URL;
+use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\DataType;
-use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
-use App\Exports\AttributesExport;
-use Maatwebsite\Excel\Facades\Excel;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class DatatypeTable extends DataTableComponent
 {
@@ -102,7 +99,7 @@ class DatatypeTable extends DataTableComponent
 
         $this->clearSelected();
 
-        return Excel::download(new AttributesExport($items), 'units.xlsx');
+        return Excel::download(new DatatypesExport($items), 'datatypes.xlsx');
     }
 
 }

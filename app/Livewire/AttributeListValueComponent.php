@@ -35,17 +35,22 @@ class AttributeListValueComponent extends Component
     #[Validate('nullable', message: 'This field is not required')]
     public $odoo_name;
 
-    public $attributeList;
+    public $attributeListId;
+    public $attributeListName;
 
     public function render()
     {
         return view('livewire.attributelistvalue-component');
     }
 
-    public function mount(AttributeList $attributeList)
+    public function mount($attributeListId = null)
     {
-        $this->attributeList = $attributeList;
+        $this->attributeListId = $attributeListId;
         $this->currentUrl = url()->current();
+        if ($this->attributeListId)
+            $this->attributeListName = AttributeList::find($this->attributeListId)->name;
+        else
+            $this->attributeListName = 'All';
     }
 
     public function store()
@@ -56,7 +61,7 @@ class AttributeListValueComponent extends Component
             'name' => $this->name,
             'comment' => $this->comment,
             'odoo_name' => $this->odoo_name,
-            'attribute_list_id' => $this->attributeList->id,
+            'attribute_list_id' => $this->attributeListId,
         ];
 
         if ($this->id)
@@ -162,7 +167,7 @@ class AttributeListValueComponent extends Component
         $this->redirectRoute('upload_valuelist',[
             'table_name' => 'attribute_list_values',
             'incoming_url' => $return,
-            'default_value' => 'attribute_list_id='.$this->attributeList->id
+            'default_value' => 'attribute_list_id='.$this->attributeListId
         ]);
     }
 

@@ -82,5 +82,12 @@ class MainController extends Controller
         return view('product-odoo-data',compact('product'));
     }
 
+    public function doc_gs_retailer() {
+        return view('doc_gs_retailer');
+    }
+
+    public function doc_gs_supplier() {
+        return view('doc_gs_supplier');
+    }
 
 }
