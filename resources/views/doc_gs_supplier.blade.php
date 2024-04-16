@@ -128,6 +128,23 @@ $breadcrumb_items = [
                             <li><i class="fa-regular fa-star fa-2xs"></i> Your category : "CARBON MAST" > Omedis category : "watersports-wingfoil-hydofoil-part"</li>
                         </ul>
                     </div>
+
+
+                    <div>
+                        <h2 id="p3" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to ... Download list of value</h2>
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            In this tutorial, we will see how to export a list a valid values from omedis for one attribute. You will use it for feeding your comparaison tables.
+                        </p>
+                        <ul class="mt-0 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <li><i class="fa-regular fa-star fa-2xs"></i> 1- Display the available <a href="{{ route('attribute-lists') }}">attributes lists</a></li>
+                            <li><i class="fa-regular fa-star fa-2xs"></i> 2- Display available values <a href="{{ route('attribute-list-values',2) }}">for the desired attributes list (category as an exemple)</a></li>
+                            <li><i class="fa-regular fa-star fa-2xs"></i> 3- Select lines you want to export (all lines with top check box)</li>
+                            <li><i class="fa-regular fa-star fa-2xs"></i> 4- Choose "Export" button in the "Bulk Action" Menu on top of the table</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="{{ asset('storage/retailer-5.png') }}"  class="mt-0 " />
+                    </div>
             </div>
         </div>
     </div>

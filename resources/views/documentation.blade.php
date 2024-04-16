@@ -72,7 +72,7 @@
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                             OMEDIS is not a software, but only a standard definition. The current website is only the tool giving easy access to the standard definition.
                             <br/>OMEDIS does nothing, except helping partners to exchange data with efficiency.
-                            <br/>OMEDIS will not manage the exchange of data. This stay the role of partners that can contrôle the diffusion.
+                            <br/>OMEDIS will not manage the exchange of data. This stay the role of partners that can control the diffusion.
                             <br/>OMEDIS is not a goal but only a middleware
                         </p>
                     </div>
@@ -138,12 +138,12 @@
                         </p>
                     </div>
                     <div>
-                        <h2 id="p9" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to collaborate to OMEDIS standard</h2>
+                        <h2 id="p9" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Need some help ?</h2>
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            Of course, OMEDIS has to be a common tool for everyone in our industry, so it's very important that it would be well-defined, and be able to cover
-                            a large spectrum of needs.
-                            <br/>The only way is to have a panel of contributors, giving each a part of their knowledge to the community. Everyone is welcome to help.
-                            <br/>The specificities of each branch of our industry is like an evidence in categories, list of possible value for variants etc.
+                            <a href=" {{ route ('doc_gs_supplier') }}">Tutorial for suppliers that want to create OMEDIS compliant file</a>
+                        </p>
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <a href=" {{ route ('doc_gs_retailer') }}">Tutorial for retailers that want to use OMEDIS compliant file</a>
                         </p>
                     </div>
 
