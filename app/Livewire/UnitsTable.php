@@ -13,9 +13,18 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 class UnitsTable extends DataTableComponent
 {
 
+    public $unitId;
+
     public function builder(): Builder
     {
-        return Unit::query(); // Select some things
+
+        if ($this->unitId)
+            return Unit::query()
+                ->where('units.id','=',$this->unitId); // Select some things
+        else
+            return Unit::query();
+
+
     }
 
     public function configure(): void

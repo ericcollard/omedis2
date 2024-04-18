@@ -14,6 +14,7 @@ class DataTypeComponent extends Component
     public $showingModal = false;
     public $modalTitle = "";
     public $currentUrl;
+    public $datatypeId;
 
     public $listeners = [
         'hideMe' => 'hideModal'
@@ -32,9 +33,10 @@ class DataTypeComponent extends Component
 
     public $comment;
 
-    public function mount()
+    public function mount($datatypeId = null)
     {
         $this->currentUrl = url()->current();
+        $this->datatypeId = $datatypeId;
     }
 
     public function store()

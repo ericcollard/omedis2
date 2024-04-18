@@ -13,9 +13,15 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 class DatatypeTable extends DataTableComponent
 {
 
+    public $datatypeId;
+
     public function builder(): Builder
     {
-        return DataType::query(); // Select some things
+        if ($this->datatypeId)
+            return DataType::query()
+                ->where('data_types.id','=',$this->datatypeId); // Select some things
+        else
+            return DataType::query();
     }
 
     public function configure(): void

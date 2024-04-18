@@ -30,9 +30,11 @@ class UnitComponent extends Component
 
     public $comment;
 
-    public function mount()
+    public $unitId;
+
+    public function mount($unitId = null)
     {
-        $this->currentUrl = url()->current();
+        $this->unitId = $unitId;
     }
 
     public function store()

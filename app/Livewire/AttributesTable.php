@@ -74,10 +74,20 @@ class AttributesTable extends DataTableComponent
                 ->location(fn($row) => "/attribute-list-values/".$row['attributeList.id']),
             Column::make("Attribute List id", "attributeList.name")
                 ->hideIf(true),
-            Column::make("Data type", "dataType.name")
-                ->sortable()->searchable(),
-            Column::make("Unit", "unit.name")
-                ->sortable()->searchable(),
+            Column::make("Data type id", "dataType.id")
+                ->hideIf(true),
+            Column::make("Data type name", "dataType.name")
+                ->hideIf(true),
+            LinkColumn::make('Data type')
+                ->title(fn($row) => $row['dataType.name'])
+                ->location(fn($row) => "/datatypes/".$row['dataType.id'])->sortable()->searchable(),
+            Column::make("Unit id", "unit.id")
+                ->hideIf(true),
+            Column::make("Unit name", "unit.name")
+                ->hideIf(true),
+            LinkColumn::make('Unit')
+                ->title(fn($row) => $row['unit.name'])
+                ->location(fn($row) => "/units/".$row['unit.id']),
             Column::make('Action')
                 ->label(
                     fn ($row, Column $column) => view('livewire.datatables.action-column')->with(

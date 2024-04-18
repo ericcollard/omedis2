@@ -11,7 +11,7 @@
             <livewire:show-breadcrumb :items="$breadcrumb_items" />
         @endpush
 
-        <livewire:units-table />
+        <livewire:units-table :unitId="$unitId"/>
 
     </div>
 

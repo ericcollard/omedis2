@@ -11,7 +11,7 @@
             <livewire:show-breadcrumb :items="$breadcrumb_items" />
         @endpush
 
-        <livewire:datatype-table />
+        <livewire:datatype-table :datatypeId="$datatypeId"/>
 
     </div>
 

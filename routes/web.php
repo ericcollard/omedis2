@@ -30,8 +30,8 @@ Route::get('/doc_gs_retailer', [MainController::class, 'doc_gs_retailer'])->name
 Route::get('/attributes', AttributeComponent::class)->name('attributes');
 Route::get('/attribute-lists', AttributeListComponent::class)->name('attribute-lists');
 Route::get('/attribute-list-values/{attributeListId?}', AttributeListValueComponent::class)->name('attribute-list-values');
-Route::get('/units', UnitComponent::class)->name('units');
-Route::get('/datatypes', DataTypeComponent::class)->name('datatypes');
+Route::get('/units/{unitId?}', UnitComponent::class)->name('units');
+Route::get('/datatypes/{datatypeId?}', DataTypeComponent::class)->name('datatypes');
 Route::get('/containers', [MainController::class, 'containers'])->name('containers');
 Route::get('/import_init', [MainController::class, 'import_init'])->name('import_init');
 Route::apiResource("api/products", ProductController::class);
