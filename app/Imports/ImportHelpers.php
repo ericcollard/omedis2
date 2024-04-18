@@ -20,7 +20,7 @@ class ImportHelpers
     public static function truncate_table()
     {
         log::debug('Empty product_bulk_import table or the current user');
-        DB::table('product_bulk_import')->where('user_id', '=', self::getCurrentUserIdOrAbort())->delete();
+        DB::table('product_bulk_import')->where('user_id', '=', self::getCurrentUserIdOrnull())->delete();
     }
 
     public static function initialize_table()
@@ -91,6 +91,19 @@ class ImportHelpers
         return $current_user_id;
     }
 
+    public static function getCurrentUserIdOrnull()
+    {
+        if (auth()->check())
+        {
+            $current_user_id = auth()->user()->id;
+        }
+        else
+        {
+            $current_user_id = 0;
+        }
+        return $current_user_id;
+    }
+
     public static function bulkImport($filePath,$disk)
     {
         $path_parts = pathinfo($filePath);
@@ -145,7 +158,7 @@ class ImportHelpers
         {
             $invalids = DB::table('product_bulk_import')
                 ->where($attribute,'=','')
-                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                 ->orWhereNull($attribute)
                 ->get();
             foreach ($invalids as $invalid)
@@ -164,7 +177,7 @@ class ImportHelpers
         //select concat(brand,name,ifnull(season,'')) as ftt, `wholesale-price`,id from product_bulk_import order by ftt,`wholesale-price`,id
         $items = DB::table('product_bulk_import')
             ->select("id","wholesale-price",DB::raw("CONCAT(brand,name,ifnull(season,'')) as full_name"))
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->orderBy('full_name','asc')
             ->orderBy('wholesale-price','asc')
             ->orderBy('id','asc')
@@ -211,7 +224,7 @@ class ImportHelpers
 
             $values = DB::table('product_bulk_import')
                 ->WhereNotNull($attribute->name)
-                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                 ->select($attribute->name, 'id', 'line_number')
                 ->get();
             foreach ($values as $value) {
@@ -252,7 +265,7 @@ class ImportHelpers
                 ->groupBy($attributeName)
                 ->havingRaw('count('.$attributeName.') > 1')
                 ->whereNotNull($attributeName)
-                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                 ->get()->pluck($attributeName);
             //log::debug($attributeName);
 
@@ -261,7 +274,7 @@ class ImportHelpers
                 $ids = DB::table('product_bulk_import')
                     ->select('id')
                     ->where($attributeName,'=',$nonUniqueValue)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                     ->get()->pluck('id');
                 //log::debug($ids);
                 foreach ($ids as $id)
@@ -281,7 +294,7 @@ class ImportHelpers
             ->select('product_id')
             ->distinct()
             ->whereNotNull('product_id')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->orderBy('product_id')
             ->get()->pluck('product_id');
     }
@@ -292,7 +305,7 @@ class ImportHelpers
         return DB::table('product_bulk_import')
             ->select('id')
             ->where('product_id','=',$product_id)
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->orderBy('wholesale-price')
             ->get()->pluck('id');
     }
@@ -319,7 +332,7 @@ class ImportHelpers
             $product_tags = DB::table('product_bulk_import')
                 ->select(                    $select_list                )
                 ->where('product_id','=',$product_id)
-                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                 ->get();
             foreach($product_tags[0] as $key => $value)
             {
@@ -352,7 +365,7 @@ class ImportHelpers
                 $products_variant_attributes_mix = DB::table('product_bulk_import')
                     ->select('id',DB::raw($select_mix_str.' as mix'))
                     ->where('product_id','=',$product_id)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                     ->whereRaw($select_mix_str." like '%#%'")
                     ->get();
                 //log::debug($products_variant_attributes_mix);
@@ -371,7 +384,7 @@ class ImportHelpers
                 $products_variant_non_unique = DB::table('product_bulk_import')
                     ->select(DB::raw('count(*) as cnt'),DB::raw($select_mix_str.' as mix'))
                     ->where('product_id','=',$product_id)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                     ->whereRaw($select_mix_str." not like '%#%'")
                     ->groupBy('mix')
                     ->havingRaw('count(*) > 1')
@@ -387,7 +400,7 @@ class ImportHelpers
                         $lines_variant_non_unique = DB::table('product_bulk_import')
                             ->select('id',DB::raw($select_mix_str.' as mix'))
                             ->where('product_id','=',$product_id)
-                            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
                             ->whereRaw($select_mix_str. '= "'.$mix.'"')
                             ->get();
                         //log::debug('lines_variant_non_unique');
@@ -410,7 +423,7 @@ class ImportHelpers
         $items = DB::table('product_bulk_import')
             ->select('id','line_number',DB::raw("CONCAT(ifnull(brand,''),' ',ifnull(name,''),' ',ifnull(season,'')) as full_name"),$field)
             ->orderBy('line_number','asc')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->whereNotNull($field)
             ->get();
         foreach ($items as $item)
@@ -435,16 +448,16 @@ class ImportHelpers
         $report_str = '';
         $cnt_products = DB::table('product_bulk_import')
             ->selectRaw(DB::raw("CONCAT(brand,' ',name,' ',ifnull(season,'')) as full_name"))
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->distinct()
             ->get()->pluck('full_name');
         $cnt_variants = DB::table('product_bulk_import')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->distinct('line_number')
             ->count();
 
         $last_update_ts = DB::table('product_bulk_import')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->latest('updated_at')->first();
         if ($last_update_ts)
             $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');

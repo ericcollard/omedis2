@@ -31,6 +31,8 @@
         <!-- Styles -->
         @livewireStyles
 
+        @stack('styles')
+
 
     </head>
     <body class="font-sans antialiased">
@@ -59,6 +61,8 @@
         </div>
 
         @stack('modals')
+
+        @stack('scripts')
 
         @livewireScripts
         <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>

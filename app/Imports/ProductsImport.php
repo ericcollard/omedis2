@@ -59,7 +59,7 @@ class ProductsImport implements ToCollection, WithHeadingRow
 
             log::debug('Inserting bulk data - Preparing insertion');
             $data = [];
-            $data['user_id'] = ImportHelpers::getCurrentUserIdOrAbort();
+            $data['user_id'] = ImportHelpers::getCurrentUserIdOrnull();
             $data['line_number'] = $key+1;
             $data['created_at'] = Carbon::now();
             $data['updated_at'] = Carbon::now();

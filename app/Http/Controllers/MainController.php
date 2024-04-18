@@ -43,6 +43,7 @@ class MainController extends Controller
 
     public function my_test() {
 
+        /*
         $errors = '<p><i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i> blabla</p>';
         $errors .= '<p><i class="fa-solid fa-circle-check text-green-400 text-xl"></i> blabla</p>';
 
@@ -57,6 +58,9 @@ class MainController extends Controller
         var_dump($cnt);
 
         return view('done',compact('errors'));
+        */
+        return view('my_test');
+
     }
 
     public function import_init() {

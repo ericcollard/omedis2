@@ -40,7 +40,7 @@ class Product extends Model
 
     public static function truncate()
     {
-        $products = self::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+        $products = self::where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->get();
         foreach ($products as $product)
             $product->delete();
@@ -347,12 +347,12 @@ class Product extends Model
     public static function getReport($limit = 3)
     {
         $report_str = '';
-        $cnt_products = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+        $cnt_products = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->count();
-        $cnt_variants = Variant::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+        $cnt_variants = Variant::where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->count();
 
-        $last_update_ts = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+        $last_update_ts = Product::where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
         ->latest('updated_at')->first();
         if ($last_update_ts)
             $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');
@@ -379,7 +379,7 @@ class Product extends Model
         $last_update_ts = DB::table('odoo_variant_values')
             ->select('odoo_variant_values.updated_at')
             ->join('variants', 'variants.id', '=', 'odoo_variant_values.variant_id')
-            ->where('variants.user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+            ->where('variants.user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->latest('odoo_variant_values.updated_at')->first();
         if ($last_update_ts)
             $last_update = Carbon::parse($last_update_ts->updated_at)->setTimezone('Europe/Paris')->format('d M Y H:i:s');

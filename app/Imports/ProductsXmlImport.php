@@ -31,7 +31,7 @@ class ProductsXmlImport
         $reader->open($inputfilepath);
         $product_counter = 0;
         $variant_counter = 0;
-        $current_user_id = ImportHelpers::getCurrentUserIdOrAbort();
+        $current_user_id = ImportHelpers::getCurrentUserIdOrnull();
         while ($reader->read()) {
             if ($reader->nodeType == XMLReader::ELEMENT && $reader->name === 'product') {
                 //log::debug('inner product element');

@@ -35,6 +35,7 @@ Route::get('/datatypes', DataTypeComponent::class)->name('datatypes');
 Route::get('/containers', [MainController::class, 'containers'])->name('containers');
 Route::get('/import_init', [MainController::class, 'import_init'])->name('import_init');
 Route::apiResource("api/products", ProductController::class);
+Route::get('/upload_datafile', UploadDataFile::class)->name('upload_datafile');
 
 Route::middleware([
     'auth:sanctum',
@@ -42,7 +43,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
 
-    Route::get('/upload_datafile', UploadDataFile::class)->name('upload_datafile');
+
     Route::get('/upload_valuelist/{table_name}/{incoming_url}/{default_value?}', UploadValueList::class)->name('upload_valuelist');
 
     Route::get('/test', [MainController::class, 'test'])->name('test');
