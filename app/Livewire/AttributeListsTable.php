@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Exports\AttributesExport;
 use App\Models\AttributeList;
+use App\Models\AttributeListValue;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\URL;
 use Maatwebsite\Excel\Facades\Excel;
@@ -86,7 +87,7 @@ class AttributeListsTable extends DataTableComponent
     public function bulkActions(): array
     {
         return [
-            'export' => 'Export',
+            'export' => 'Export'
         ];
     }
 
@@ -98,5 +99,7 @@ class AttributeListsTable extends DataTableComponent
 
         return Excel::download(new AttributesExport($items), 'attributes.xlsx');
     }
+
+
 
 }

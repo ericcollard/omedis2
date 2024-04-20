@@ -97,6 +97,7 @@ class AttributeListValuesTable extends DataTableComponent
     {
         return [
             'export' => 'Export',
+            'delete' => 'Delete',
         ];
     }
 
@@ -107,6 +108,17 @@ class AttributeListValuesTable extends DataTableComponent
         $this->clearSelected();
 
         return Excel::download(new AttributeListValuesExport($items), 'attributelistvalues.xlsx');
+    }
+
+    public function delete()
+    {
+        $items = $this->getSelected();
+        foreach ($items as $item)
+        {
+            $res=AttributeListValue::where('id',$item)->delete();
+        }
+        $this->clearSelected();
+
     }
 
 }
