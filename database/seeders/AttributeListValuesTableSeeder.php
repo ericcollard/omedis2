@@ -6107,2034 +6107,6 @@ class AttributeListValuesTableSeeder extends Seeder
             ),
             7 => 
             array (
-                'id' => 11075,
-                'name' => 'allsports-drinkwear',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Cadeaux / Gourdes',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            8 => 
-            array (
-                'id' => 11076,
-                'name' => 'allsports-gifts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Cadeaux / Porte clé',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            9 => 
-            array (
-                'id' => 11077,
-                'name' => 'allsports-electronic',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Electronique',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            10 => 
-            array (
-                'id' => 11078,
-                'name' => 'allsports-waterproof-pouch',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Pochette Etanche',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            11 => 
-            array (
-                'id' => 11079,
-                'name' => 'allsports-tools',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Outillage et visserie / Outillage',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            12 => 
-            array (
-                'id' => 11080,
-                'name' => 'allsports-sunglasses',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Lunettes',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            13 => 
-            array (
-                'id' => 11081,
-                'name' => 'allsports-suncream',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Crème solaire',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            14 => 
-            array (
-                'id' => 11082,
-                'name' => 'watersports-harness-waist',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Harnais / Ceinture',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            15 => 
-            array (
-                'id' => 11083,
-                'name' => 'watersports-harness-seat',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Harnais / Culotte',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            16 => 
-            array (
-                'id' => 11084,
-                'name' => 'watersports-harness-parts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Harnais / Pièces',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            17 => 
-            array (
-                'id' => 11085,
-                'name' => 'watersports-wetsuit-gloves',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Bonnet et gants',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            18 => 
-            array (
-                'id' => 11086,
-                'name' => 'watersports-wetsuit-boots',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Chaussons',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            19 => 
-            array (
-                'id' => 11087,
-                'name' => 'watersports-wetsuit-semidry-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            20 => 
-            array (
-                'id' => 11088,
-                'name' => 'watersports-wetsuit-semidry-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            21 => 
-            array (
-                'id' => 11089,
-                'name' => 'watersports-wetsuit-semidry-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            22 => 
-            array (
-                'id' => 11090,
-                'name' => 'watersports-wetsuit-steamer-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            23 => 
-            array (
-                'id' => 11091,
-                'name' => 'watersports-wetsuit-steamer-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            24 => 
-            array (
-                'id' => 11092,
-                'name' => 'watersports-wetsuit-steamer-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            25 => 
-            array (
-                'id' => 11093,
-                'name' => 'watersports-wetsuit-poncho',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Poncho',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            26 => 
-            array (
-                'id' => 11094,
-                'name' => 'watersports-wetsuit-shorty-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            27 => 
-            array (
-                'id' => 11095,
-                'name' => 'watersports-wetsuit-shorty-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            28 => 
-            array (
-                'id' => 11096,
-                'name' => 'watersports-wetsuit-shorty-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            29 => 
-            array (
-                'id' => 11097,
-                'name' => 'watersports-wetsuit-top-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            30 => 
-            array (
-                'id' => 11098,
-                'name' => 'watersports-wetsuit-top-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            31 => 
-            array (
-                'id' => 11099,
-                'name' => 'watersports-wetsuit-top-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            32 => 
-            array (
-                'id' => 11100,
-                'name' => 'watersports-windsurf-fin',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Aileron',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            33 => 
-            array (
-                'id' => 11101,
-                'name' => 'watersports-windsurf-board-windfoil',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Foil',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            34 => 
-            array (
-                'id' => 11102,
-                'name' => 'watersports-windsurf-board-freerace',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Freerace',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            35 => 
-            array (
-                'id' => 11103,
-                'name' => 'watersports-windsurf-board-freeride',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Freeride',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            36 => 
-            array (
-                'id' => 11104,
-                'name' => 'watersports-windsurf-board-slalom',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Slalom',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            37 => 
-            array (
-                'id' => 11105,
-                'name' => 'watersports-windsurf-board-wave',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Vague',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            38 => 
-            array (
-                'id' => 11106,
-                'name' => 'watersports-windsurf-footstrap',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Flotteur / Footstraps',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            39 => 
-            array (
-                'id' => 11107,
-                'name' => 'watersports-windsurf-hydofoil-complete',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Foil / Complet',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            40 => 
-            array (
-                'id' => 11108,
-                'name' => 'watersports-windsurf-hydofoil-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Foil / Pièces',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            41 => 
-            array (
-                'id' => 11109,
-                'name' => 'watersports-windsurf-iqfoil',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / IQFOIL',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            42 => 
-            array (
-                'id' => 11110,
-                'name' => 'watersports-windsurf-harness-line-fix',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Lignes de harnais / Fixe',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            43 => 
-            array (
-                'id' => 11111,
-                'name' => 'watersports-windsurf-harness-line-vario',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Lignes de harnais / Vario',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            44 => 
-            array (
-                'id' => 11112,
-                'name' => 'watersports-windsurf-mast-rdm',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Mat / RDM',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            45 => 
-            array (
-                'id' => 11113,
-                'name' => 'watersports-windsurf-mast-sdm',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Mat / SDM',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            46 => 
-            array (
-                'id' => 11114,
-                'name' => 'watersports-windsurf-one-design',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / One Design',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            47 => 
-            array (
-                'id' => 11115,
-                'name' => 'watersports-windsurf-mastfoot-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Pied de mat / Pièces détachées',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            48 => 
-            array (
-                'id' => 11116,
-                'name' => 'watersports-windsurf-mast-base',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Pied de mat / Plaquette',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            49 => 
-            array (
-                'id' => 11117,
-                'name' => 'watersports-windsurf-mast-extension-rdm',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Pied de mat / Rallonge RDM',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            50 => 
-            array (
-                'id' => 11118,
-                'name' => 'watersports-windsurf-mast-extension-sdm',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Pied de mat / Rallonge SDM',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            51 => 
-            array (
-                'id' => 11119,
-                'name' => 'watersports-windsurf-sail-windfoil',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Foil',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            52 => 
-            array (
-                'id' => 11120,
-                'name' => 'watersports-windsurf-sail-freerace',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Freerace',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            53 => 
-            array (
-                'id' => 11121,
-                'name' => 'watersports-windsurf-sail-freeride',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Freeride',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            54 => 
-            array (
-                'id' => 11122,
-                'name' => 'watersports-windsurf-sail-rig',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Greement',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            55 => 
-            array (
-                'id' => 11123,
-                'name' => 'watersports-windsurf-sail-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Pièces',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            56 => 
-            array (
-                'id' => 11124,
-                'name' => 'watersports-windsurf-sail-slalom',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Slalom',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            57 => 
-            array (
-                'id' => 11125,
-                'name' => 'watersports-windsurf-sail-wave',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Voile / Vague',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            58 => 
-            array (
-                'id' => 11126,
-                'name' => 'watersports-windsurf-boom-aluminium',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Wishbone / Aluminium',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            59 => 
-            array (
-                'id' => 11127,
-                'name' => 'watersports-windsurf-boom-carbon',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Wishbone / Carbone',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            60 => 
-            array (
-                'id' => 11128,
-                'name' => 'watersports-windsurf-boom-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Windsurf / Wishbone / Pièces détachées',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            61 => 
-            array (
-                'id' => 11129,
-                'name' => 'watersports-windsurf-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse planche windsurf',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            62 => 
-            array (
-                'id' => 11130,
-                'name' => 'watersports-wingfoil-accessoires',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Accessoires',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            63 => 
-            array (
-                'id' => 11131,
-                'name' => 'watersports-wingfoil-wing',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Aile',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            64 => 
-            array (
-                'id' => 11132,
-                'name' => 'watersports-wingfoil-bladder',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Boudins',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            65 => 
-            array (
-                'id' => 11133,
-                'name' => 'watersports-wingfoil-board',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Flotteur',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            66 => 
-            array (
-                'id' => 11134,
-                'name' => 'watersports-wingfoil-hydofoil-complete',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Foil / Complet',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            67 => 
-            array (
-                'id' => 11135,
-                'name' => 'watersports-wingfoil-hydofoil-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            68 => 
-            array (
-                'id' => 11136,
-                'name' => 'watersports-wingfoil-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse planche Wing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            69 => 
-            array (
-                'id' => 11137,
-                'name' => 'watersports-wingfoil-leash',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Leash / Wing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            70 => 
-            array (
-                'id' => 11138,
-                'name' => 'watersports-kitesurf-kite',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Aile / Complete',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            71 => 
-            array (
-                'id' => 11139,
-                'name' => 'watersports-kitesurf-bladder&repair',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Aile / Pièces et réparation',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            72 => 
-            array (
-                'id' => 11140,
-                'name' => 'watersports-kitesurf-bar-complete',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Barre / Complete',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            73 => 
-            array (
-                'id' => 11141,
-                'name' => 'watersports-kitesurf-var-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Barre / Pièces détachées',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            74 => 
-            array (
-                'id' => 11142,
-                'name' => 'watersports-kitesurf-board-surf',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Flotteur / Directionnel',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            75 => 
-            array (
-                'id' => 11143,
-                'name' => 'watersports-kitesurf-board-foil',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Flotteur / Foil',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            76 => 
-            array (
-                'id' => 11144,
-                'name' => 'watersports-kitesurf-board-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Flotteur / Pièces détachées',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            77 => 
-            array (
-                'id' => 11145,
-                'name' => 'watersports-kitesurf-board-twintip',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Flotteur / Twintip',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            78 => 
-            array (
-                'id' => 11146,
-                'name' => 'watersports-kitesurf-hydrofoil-complete',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Foil',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            79 => 
-            array (
-                'id' => 11147,
-                'name' => 'watersports-kitesurf-hydrofoil-part',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => NULL,
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            80 => 
-            array (
-                'id' => 11148,
-                'name' => 'watersports-kitesurf-package',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Kitesurf / Pack',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            81 => 
-            array (
-                'id' => 11149,
-                'name' => 'watersports-kitesurf-leash',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Leash / Aile',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            82 => 
-            array (
-                'id' => 11150,
-                'name' => 'watersports-kitesurf-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse planche kite',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            83 => 
-            array (
-                'id' => 11151,
-                'name' => 'watersports-sup&surf-bodyboard',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Bodyboard',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            84 => 
-            array (
-                'id' => 11152,
-                'name' => 'watersports-sup&surf-fin',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Dérive',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            85 => 
-            array (
-                'id' => 11153,
-                'name' => 'watersports-sup&surf-pads',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Pads',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            86 => 
-            array (
-                'id' => 11154,
-                'name' => 'watersports-sup&surf-paddle',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Pagaie',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            87 => 
-            array (
-                'id' => 11155,
-                'name' => 'watersports-sup&surf-sup-hard',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / SUP / Gonflable',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            88 => 
-            array (
-                'id' => 11156,
-                'name' => 'watersports-sup&surf-sup-inflatable',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / SUP / Rigide',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            89 => 
-            array (
-                'id' => 11157,
-                'name' => 'watersports-sup&surf-skate',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Skate',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            90 => 
-            array (
-                'id' => 11158,
-                'name' => 'watersports-sup&surf-surf',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Surf',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            91 => 
-            array (
-                'id' => 11159,
-                'name' => 'watersports-sup&surf-wax',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Sup & Surf / Wax',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            92 => 
-            array (
-                'id' => 11160,
-                'name' => 'watersports-sup&surf-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse planche surf',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            93 => 
-            array (
-                'id' => 11161,
-                'name' => 'watersports-sup&surf-leash',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Leash / Board',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:38',
-                'updated_at' => '2024-01-22 20:28:38',
-            ),
-            94 => 
-            array (
-                'id' => 11162,
-                'name' => 'watersports-towed-accessories',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Accessoires',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            95 => 
-            array (
-                'id' => 11163,
-                'name' => 'watersports-towed-buoy',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Bouée',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            96 => 
-            array (
-                'id' => 11164,
-                'name' => 'watersports-towed-wakebord-boots',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Chausse',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            97 => 
-            array (
-                'id' => 11165,
-                'name' => 'watersports-towed-wakebord-package',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Pack',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            98 => 
-            array (
-                'id' => 11166,
-                'name' => 'watersports-towed-wakebord-board',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Planche',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            99 => 
-            array (
-                'id' => 11167,
-                'name' => 'watersports-towed-waterski',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Wakeboard / Ski nautique',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            100 => 
-            array (
-                'id' => 11168,
-                'name' => 'watersports-towed-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse wake',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            101 => 
-            array (
-                'id' => 11169,
-                'name' => 'watersports-allround-rope',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Outillage et visserie / Bout',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            102 => 
-            array (
-                'id' => 11170,
-                'name' => 'watersports-allround-inserts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Outillage et visserie / Inserts',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            103 => 
-            array (
-                'id' => 11171,
-                'name' => 'watersports-allround-pump',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Outillage et visserie / Pompe',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            104 => 
-            array (
-                'id' => 11172,
-                'name' => 'watersports-allround-screws&bold',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Outillage et visserie / Visserie',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            105 => 
-            array (
-                'id' => 11173,
-                'name' => 'watersports-allround-helmet',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Casque',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            106 => 
-            array (
-                'id' => 11174,
-                'name' => 'watersports-allround-impact-vest',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Gilets d\'impact',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            107 => 
-            array (
-                'id' => 11175,
-                'name' => 'snowsport-allround-protection-helmet',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Casque / Loisir',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            108 => 
-            array (
-                'id' => 11176,
-                'name' => 'snowsport-allround-protection-racing-helmet',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Casque / Racing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            109 => 
-            array (
-                'id' => 11177,
-                'name' => 'snowsport-allround-protection-back-protection',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Dorsale',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            110 => 
-            array (
-                'id' => 11178,
-                'name' => 'snowsport-allround-protection-google',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Masque',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            111 => 
-            array (
-                'id' => 11179,
-                'name' => 'snowsport-allround-protection-racing',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Racing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            112 => 
-            array (
-                'id' => 11180,
-                'name' => 'snowsport-allround-security',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Sécurité ski',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            113 => 
-            array (
-                'id' => 11181,
-                'name' => 'snowsport-allround-racing-wear-race-suit',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Combinaison',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            114 => 
-            array (
-                'id' => 11182,
-                'name' => 'snowsport-allround-racing-wear-pant&shorts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Pantalon et short',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            115 => 
-            array (
-                'id' => 11183,
-                'name' => 'snowsport-allround-racing-wear-jacket',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Veste',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            116 => 
-            array (
-                'id' => 11184,
-                'name' => 'snowsport-allround-racing-wear-gloves',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Gants / Racing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            117 => 
-            array (
-                'id' => 11185,
-                'name' => 'snowsport-allround-tecnical-wear-midlayer-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            118 => 
-            array (
-                'id' => 11186,
-                'name' => 'snowsport-allround-tecnical-wear-midlayer-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            119 => 
-            array (
-                'id' => 11187,
-                'name' => 'snowsport-allround-tecnical-wear-midlayer-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            120 => 
-            array (
-                'id' => 11188,
-                'name' => 'snowsport-allround-tecnical-wear-beanie',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Bonnet',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            121 => 
-            array (
-                'id' => 11189,
-                'name' => 'snowsport-allround-tecnical-wear-socks',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Chaussettes',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            122 => 
-            array (
-                'id' => 11190,
-                'name' => 'snowsport-allround-tecnical-wear-gloves',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Gants / Loisir',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            123 => 
-            array (
-                'id' => 11191,
-                'name' => 'snowsport-allround-tecnical-wear-pants-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            124 => 
-            array (
-                'id' => 11192,
-                'name' => 'snowsport-allround-tecnical-wear-pants-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            125 => 
-            array (
-                'id' => 11193,
-                'name' => 'snowsport-allround-tecnical-wear-pants-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            126 => 
-            array (
-                'id' => 11194,
-                'name' => 'snowsport-allround-tecnical-wear-baselayer-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            127 => 
-            array (
-                'id' => 11195,
-                'name' => 'snowsport-allround-tecnical-wear-baselayer-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            128 => 
-            array (
-                'id' => 11196,
-                'name' => 'snowsport-allround-tecnical-wear-baselayer-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            129 => 
-            array (
-                'id' => 11197,
-                'name' => 'snowsport-allround-tecnical-wear-jacket-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            130 => 
-            array (
-                'id' => 11198,
-                'name' => 'snowsport-allround-tecnical-wear-jacket-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            131 => 
-            array (
-                'id' => 11199,
-                'name' => 'snowsport-allround-tecnical-wear-jacket-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            132 => 
-            array (
-                'id' => 11200,
-                'name' => 'snowsport-ski-poles-racing',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Batons / Course',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            133 => 
-            array (
-                'id' => 11201,
-                'name' => 'snowsport-ski-poles',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Batons / Loisir',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            134 => 
-            array (
-                'id' => 11202,
-                'name' => 'snowsport-ski-skiboots-bootfotting',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Chaussures / Bootfitting',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            135 => 
-            array (
-                'id' => 11203,
-                'name' => 'snowsport-ski-skiboots-piste&freeride',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Chaussures / Piste',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            136 => 
-            array (
-                'id' => 11204,
-                'name' => 'snowsport-ski-skiboots-pure-racing',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Chaussures / Racing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            137 => 
-            array (
-                'id' => 11205,
-                'name' => 'snowsport-ski-skiboots-touring',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Chaussures / Randonnée',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            138 => 
-            array (
-                'id' => 11206,
-                'name' => 'snowsport-ski-tunning-wax',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Entretien / Fart',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            139 => 
-            array (
-                'id' => 11207,
-                'name' => 'snowsport-ski-tunning-tools',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Entretien / Outillage',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            140 => 
-            array (
-                'id' => 11208,
-                'name' => 'snowsport-ski-binding-alpine',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Fixations / Alpine',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            141 => 
-            array (
-                'id' => 11209,
-                'name' => 'snowsport-ski-binding-parts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Fixations / Pièces',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            142 => 
-            array (
-                'id' => 11210,
-                'name' => 'snowsport-ski-binding-touring',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Fixations / Randonnée',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            143 => 
-            array (
-                'id' => 11211,
-                'name' => 'snowsport-ski-skins',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Peaux',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            144 => 
-            array (
-                'id' => 11212,
-                'name' => 'snowsport-ski-skis-all-moutain&freeride',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Skis / All Mountain et Freeride',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            145 => 
-            array (
-                'id' => 11213,
-                'name' => 'snowsport-ski-skis-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Skis / Junior',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            146 => 
-            array (
-                'id' => 11214,
-                'name' => 'snowsport-ski-skis-piste',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Skis / Piste',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            147 => 
-            array (
-                'id' => 11215,
-                'name' => 'snowsport-ski-skis-pure-racing',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Skis / Racing',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            148 => 
-            array (
-                'id' => 11216,
-                'name' => 'snowsport-ski-skis-touring',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Ski alpin / Skis / Randonnée',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            149 => 
-            array (
-                'id' => 11217,
-                'name' => 'snowsport-ski-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse Ski',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            150 => 
-            array (
-                'id' => 11218,
-                'name' => 'snowsport-snowboard-boots-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Boots / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            151 => 
-            array (
-                'id' => 11219,
-                'name' => 'snowsport-snowboard-boots-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Boots / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            152 => 
-            array (
-                'id' => 11220,
-                'name' => 'snowsport-snowboard-binding-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Fixations / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            153 => 
-            array (
-                'id' => 11221,
-                'name' => 'snowsport-snowboard-binding-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Fixations / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            154 => 
-            array (
-                'id' => 11222,
-                'name' => 'snowsport-snowboard-package-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Pack / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            155 => 
-            array (
-                'id' => 11223,
-                'name' => 'snowsport-snowboard-package-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Pack / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            156 => 
-            array (
-                'id' => 11224,
-                'name' => 'snowsport-snowboard-package-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Pack / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            157 => 
-            array (
-                'id' => 11225,
-                'name' => 'snowsport-snowboard-parts',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Pièces détachées',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            158 => 
-            array (
-                'id' => 11226,
-                'name' => 'snowsport-snowboard-board-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Plateau / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            159 => 
-            array (
-                'id' => 11227,
-                'name' => 'snowsport-snowboard-board-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Plateau / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            160 => 
-            array (
-                'id' => 11228,
-                'name' => 'snowsport-snowboard-split&touring',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Snowboard / Split et Randonnée',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            161 => 
-            array (
-                'id' => 11229,
-                'name' => 'snowsport-snowboard-bag',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Bagagerie / Housse Snow',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            162 => 
-            array (
-                'id' => 11230,
-                'name' => 'fashion-accessories',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Accessoires ',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            163 => 
-            array (
-                'id' => 11231,
-                'name' => 'fashion-caps',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Casquette',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            164 => 
-            array (
-                'id' => 11232,
-                'name' => 'fashion-pants-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            165 => 
-            array (
-                'id' => 11233,
-                'name' => 'fashion-pants-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            166 => 
-            array (
-                'id' => 11234,
-                'name' => 'fashion-pants-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            167 => 
-            array (
-                'id' => 11235,
-                'name' => 'fashion-shorts-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            168 => 
-            array (
-                'id' => 11236,
-                'name' => 'fashion-shorts-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            169 => 
-            array (
-                'id' => 11237,
-                'name' => 'fashion-shorts-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            170 => 
-            array (
-                'id' => 11238,
-                'name' => 'fashion-sweat&shirt-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            171 => 
-            array (
-                'id' => 11239,
-                'name' => 'fashion-sweat&shirt-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            172 => 
-            array (
-                'id' => 11240,
-                'name' => 'fashion-sweat&shirt-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            173 => 
-            array (
-                'id' => 11241,
-                'name' => 'fashion-te-shirts-kid',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Enfant',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            174 => 
-            array (
-                'id' => 11242,
-                'name' => 'fashion-te-shirts-women',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Femme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            175 => 
-            array (
-                'id' => 11243,
-                'name' => 'fashion-te-shirts-men',
-                'comment' => NULL,
-                'attribute_list_id' => 2,
-                'user_id' => 2,
-                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Homme',
-                'sort' => 0,
-                'created_at' => '2024-01-22 20:28:39',
-                'updated_at' => '2024-01-22 20:28:39',
-            ),
-            176 => 
-            array (
                 'id' => 11244,
                 'name' => 'xxxs',
                 'comment' => NULL,
@@ -8145,7 +6117,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            177 => 
+            8 => 
             array (
                 'id' => 11245,
                 'name' => 'xxs',
@@ -8157,7 +6129,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            178 => 
+            9 => 
             array (
                 'id' => 11246,
                 'name' => 'xs',
@@ -8169,7 +6141,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            179 => 
+            10 => 
             array (
                 'id' => 11247,
                 'name' => 's',
@@ -8181,7 +6153,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            180 => 
+            11 => 
             array (
                 'id' => 11248,
                 'name' => 'st',
@@ -8193,7 +6165,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            181 => 
+            12 => 
             array (
                 'id' => 11249,
                 'name' => 's+',
@@ -8205,7 +6177,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            182 => 
+            13 => 
             array (
                 'id' => 11250,
                 'name' => 'ms',
@@ -8217,7 +6189,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            183 => 
+            14 => 
             array (
                 'id' => 11251,
                 'name' => 'm',
@@ -8229,7 +6201,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            184 => 
+            15 => 
             array (
                 'id' => 11252,
                 'name' => 'mt',
@@ -8241,7 +6213,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            185 => 
+            16 => 
             array (
                 'id' => 11253,
                 'name' => 'm+',
@@ -8253,7 +6225,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            186 => 
+            17 => 
             array (
                 'id' => 11254,
                 'name' => 'ls',
@@ -8265,7 +6237,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            187 => 
+            18 => 
             array (
                 'id' => 11255,
                 'name' => 'l',
@@ -8277,7 +6249,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            188 => 
+            19 => 
             array (
                 'id' => 11256,
                 'name' => 'lt',
@@ -8289,7 +6261,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            189 => 
+            20 => 
             array (
                 'id' => 11257,
                 'name' => 'xls',
@@ -8301,7 +6273,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            190 => 
+            21 => 
             array (
                 'id' => 11258,
                 'name' => 'xl',
@@ -8313,7 +6285,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            191 => 
+            22 => 
             array (
                 'id' => 11259,
                 'name' => 'xlt',
@@ -8325,7 +6297,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            192 => 
+            23 => 
             array (
                 'id' => 11260,
                 'name' => 'xxl',
@@ -8337,7 +6309,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            193 => 
+            24 => 
             array (
                 'id' => 11261,
                 'name' => 'xxxl',
@@ -8349,7 +6321,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            194 => 
+            25 => 
             array (
                 'id' => 11262,
                 'name' => 'xxxxl',
@@ -8361,7 +6333,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-24 15:43:52',
                 'updated_at' => '2024-01-24 15:43:52',
             ),
-            195 => 
+            26 => 
             array (
                 'id' => 11263,
                 'name' => '12-24',
@@ -8373,7 +6345,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            196 => 
+            27 => 
             array (
                 'id' => 11264,
                 'name' => '20-22',
@@ -8385,7 +6357,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            197 => 
+            28 => 
             array (
                 'id' => 11265,
                 'name' => '20-26',
@@ -8397,7 +6369,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            198 => 
+            29 => 
             array (
                 'id' => 11266,
                 'name' => '22-24',
@@ -8409,7 +6381,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            199 => 
+            30 => 
             array (
                 'id' => 11267,
                 'name' => '22-28',
@@ -8421,7 +6393,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            200 => 
+            31 => 
             array (
                 'id' => 11268,
                 'name' => '24-26',
@@ -8433,7 +6405,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            201 => 
+            32 => 
             array (
                 'id' => 11269,
                 'name' => '24-30',
@@ -8445,7 +6417,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            202 => 
+            33 => 
             array (
                 'id' => 11270,
                 'name' => '27-30',
@@ -8457,7 +6429,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            203 => 
+            34 => 
             array (
                 'id' => 11271,
                 'name' => '28-34',
@@ -8469,7 +6441,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            204 => 
+            35 => 
             array (
                 'id' => 11272,
                 'name' => '120-210',
@@ -8481,7 +6453,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            205 => 
+            36 => 
             array (
                 'id' => 11273,
                 'name' => '130-180',
@@ -8493,7 +6465,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            206 => 
+            37 => 
             array (
                 'id' => 11274,
                 'name' => '135-195',
@@ -8505,7 +6477,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            207 => 
+            38 => 
             array (
                 'id' => 11275,
                 'name' => '140-180',
@@ -8517,7 +6489,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            208 => 
+            39 => 
             array (
                 'id' => 11276,
                 'name' => '140-190',
@@ -8529,7 +6501,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            209 => 
+            40 => 
             array (
                 'id' => 11277,
                 'name' => '140-200',
@@ -8541,7 +6513,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            210 => 
+            41 => 
             array (
                 'id' => 11278,
                 'name' => '150-190',
@@ -8553,7 +6525,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            211 => 
+            42 => 
             array (
                 'id' => 11279,
                 'name' => '150-200',
@@ -8565,7 +6537,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            212 => 
+            43 => 
             array (
                 'id' => 11280,
                 'name' => '150-210',
@@ -8577,7 +6549,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            213 => 
+            44 => 
             array (
                 'id' => 11281,
                 'name' => '155-205',
@@ -8589,7 +6561,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            214 => 
+            45 => 
             array (
                 'id' => 11282,
                 'name' => '160-210',
@@ -8601,7 +6573,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            215 => 
+            46 => 
             array (
                 'id' => 11283,
                 'name' => '160-215',
@@ -8613,7 +6585,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            216 => 
+            47 => 
             array (
                 'id' => 11284,
                 'name' => '160-220',
@@ -8625,7 +6597,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            217 => 
+            48 => 
             array (
                 'id' => 11285,
                 'name' => '165-215',
@@ -8637,7 +6609,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            218 => 
+            49 => 
             array (
                 'id' => 11286,
                 'name' => '170-210',
@@ -8649,7 +6621,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            219 => 
+            50 => 
             array (
                 'id' => 11287,
                 'name' => '170-220',
@@ -8661,7 +6633,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            220 => 
+            51 => 
             array (
                 'id' => 11288,
                 'name' => '170-230',
@@ -8673,7 +6645,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            221 => 
+            52 => 
             array (
                 'id' => 11289,
                 'name' => '175-215',
@@ -8685,7 +6657,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            222 => 
+            53 => 
             array (
                 'id' => 11290,
                 'name' => '175-225',
@@ -8697,7 +6669,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            223 => 
+            54 => 
             array (
                 'id' => 11291,
                 'name' => '180-230',
@@ -8709,7 +6681,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            224 => 
+            55 => 
             array (
                 'id' => 11292,
                 'name' => '180-235',
@@ -8721,7 +6693,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            225 => 
+            56 => 
             array (
                 'id' => 11293,
                 'name' => '180-240',
@@ -8733,7 +6705,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            226 => 
+            57 => 
             array (
                 'id' => 11294,
                 'name' => '185-235',
@@ -8745,7 +6717,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            227 => 
+            58 => 
             array (
                 'id' => 11295,
                 'name' => '190-240',
@@ -8757,7 +6729,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            228 => 
+            59 => 
             array (
                 'id' => 11296,
                 'name' => '190-245',
@@ -8769,7 +6741,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            229 => 
+            60 => 
             array (
                 'id' => 11297,
                 'name' => '190-250',
@@ -8781,7 +6753,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            230 => 
+            61 => 
             array (
                 'id' => 11298,
                 'name' => '200-250',
@@ -8793,7 +6765,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            231 => 
+            62 => 
             array (
                 'id' => 11299,
                 'name' => '200-260',
@@ -8805,7 +6777,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            232 => 
+            63 => 
             array (
                 'id' => 11300,
                 'name' => '210-260',
@@ -8817,7 +6789,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            233 => 
+            64 => 
             array (
                 'id' => 11301,
                 'name' => '210-270',
@@ -8829,7 +6801,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            234 => 
+            65 => 
             array (
                 'id' => 11302,
                 'name' => '220-280',
@@ -8841,7 +6813,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            235 => 
+            66 => 
             array (
                 'id' => 11303,
                 'name' => '230-280',
@@ -8853,7 +6825,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            236 => 
+            67 => 
             array (
                 'id' => 11304,
                 'name' => '230-290',
@@ -8865,7 +6837,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            237 => 
+            68 => 
             array (
                 'id' => 11305,
                 'name' => '240-290',
@@ -8877,7 +6849,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            238 => 
+            69 => 
             array (
                 'id' => 11306,
                 'name' => '240-300',
@@ -8889,7 +6861,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            239 => 
+            70 => 
             array (
                 'id' => 11307,
                 'name' => '250-310',
@@ -8901,7 +6873,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            240 => 
+            71 => 
             array (
                 'id' => 11308,
                 'name' => '30-31',
@@ -8913,7 +6885,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            241 => 
+            72 => 
             array (
                 'id' => 11309,
                 'name' => '31-34',
@@ -8925,7 +6897,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            242 => 
+            73 => 
             array (
                 'id' => 11310,
                 'name' => '32-33',
@@ -8937,7 +6909,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            243 => 
+            74 => 
             array (
                 'id' => 11311,
                 'name' => '32-38',
@@ -8949,7 +6921,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            244 => 
+            75 => 
             array (
                 'id' => 11312,
                 'name' => '33-35',
@@ -8961,7 +6933,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            245 => 
+            76 => 
             array (
                 'id' => 11313,
                 'name' => '34-42',
@@ -8973,7 +6945,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            246 => 
+            77 => 
             array (
                 'id' => 11314,
                 'name' => '35-36',
@@ -8985,7 +6957,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            247 => 
+            78 => 
             array (
                 'id' => 11315,
                 'name' => '35-38',
@@ -8997,7 +6969,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            248 => 
+            79 => 
             array (
                 'id' => 11316,
                 'name' => '36-37',
@@ -9009,7 +6981,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            249 => 
+            80 => 
             array (
                 'id' => 11317,
                 'name' => '37-38',
@@ -9021,7 +6993,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            250 => 
+            81 => 
             array (
                 'id' => 11318,
                 'name' => '38-39',
@@ -9033,7 +7005,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            251 => 
+            82 => 
             array (
                 'id' => 11319,
                 'name' => '39-40',
@@ -9045,7 +7017,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            252 => 
+            83 => 
             array (
                 'id' => 11320,
                 'name' => '39-41',
@@ -9057,7 +7029,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            253 => 
+            84 => 
             array (
                 'id' => 11321,
                 'name' => '40-41',
@@ -9069,7 +7041,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            254 => 
+            85 => 
             array (
                 'id' => 11322,
                 'name' => '41-42',
@@ -9081,7 +7053,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            255 => 
+            86 => 
             array (
                 'id' => 11323,
                 'name' => '42-43',
@@ -9093,7 +7065,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            256 => 
+            87 => 
             array (
                 'id' => 11324,
                 'name' => '42-44',
@@ -9105,7 +7077,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            257 => 
+            88 => 
             array (
                 'id' => 11325,
                 'name' => '43-44',
@@ -9117,7 +7089,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            258 => 
+            89 => 
             array (
                 'id' => 11326,
                 'name' => '44-45',
@@ -9129,7 +7101,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            259 => 
+            90 => 
             array (
                 'id' => 11327,
                 'name' => '45-46',
@@ -9141,7 +7113,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            260 => 
+            91 => 
             array (
                 'id' => 11328,
                 'name' => '45-47',
@@ -9153,7 +7125,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            261 => 
+            92 => 
             array (
                 'id' => 11329,
                 'name' => '46-47',
@@ -9165,7 +7137,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            262 => 
+            93 => 
             array (
                 'id' => 11330,
                 'name' => '47-50',
@@ -9177,7 +7149,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            263 => 
+            94 => 
             array (
                 'id' => 11331,
                 'name' => '47-51',
@@ -9189,7 +7161,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            264 => 
+            95 => 
             array (
                 'id' => 11332,
                 'name' => '47-52',
@@ -9201,7 +7173,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            265 => 
+            96 => 
             array (
                 'id' => 11333,
                 'name' => '47-53',
@@ -9213,7 +7185,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            266 => 
+            97 => 
             array (
                 'id' => 11334,
                 'name' => '48-51',
@@ -9225,7 +7197,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            267 => 
+            98 => 
             array (
                 'id' => 11335,
                 'name' => '48-52',
@@ -9237,7 +7209,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            268 => 
+            99 => 
             array (
                 'id' => 11336,
                 'name' => '48-53',
@@ -9249,7 +7221,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            269 => 
+            100 => 
             array (
                 'id' => 11337,
                 'name' => '48-54',
@@ -9261,7 +7233,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            270 => 
+            101 => 
             array (
                 'id' => 11338,
                 'name' => '49-52',
@@ -9273,7 +7245,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            271 => 
+            102 => 
             array (
                 'id' => 11339,
                 'name' => '49-53',
@@ -9285,7 +7257,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            272 => 
+            103 => 
             array (
                 'id' => 11340,
                 'name' => '49-54',
@@ -9297,7 +7269,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            273 => 
+            104 => 
             array (
                 'id' => 11341,
                 'name' => '49-55',
@@ -9309,7 +7281,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            274 => 
+            105 => 
             array (
                 'id' => 11342,
                 'name' => '50-51',
@@ -9321,7 +7293,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            275 => 
+            106 => 
             array (
                 'id' => 11343,
                 'name' => '50-52',
@@ -9333,7 +7305,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            276 => 
+            107 => 
             array (
                 'id' => 11344,
                 'name' => '50-53',
@@ -9345,7 +7317,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            277 => 
+            108 => 
             array (
                 'id' => 11345,
                 'name' => '50-54',
@@ -9357,7 +7329,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            278 => 
+            109 => 
             array (
                 'id' => 11346,
                 'name' => '50-55',
@@ -9369,7 +7341,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            279 => 
+            110 => 
             array (
                 'id' => 11347,
                 'name' => '51-52',
@@ -9381,7 +7353,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            280 => 
+            111 => 
             array (
                 'id' => 11348,
                 'name' => '51-53',
@@ -9393,7 +7365,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            281 => 
+            112 => 
             array (
                 'id' => 11349,
                 'name' => '51-54',
@@ -9405,7 +7377,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            282 => 
+            113 => 
             array (
                 'id' => 11350,
                 'name' => '51-55',
@@ -9417,7 +7389,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            283 => 
+            114 => 
             array (
                 'id' => 11351,
                 'name' => '51-56',
@@ -9429,7 +7401,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            284 => 
+            115 => 
             array (
                 'id' => 11352,
                 'name' => '52-53',
@@ -9441,7 +7413,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            285 => 
+            116 => 
             array (
                 'id' => 11353,
                 'name' => '52-54',
@@ -9453,7 +7425,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            286 => 
+            117 => 
             array (
                 'id' => 11354,
                 'name' => '52-55',
@@ -9465,7 +7437,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            287 => 
+            118 => 
             array (
                 'id' => 11355,
                 'name' => '52-56',
@@ -9477,7 +7449,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            288 => 
+            119 => 
             array (
                 'id' => 11356,
                 'name' => '52-57',
@@ -9489,7 +7461,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            289 => 
+            120 => 
             array (
                 'id' => 11357,
                 'name' => '52-58',
@@ -9501,7 +7473,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            290 => 
+            121 => 
             array (
                 'id' => 11358,
                 'name' => '53-54',
@@ -9513,7 +7485,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            291 => 
+            122 => 
             array (
                 'id' => 11359,
                 'name' => '53-55',
@@ -9525,7 +7497,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            292 => 
+            123 => 
             array (
                 'id' => 11360,
                 'name' => '53-56',
@@ -9537,7 +7509,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            293 => 
+            124 => 
             array (
                 'id' => 11361,
                 'name' => '53-57',
@@ -9549,7 +7521,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:36',
                 'updated_at' => '2024-01-31 17:07:36',
             ),
-            294 => 
+            125 => 
             array (
                 'id' => 11362,
                 'name' => '53-58',
@@ -9561,7 +7533,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            295 => 
+            126 => 
             array (
                 'id' => 11363,
                 'name' => '54-55',
@@ -9573,7 +7545,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            296 => 
+            127 => 
             array (
                 'id' => 11364,
                 'name' => '54-56',
@@ -9585,7 +7557,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            297 => 
+            128 => 
             array (
                 'id' => 11365,
                 'name' => '54-57',
@@ -9597,7 +7569,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            298 => 
+            129 => 
             array (
                 'id' => 11366,
                 'name' => '54-58',
@@ -9609,7 +7581,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            299 => 
+            130 => 
             array (
                 'id' => 11367,
                 'name' => '55-56',
@@ -9621,7 +7593,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            300 => 
+            131 => 
             array (
                 'id' => 11368,
                 'name' => '55-57',
@@ -9633,7 +7605,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            301 => 
+            132 => 
             array (
                 'id' => 11369,
                 'name' => '55-58',
@@ -9645,7 +7617,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            302 => 
+            133 => 
             array (
                 'id' => 11370,
                 'name' => '55-59',
@@ -9657,7 +7629,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            303 => 
+            134 => 
             array (
                 'id' => 11371,
                 'name' => '56-57',
@@ -9669,7 +7641,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            304 => 
+            135 => 
             array (
                 'id' => 11372,
                 'name' => '56-58',
@@ -9681,7 +7653,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            305 => 
+            136 => 
             array (
                 'id' => 11373,
                 'name' => '56-59',
@@ -9693,7 +7665,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            306 => 
+            137 => 
             array (
                 'id' => 11374,
                 'name' => '56-60',
@@ -9705,7 +7677,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            307 => 
+            138 => 
             array (
                 'id' => 11375,
                 'name' => '57-58',
@@ -9717,7 +7689,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            308 => 
+            139 => 
             array (
                 'id' => 11376,
                 'name' => '57-59',
@@ -9729,7 +7701,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            309 => 
+            140 => 
             array (
                 'id' => 11377,
                 'name' => '57-60',
@@ -9741,7 +7713,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            310 => 
+            141 => 
             array (
                 'id' => 11378,
                 'name' => '57-61',
@@ -9753,7 +7725,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            311 => 
+            142 => 
             array (
                 'id' => 11379,
                 'name' => '58-59',
@@ -9765,7 +7737,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            312 => 
+            143 => 
             array (
                 'id' => 11380,
                 'name' => '58-60',
@@ -9777,7 +7749,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            313 => 
+            144 => 
             array (
                 'id' => 11381,
                 'name' => '58-61',
@@ -9789,7 +7761,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            314 => 
+            145 => 
             array (
                 'id' => 11382,
                 'name' => '58-62',
@@ -9801,7 +7773,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            315 => 
+            146 => 
             array (
                 'id' => 11383,
                 'name' => '59-60',
@@ -9813,7 +7785,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            316 => 
+            147 => 
             array (
                 'id' => 11384,
                 'name' => '59-61',
@@ -9825,7 +7797,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            317 => 
+            148 => 
             array (
                 'id' => 11385,
                 'name' => '59-62',
@@ -9837,7 +7809,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            318 => 
+            149 => 
             array (
                 'id' => 11386,
                 'name' => '60-61',
@@ -9849,7 +7821,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            319 => 
+            150 => 
             array (
                 'id' => 11387,
                 'name' => '60-62',
@@ -9861,7 +7833,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            320 => 
+            151 => 
             array (
                 'id' => 11388,
                 'name' => '60-63',
@@ -9873,7 +7845,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            321 => 
+            152 => 
             array (
                 'id' => 11389,
                 'name' => '61-62',
@@ -9885,7 +7857,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            322 => 
+            153 => 
             array (
                 'id' => 11390,
                 'name' => '61-63',
@@ -9897,7 +7869,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            323 => 
+            154 => 
             array (
                 'id' => 11391,
                 'name' => '61-64',
@@ -9909,7 +7881,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            324 => 
+            155 => 
             array (
                 'id' => 11392,
                 'name' => 'xxs-xs',
@@ -9921,7 +7893,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            325 => 
+            156 => 
             array (
                 'id' => 11393,
                 'name' => 'xxs-s',
@@ -9933,7 +7905,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            326 => 
+            157 => 
             array (
                 'id' => 11394,
                 'name' => 'xs-s',
@@ -9945,7 +7917,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            327 => 
+            158 => 
             array (
                 'id' => 11395,
                 'name' => 's-m',
@@ -9957,7 +7929,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            328 => 
+            159 => 
             array (
                 'id' => 11396,
                 'name' => 'm-l',
@@ -9969,7 +7941,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            329 => 
+            160 => 
             array (
                 'id' => 11397,
                 'name' => 'm-xl',
@@ -9981,7 +7953,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            330 => 
+            161 => 
             array (
                 'id' => 11398,
                 'name' => 'l-xl',
@@ -9993,7 +7965,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            331 => 
+            162 => 
             array (
                 'id' => 11399,
                 'name' => 'xl-xxl',
@@ -10005,7 +7977,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-01-31 17:07:37',
                 'updated_at' => '2024-01-31 17:07:37',
             ),
-            332 => 
+            163 => 
             array (
                 'id' => 11400,
                 'name' => 'colorless',
@@ -10017,7 +7989,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            333 => 
+            164 => 
             array (
                 'id' => 11401,
                 'name' => 'white',
@@ -10029,7 +8001,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            334 => 
+            165 => 
             array (
                 'id' => 11402,
                 'name' => 'black',
@@ -10041,7 +8013,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            335 => 
+            166 => 
             array (
                 'id' => 11403,
                 'name' => 'carbon',
@@ -10053,7 +8025,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            336 => 
+            167 => 
             array (
                 'id' => 11404,
                 'name' => 'charcoal',
@@ -10065,7 +8037,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            337 => 
+            168 => 
             array (
                 'id' => 11405,
                 'name' => 'grey',
@@ -10077,7 +8049,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            338 => 
+            169 => 
             array (
                 'id' => 11406,
                 'name' => 'silver',
@@ -10089,7 +8061,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            339 => 
+            170 => 
             array (
                 'id' => 11407,
                 'name' => 'taupe',
@@ -10101,7 +8073,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            340 => 
+            171 => 
             array (
                 'id' => 11408,
                 'name' => 'coffee',
@@ -10113,7 +8085,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            341 => 
+            172 => 
             array (
                 'id' => 11409,
                 'name' => 'brown',
@@ -10125,7 +8097,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            342 => 
+            173 => 
             array (
                 'id' => 11410,
                 'name' => 'sienna',
@@ -10137,7 +8109,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:17',
                 'updated_at' => '2024-02-13 15:46:17',
             ),
-            343 => 
+            174 => 
             array (
                 'id' => 11411,
                 'name' => 'saddle',
@@ -10149,7 +8121,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            344 => 
+            175 => 
             array (
                 'id' => 11412,
                 'name' => 'maroon',
@@ -10161,7 +8133,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            345 => 
+            176 => 
             array (
                 'id' => 11413,
                 'name' => 'sepia',
@@ -10173,7 +8145,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            346 => 
+            177 => 
             array (
                 'id' => 11414,
                 'name' => 'camel',
@@ -10185,7 +8157,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            347 => 
+            178 => 
             array (
                 'id' => 11415,
                 'name' => 'tan',
@@ -10197,7 +8169,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            348 => 
+            179 => 
             array (
                 'id' => 11416,
                 'name' => 'brass',
@@ -10209,7 +8181,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            349 => 
+            180 => 
             array (
                 'id' => 11417,
                 'name' => 'sand',
@@ -10221,7 +8193,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            350 => 
+            181 => 
             array (
                 'id' => 11418,
                 'name' => 'bone',
@@ -10233,7 +8205,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            351 => 
+            182 => 
             array (
                 'id' => 11419,
                 'name' => 'beige',
@@ -10245,7 +8217,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            352 => 
+            183 => 
             array (
                 'id' => 11420,
                 'name' => 'khaki',
@@ -10257,7 +8229,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            353 => 
+            184 => 
             array (
                 'id' => 11421,
                 'name' => 'topaz',
@@ -10269,7 +8241,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            354 => 
+            185 => 
             array (
                 'id' => 11422,
                 'name' => 'amber',
@@ -10281,7 +8253,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            355 => 
+            186 => 
             array (
                 'id' => 11423,
                 'name' => 'gold',
@@ -10293,7 +8265,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            356 => 
+            187 => 
             array (
                 'id' => 11424,
                 'name' => 'yellow',
@@ -10305,7 +8277,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            357 => 
+            188 => 
             array (
                 'id' => 11425,
                 'name' => 'mustard',
@@ -10317,7 +8289,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            358 => 
+            189 => 
             array (
                 'id' => 11426,
                 'name' => 'orange',
@@ -10329,7 +8301,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            359 => 
+            190 => 
             array (
                 'id' => 11427,
                 'name' => 'tangerine',
@@ -10341,7 +8313,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            360 => 
+            191 => 
             array (
                 'id' => 11428,
                 'name' => 'bronze',
@@ -10353,7 +8325,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            361 => 
+            192 => 
             array (
                 'id' => 11429,
                 'name' => 'chocolate',
@@ -10365,7 +8337,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            362 => 
+            193 => 
             array (
                 'id' => 11430,
                 'name' => 'coral',
@@ -10377,7 +8349,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            363 => 
+            194 => 
             array (
                 'id' => 11431,
                 'name' => 'pumpkin',
@@ -10389,7 +8361,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            364 => 
+            195 => 
             array (
                 'id' => 11432,
                 'name' => 'rust',
@@ -10401,7 +8373,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            365 => 
+            196 => 
             array (
                 'id' => 11433,
                 'name' => 'mahogany',
@@ -10413,7 +8385,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            366 => 
+            197 => 
             array (
                 'id' => 11434,
                 'name' => 'red',
@@ -10425,7 +8397,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            367 => 
+            198 => 
             array (
                 'id' => 11435,
                 'name' => 'crimson',
@@ -10437,7 +8409,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            368 => 
+            199 => 
             array (
                 'id' => 11436,
                 'name' => 'cherry',
@@ -10449,7 +8421,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            369 => 
+            200 => 
             array (
                 'id' => 11437,
                 'name' => 'rose',
@@ -10461,7 +8433,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            370 => 
+            201 => 
             array (
                 'id' => 11438,
                 'name' => 'salmon',
@@ -10473,7 +8445,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            371 => 
+            202 => 
             array (
                 'id' => 11439,
                 'name' => 'pink',
@@ -10485,7 +8457,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            372 => 
+            203 => 
             array (
                 'id' => 11440,
                 'name' => 'mauve',
@@ -10497,7 +8469,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            373 => 
+            204 => 
             array (
                 'id' => 11441,
                 'name' => 'lavender',
@@ -10509,7 +8481,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            374 => 
+            205 => 
             array (
                 'id' => 11442,
                 'name' => 'magenta',
@@ -10521,7 +8493,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            375 => 
+            206 => 
             array (
                 'id' => 11443,
                 'name' => 'amethyst',
@@ -10533,7 +8505,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            376 => 
+            207 => 
             array (
                 'id' => 11444,
                 'name' => 'purple',
@@ -10545,7 +8517,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            377 => 
+            208 => 
             array (
                 'id' => 11445,
                 'name' => 'indigo',
@@ -10557,7 +8529,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            378 => 
+            209 => 
             array (
                 'id' => 11446,
                 'name' => 'navy',
@@ -10569,7 +8541,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            379 => 
+            210 => 
             array (
                 'id' => 11447,
                 'name' => 'blue',
@@ -10581,7 +8553,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            380 => 
+            211 => 
             array (
                 'id' => 11448,
                 'name' => 'azure',
@@ -10593,7 +8565,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            381 => 
+            212 => 
             array (
                 'id' => 11449,
                 'name' => 'sky',
@@ -10605,7 +8577,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            382 => 
+            213 => 
             array (
                 'id' => 11450,
                 'name' => 'cyan',
@@ -10617,7 +8589,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            383 => 
+            214 => 
             array (
                 'id' => 11451,
                 'name' => 'aquamarine',
@@ -10629,7 +8601,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            384 => 
+            215 => 
             array (
                 'id' => 11452,
                 'name' => 'emerald',
@@ -10641,7 +8613,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            385 => 
+            216 => 
             array (
                 'id' => 11453,
                 'name' => 'mint',
@@ -10653,7 +8625,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            386 => 
+            217 => 
             array (
                 'id' => 11454,
                 'name' => 'teal',
@@ -10665,7 +8637,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            387 => 
+            218 => 
             array (
                 'id' => 11455,
                 'name' => 'lime',
@@ -10677,7 +8649,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            388 => 
+            219 => 
             array (
                 'id' => 11456,
                 'name' => 'chartreuse',
@@ -10689,7 +8661,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            389 => 
+            220 => 
             array (
                 'id' => 11457,
                 'name' => 'asparagus',
@@ -10701,7 +8673,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            390 => 
+            221 => 
             array (
                 'id' => 11458,
                 'name' => 'jade',
@@ -10713,7 +8685,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            391 => 
+            222 => 
             array (
                 'id' => 11459,
                 'name' => 'forest',
@@ -10725,7 +8697,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            392 => 
+            223 => 
             array (
                 'id' => 11460,
                 'name' => 'green',
@@ -10737,7 +8709,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
-            393 => 
+            224 => 
             array (
                 'id' => 11461,
                 'name' => 'ocean',
@@ -10749,7 +8721,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 08:15:06',
                 'updated_at' => '2024-02-14 08:15:06',
             ),
-            394 => 
+            225 => 
             array (
                 'id' => 11462,
                 'name' => 'thym',
@@ -10761,7 +8733,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 08:22:07',
                 'updated_at' => '2024-02-14 08:22:07',
             ),
-            395 => 
+            226 => 
             array (
                 'id' => 11463,
                 'name' => 'lagoped',
@@ -10773,7 +8745,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 08:44:14',
                 'updated_at' => '2024-02-14 08:44:14',
             ),
-            396 => 
+            227 => 
             array (
                 'id' => 11464,
                 'name' => 'lagoped',
@@ -10785,7 +8757,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 08:45:31',
                 'updated_at' => '2024-02-14 08:45:31',
             ),
-            397 => 
+            228 => 
             array (
                 'id' => 11465,
                 'name' => 'la-chaussette-de-france',
@@ -10797,7 +8769,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-07 14:42:02',
                 'updated_at' => '2024-04-07 14:42:02',
             ),
-            398 => 
+            229 => 
             array (
                 'id' => 11466,
                 'name' => 'tismail',
@@ -10809,7 +8781,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-07 14:42:17',
                 'updated_at' => '2024-04-07 14:43:26',
             ),
-            399 => 
+            230 => 
             array (
                 'id' => 11467,
                 'name' => 'windsurfer',
@@ -10821,19 +8793,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-10 12:18:23',
                 'updated_at' => '2024-04-10 12:18:23',
             ),
-            400 => 
-            array (
-                'id' => 11468,
-                'name' => 'watersports-windsurf-windsurfer',
-                'comment' => '',
-                'attribute_list_id' => 2,
-                'user_id' => 1,
-                'odoo_name' => 'Tous / Windsurf / Windsurfer',
-                'sort' => 0,
-                'created_at' => '2024-04-10 12:19:02',
-                'updated_at' => '2024-04-10 12:19:02',
-            ),
-            401 => 
+            231 => 
             array (
                 'id' => 11469,
                 'name' => '30',
@@ -10845,7 +8805,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            402 => 
+            232 => 
             array (
                 'id' => 11470,
                 'name' => '31',
@@ -10857,7 +8817,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            403 => 
+            233 => 
             array (
                 'id' => 11471,
                 'name' => '32',
@@ -10869,7 +8829,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            404 => 
+            234 => 
             array (
                 'id' => 11472,
                 'name' => '33',
@@ -10881,7 +8841,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            405 => 
+            235 => 
             array (
                 'id' => 11473,
                 'name' => '34',
@@ -10893,7 +8853,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            406 => 
+            236 => 
             array (
                 'id' => 11474,
                 'name' => '35',
@@ -10905,7 +8865,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            407 => 
+            237 => 
             array (
                 'id' => 11475,
                 'name' => '36',
@@ -10917,7 +8877,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            408 => 
+            238 => 
             array (
                 'id' => 11476,
                 'name' => '37',
@@ -10929,7 +8889,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            409 => 
+            239 => 
             array (
                 'id' => 11477,
                 'name' => '38',
@@ -10941,7 +8901,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            410 => 
+            240 => 
             array (
                 'id' => 11478,
                 'name' => '39',
@@ -10953,7 +8913,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            411 => 
+            241 => 
             array (
                 'id' => 11479,
                 'name' => '40',
@@ -10965,7 +8925,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            412 => 
+            242 => 
             array (
                 'id' => 11480,
                 'name' => '41',
@@ -10977,7 +8937,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            413 => 
+            243 => 
             array (
                 'id' => 11481,
                 'name' => '42',
@@ -10989,7 +8949,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            414 => 
+            244 => 
             array (
                 'id' => 11482,
                 'name' => '43',
@@ -11001,7 +8961,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            415 => 
+            245 => 
             array (
                 'id' => 11483,
                 'name' => '44',
@@ -11013,7 +8973,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            416 => 
+            246 => 
             array (
                 'id' => 11484,
                 'name' => '45',
@@ -11025,7 +8985,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            417 => 
+            247 => 
             array (
                 'id' => 11485,
                 'name' => '46',
@@ -11037,7 +8997,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            418 => 
+            248 => 
             array (
                 'id' => 11486,
                 'name' => '47',
@@ -11049,7 +9009,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            419 => 
+            249 => 
             array (
                 'id' => 11487,
                 'name' => '48',
@@ -11061,7 +9021,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            420 => 
+            250 => 
             array (
                 'id' => 11488,
                 'name' => '49',
@@ -11073,7 +9033,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            421 => 
+            251 => 
             array (
                 'id' => 11489,
                 'name' => '50',
@@ -11085,7 +9045,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            422 => 
+            252 => 
             array (
                 'id' => 11490,
                 'name' => '51',
@@ -11097,7 +9057,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            423 => 
+            253 => 
             array (
                 'id' => 11491,
                 'name' => '52',
@@ -11109,7 +9069,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            424 => 
+            254 => 
             array (
                 'id' => 11492,
                 'name' => '53',
@@ -11121,7 +9081,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            425 => 
+            255 => 
             array (
                 'id' => 11493,
                 'name' => '54',
@@ -11133,7 +9093,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            426 => 
+            256 => 
             array (
                 'id' => 11494,
                 'name' => '55',
@@ -11145,7 +9105,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            427 => 
+            257 => 
             array (
                 'id' => 11495,
                 'name' => '56',
@@ -11157,7 +9117,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            428 => 
+            258 => 
             array (
                 'id' => 11496,
                 'name' => '57',
@@ -11169,7 +9129,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            429 => 
+            259 => 
             array (
                 'id' => 11497,
                 'name' => '58',
@@ -11181,7 +9141,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            430 => 
+            260 => 
             array (
                 'id' => 11498,
                 'name' => '59',
@@ -11193,7 +9153,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            431 => 
+            261 => 
             array (
                 'id' => 11499,
                 'name' => '60',
@@ -11205,7 +9165,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            432 => 
+            262 => 
             array (
                 'id' => 11500,
                 'name' => '61',
@@ -11217,7 +9177,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            433 => 
+            263 => 
             array (
                 'id' => 11501,
                 'name' => '62',
@@ -11229,7 +9189,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:38:30',
                 'updated_at' => '2024-04-18 15:38:30',
             ),
-            434 => 
+            264 => 
             array (
                 'id' => 11502,
                 'name' => '2',
@@ -11241,7 +9201,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            435 => 
+            265 => 
             array (
                 'id' => 11503,
                 'name' => '3',
@@ -11253,7 +9213,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            436 => 
+            266 => 
             array (
                 'id' => 11504,
                 'name' => '4',
@@ -11265,7 +9225,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            437 => 
+            267 => 
             array (
                 'id' => 11505,
                 'name' => '5',
@@ -11277,7 +9237,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            438 => 
+            268 => 
             array (
                 'id' => 11506,
                 'name' => '6',
@@ -11289,7 +9249,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            439 => 
+            269 => 
             array (
                 'id' => 11507,
                 'name' => '7',
@@ -11301,7 +9261,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            440 => 
+            270 => 
             array (
                 'id' => 11508,
                 'name' => '8',
@@ -11313,7 +9273,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            441 => 
+            271 => 
             array (
                 'id' => 11509,
                 'name' => '9',
@@ -11325,7 +9285,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            442 => 
+            272 => 
             array (
                 'id' => 11510,
                 'name' => '10',
@@ -11337,7 +9297,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            443 => 
+            273 => 
             array (
                 'id' => 11511,
                 'name' => '11',
@@ -11349,7 +9309,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            444 => 
+            274 => 
             array (
                 'id' => 11512,
                 'name' => '12',
@@ -11361,7 +9321,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            445 => 
+            275 => 
             array (
                 'id' => 11513,
                 'name' => '13',
@@ -11373,7 +9333,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            446 => 
+            276 => 
             array (
                 'id' => 11514,
                 'name' => '14',
@@ -11385,7 +9345,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            447 => 
+            277 => 
             array (
                 'id' => 11515,
                 'name' => '15',
@@ -11397,7 +9357,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:21',
                 'updated_at' => '2024-04-18 15:39:21',
             ),
-            448 => 
+            278 => 
             array (
                 'id' => 11516,
                 'name' => '2',
@@ -11409,7 +9369,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            449 => 
+            279 => 
             array (
                 'id' => 11517,
                 'name' => '3',
@@ -11421,7 +9381,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            450 => 
+            280 => 
             array (
                 'id' => 11518,
                 'name' => '4',
@@ -11433,7 +9393,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            451 => 
+            281 => 
             array (
                 'id' => 11519,
                 'name' => '5',
@@ -11445,7 +9405,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            452 => 
+            282 => 
             array (
                 'id' => 11520,
                 'name' => '6',
@@ -11457,7 +9417,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            453 => 
+            283 => 
             array (
                 'id' => 11521,
                 'name' => '7',
@@ -11469,7 +9429,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            454 => 
+            284 => 
             array (
                 'id' => 11522,
                 'name' => '8',
@@ -11481,7 +9441,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            455 => 
+            285 => 
             array (
                 'id' => 11523,
                 'name' => '9',
@@ -11493,7 +9453,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            456 => 
+            286 => 
             array (
                 'id' => 11524,
                 'name' => '10',
@@ -11505,7 +9465,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            457 => 
+            287 => 
             array (
                 'id' => 11525,
                 'name' => '11',
@@ -11517,7 +9477,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            458 => 
+            288 => 
             array (
                 'id' => 11526,
                 'name' => '12',
@@ -11529,7 +9489,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            459 => 
+            289 => 
             array (
                 'id' => 11527,
                 'name' => '13',
@@ -11541,7 +9501,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            460 => 
+            290 => 
             array (
                 'id' => 11528,
                 'name' => '14',
@@ -11553,7 +9513,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            461 => 
+            291 => 
             array (
                 'id' => 11529,
                 'name' => '15',
@@ -11565,7 +9525,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:39:34',
                 'updated_at' => '2024-04-18 15:39:34',
             ),
-            462 => 
+            292 => 
             array (
                 'id' => 11530,
                 'name' => '16',
@@ -11577,7 +9537,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:40:44',
                 'updated_at' => '2024-04-18 15:40:44',
             ),
-            463 => 
+            293 => 
             array (
                 'id' => 11531,
                 'name' => '25',
@@ -11589,7 +9549,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:42:22',
                 'updated_at' => '2024-04-18 15:42:22',
             ),
-            464 => 
+            294 => 
             array (
                 'id' => 11532,
                 'name' => '26',
@@ -11601,7 +9561,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:42:22',
                 'updated_at' => '2024-04-18 15:42:22',
             ),
-            465 => 
+            295 => 
             array (
                 'id' => 11533,
                 'name' => '27',
@@ -11613,7 +9573,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:42:22',
                 'updated_at' => '2024-04-18 15:42:22',
             ),
-            466 => 
+            296 => 
             array (
                 'id' => 11534,
                 'name' => '28',
@@ -11625,7 +9585,7 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-04-18 15:42:22',
                 'updated_at' => '2024-04-18 15:42:22',
             ),
-            467 => 
+            297 => 
             array (
                 'id' => 11535,
                 'name' => '29',
@@ -11636,6 +9596,2118 @@ class AttributeListValuesTableSeeder extends Seeder
                 'sort' => 0,
                 'created_at' => '2024-04-18 15:42:22',
                 'updated_at' => '2024-04-18 15:42:22',
+            ),
+            298 => 
+            array (
+                'id' => 11536,
+                'name' => 'allsports-drinkwear',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Cadeaux / Gourdes',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            299 => 
+            array (
+                'id' => 11537,
+                'name' => 'allsports-gifts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Cadeaux / Porte clé',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            300 => 
+            array (
+                'id' => 11538,
+                'name' => 'allsports-electronic',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Electronique',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            301 => 
+            array (
+                'id' => 11539,
+                'name' => 'allsports-waterproof-pouch',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Pochette Etanche',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            302 => 
+            array (
+                'id' => 11540,
+                'name' => 'allsports-tools',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Outillage et visserie / Outillage',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            303 => 
+            array (
+                'id' => 11541,
+                'name' => 'allsports-sunglasses',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Lunettes',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            304 => 
+            array (
+                'id' => 11542,
+                'name' => 'allsports-suncream',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Crème solaire',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            305 => 
+            array (
+                'id' => 11543,
+                'name' => 'watersports-harness-waist',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Harnais / Ceinture',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            306 => 
+            array (
+                'id' => 11544,
+                'name' => 'watersports-harness-seat',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Harnais / Culotte',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            307 => 
+            array (
+                'id' => 11545,
+                'name' => 'watersports-harness-parts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Harnais / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            308 => 
+            array (
+                'id' => 11546,
+                'name' => 'watersports-wetsuit-gloves',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Bonnet et gants',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            309 => 
+            array (
+                'id' => 11547,
+                'name' => 'watersports-wetsuit-boots',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Chaussons',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            310 => 
+            array (
+                'id' => 11548,
+                'name' => 'watersports-wetsuit-semidry-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            311 => 
+            array (
+                'id' => 11549,
+                'name' => 'watersports-wetsuit-semidry-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            312 => 
+            array (
+                'id' => 11550,
+                'name' => 'watersports-wetsuit-semidry-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Intégrale / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            313 => 
+            array (
+                'id' => 11551,
+                'name' => 'watersports-wetsuit-steamer-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            314 => 
+            array (
+                'id' => 11552,
+                'name' => 'watersports-wetsuit-steamer-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            315 => 
+            array (
+                'id' => 11553,
+                'name' => 'watersports-wetsuit-steamer-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Manche courte / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            316 => 
+            array (
+                'id' => 11554,
+                'name' => 'watersports-wetsuit-poncho',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Poncho',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            317 => 
+            array (
+                'id' => 11555,
+                'name' => 'watersports-wetsuit-shorty-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            318 => 
+            array (
+                'id' => 11556,
+                'name' => 'watersports-wetsuit-shorty-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            319 => 
+            array (
+                'id' => 11557,
+                'name' => 'watersports-wetsuit-shorty-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Shorty / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            320 => 
+            array (
+                'id' => 11558,
+                'name' => 'watersports-wetsuit-top-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            321 => 
+            array (
+                'id' => 11559,
+                'name' => 'watersports-wetsuit-top-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            322 => 
+            array (
+                'id' => 11560,
+                'name' => 'watersports-wetsuit-top-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Néoprène / Top / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            323 => 
+            array (
+                'id' => 11561,
+                'name' => 'watersports-windsurf-fin',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Aileron',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            324 => 
+            array (
+                'id' => 11562,
+                'name' => 'watersports-windsurf-board-windfoil',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Foil',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            325 => 
+            array (
+                'id' => 11563,
+                'name' => 'watersports-windsurf-board-freerace',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Freerace',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            326 => 
+            array (
+                'id' => 11564,
+                'name' => 'watersports-windsurf-board-freeride',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Freeride',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            327 => 
+            array (
+                'id' => 11565,
+                'name' => 'watersports-windsurf-board-slalom',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Slalom',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            328 => 
+            array (
+                'id' => 11566,
+                'name' => 'watersports-windsurf-board-wave',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Vague',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            329 => 
+            array (
+                'id' => 11567,
+                'name' => 'watersports-windsurf-footstrap',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Flotteur / Footstraps',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            330 => 
+            array (
+                'id' => 11568,
+                'name' => 'watersports-windsurf-hydofoil-complete',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Foil / Complet',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            331 => 
+            array (
+                'id' => 11569,
+                'name' => 'watersports-windsurf-hydofoil-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            332 => 
+            array (
+                'id' => 11570,
+                'name' => 'watersports-windsurf-iqfoil',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / IQFOIL',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            333 => 
+            array (
+                'id' => 11571,
+                'name' => 'watersports-windsurf-harness-line-fix',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Lignes de harnais / Fixe',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            334 => 
+            array (
+                'id' => 11572,
+                'name' => 'watersports-windsurf-harness-line-vario',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Lignes de harnais / Vario',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            335 => 
+            array (
+                'id' => 11573,
+                'name' => 'watersports-windsurf-mast-rdm',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Mat / RDM',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            336 => 
+            array (
+                'id' => 11574,
+                'name' => 'watersports-windsurf-mast-sdm',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Mat / SDM',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            337 => 
+            array (
+                'id' => 11575,
+                'name' => 'watersports-windsurf-one-design',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / One Design',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            338 => 
+            array (
+                'id' => 11576,
+                'name' => 'watersports-windsurf-mastfoot-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Pied de mat / Pièces détachées',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            339 => 
+            array (
+                'id' => 11577,
+                'name' => 'watersports-windsurf-mast-base',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Pied de mat / Plaquette',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            340 => 
+            array (
+                'id' => 11578,
+                'name' => 'watersports-windsurf-mast-extension-rdm',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Pied de mat / Rallonge RDM',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            341 => 
+            array (
+                'id' => 11579,
+                'name' => 'watersports-windsurf-mast-extension-sdm',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Pied de mat / Rallonge SDM',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            342 => 
+            array (
+                'id' => 11580,
+                'name' => 'watersports-windsurf-sail-windfoil',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Foil',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            343 => 
+            array (
+                'id' => 11581,
+                'name' => 'watersports-windsurf-sail-freerace',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Freerace',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            344 => 
+            array (
+                'id' => 11582,
+                'name' => 'watersports-windsurf-sail-freeride',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Freeride',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            345 => 
+            array (
+                'id' => 11583,
+                'name' => 'watersports-windsurf-sail-rig',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Greement',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            346 => 
+            array (
+                'id' => 11584,
+                'name' => 'watersports-windsurf-sail-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            347 => 
+            array (
+                'id' => 11585,
+                'name' => 'watersports-windsurf-sail-slalom',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Slalom',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            348 => 
+            array (
+                'id' => 11586,
+                'name' => 'watersports-windsurf-sail-wave',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Voile / Vague',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            349 => 
+            array (
+                'id' => 11587,
+                'name' => 'watersports-windsurf-boom-aluminium',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Wishbone / Aluminium',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            350 => 
+            array (
+                'id' => 11588,
+                'name' => 'watersports-windsurf-boom-carbon',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Wishbone / Carbone',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            351 => 
+            array (
+                'id' => 11589,
+                'name' => 'watersports-windsurf-boom-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Wishbone / Pièces détachées',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            352 => 
+            array (
+                'id' => 11590,
+                'name' => 'watersports-windsurf-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse planche windsurf',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            353 => 
+            array (
+                'id' => 11591,
+                'name' => 'watersports-wingfoil-accessoires',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Accessoires',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            354 => 
+            array (
+                'id' => 11592,
+                'name' => 'watersports-wingfoil-wing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Aile',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            355 => 
+            array (
+                'id' => 11593,
+                'name' => 'watersports-wingfoil-bladder',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Boudins',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            356 => 
+            array (
+                'id' => 11594,
+                'name' => 'watersports-wingfoil-board',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Flotteur',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            357 => 
+            array (
+                'id' => 11595,
+                'name' => 'watersports-wingfoil-hydofoil-complete',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Complet',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            358 => 
+            array (
+                'id' => 11596,
+                'name' => 'watersports-wingfoil-hydofoil-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            359 => 
+            array (
+                'id' => 11597,
+                'name' => 'watersports-wingfoil-hydofoil-part-backwing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            360 => 
+            array (
+                'id' => 11598,
+                'name' => 'watersports-wingfoil-hydofoil-part-frontwing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            361 => 
+            array (
+                'id' => 11599,
+                'name' => 'watersports-wingfoil-hydofoil-part-fuselage',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            362 => 
+            array (
+                'id' => 11600,
+                'name' => 'watersports-wingfoil-hydofoil-part-mast',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            363 => 
+            array (
+                'id' => 11601,
+                'name' => 'watersports-wingfoil-hydofoil-part-tbar',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            364 => 
+            array (
+                'id' => 11602,
+                'name' => 'watersports-wingfoil-hydofoil-part-fullplane',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wingfoil / Foil / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            365 => 
+            array (
+                'id' => 11603,
+                'name' => 'watersports-wingfoil-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse planche Wing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            366 => 
+            array (
+                'id' => 11604,
+                'name' => 'watersports-wingfoil-leash',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Leash / Wing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            367 => 
+            array (
+                'id' => 11605,
+                'name' => 'watersports-kitesurf-kite',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Aile / Complete',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            368 => 
+            array (
+                'id' => 11606,
+                'name' => 'watersports-kitesurf-bladder&repair',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Aile / Pièces et réparation',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            369 => 
+            array (
+                'id' => 11607,
+                'name' => 'watersports-kitesurf-bar-complete',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Barre / Complete',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            370 => 
+            array (
+                'id' => 11608,
+                'name' => 'watersports-kitesurf-var-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Barre / Pièces détachées',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            371 => 
+            array (
+                'id' => 11609,
+                'name' => 'watersports-kitesurf-board-surf',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Flotteur / Directionnel',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            372 => 
+            array (
+                'id' => 11610,
+                'name' => 'watersports-kitesurf-board-foil',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Flotteur / Foil',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            373 => 
+            array (
+                'id' => 11611,
+                'name' => 'watersports-kitesurf-board-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Flotteur / Pièces détachées',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            374 => 
+            array (
+                'id' => 11612,
+                'name' => 'watersports-kitesurf-board-twintip',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Flotteur / Twintip',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            375 => 
+            array (
+                'id' => 11613,
+                'name' => 'watersports-kitesurf-hydrofoil-complete',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Foil',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            376 => 
+            array (
+                'id' => 11614,
+                'name' => 'watersports-kitesurf-hydrofoil-part',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => NULL,
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            377 => 
+            array (
+                'id' => 11615,
+                'name' => 'watersports-kitesurf-package',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Kitesurf / Pack',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            378 => 
+            array (
+                'id' => 11616,
+                'name' => 'watersports-kitesurf-leash',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Leash / Aile',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            379 => 
+            array (
+                'id' => 11617,
+                'name' => 'watersports-kitesurf-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse planche kite',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            380 => 
+            array (
+                'id' => 11618,
+                'name' => 'watersports-sup&surf-bodyboard',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Bodyboard',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            381 => 
+            array (
+                'id' => 11619,
+                'name' => 'watersports-sup&surf-fin',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Dérive',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            382 => 
+            array (
+                'id' => 11620,
+                'name' => 'watersports-sup&surf-pads',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Pads',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            383 => 
+            array (
+                'id' => 11621,
+                'name' => 'watersports-sup&surf-paddle',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Pagaie',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            384 => 
+            array (
+                'id' => 11622,
+                'name' => 'watersports-sup&surf-sup-hard',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / SUP / Gonflable',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            385 => 
+            array (
+                'id' => 11623,
+                'name' => 'watersports-sup&surf-sup-inflatable',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / SUP / Rigide',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            386 => 
+            array (
+                'id' => 11624,
+                'name' => 'watersports-sup&surf-skate',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Skate',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            387 => 
+            array (
+                'id' => 11625,
+                'name' => 'watersports-sup&surf-surf',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Surf',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            388 => 
+            array (
+                'id' => 11626,
+                'name' => 'watersports-sup&surf-wax',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Sup & Surf / Wax',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            389 => 
+            array (
+                'id' => 11627,
+                'name' => 'watersports-sup&surf-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse planche surf',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            390 => 
+            array (
+                'id' => 11628,
+                'name' => 'watersports-sup&surf-leash',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Leash / Board',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            391 => 
+            array (
+                'id' => 11629,
+                'name' => 'watersports-towed-accessories',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Accessoires',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            392 => 
+            array (
+                'id' => 11630,
+                'name' => 'watersports-towed-buoy',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Bouée',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            393 => 
+            array (
+                'id' => 11631,
+                'name' => 'watersports-towed-wakebord-boots',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Chausse',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            394 => 
+            array (
+                'id' => 11632,
+                'name' => 'watersports-towed-wakebord-package',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Pack',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            395 => 
+            array (
+                'id' => 11633,
+                'name' => 'watersports-towed-wakebord-board',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Planche',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            396 => 
+            array (
+                'id' => 11634,
+                'name' => 'watersports-towed-waterski',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Wakeboard / Ski nautique',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            397 => 
+            array (
+                'id' => 11635,
+                'name' => 'watersports-towed-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse wake',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            398 => 
+            array (
+                'id' => 11636,
+                'name' => 'watersports-allround-rope',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Outillage et visserie / Bout',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            399 => 
+            array (
+                'id' => 11637,
+                'name' => 'watersports-allround-inserts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Outillage et visserie / Inserts',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            400 => 
+            array (
+                'id' => 11638,
+                'name' => 'watersports-allround-pump',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Outillage et visserie / Pompe',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            401 => 
+            array (
+                'id' => 11639,
+                'name' => 'watersports-allround-screws&bold',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Outillage et visserie / Visserie',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            402 => 
+            array (
+                'id' => 11640,
+                'name' => 'watersports-allround-helmet',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Casque',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            403 => 
+            array (
+                'id' => 11641,
+                'name' => 'watersports-allround-impact-vest',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Nautique / Gilets d\'impact',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            404 => 
+            array (
+                'id' => 11642,
+                'name' => 'snowsport-allround-protection-helmet',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Casque / Loisir',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            405 => 
+            array (
+                'id' => 11643,
+                'name' => 'snowsport-allround-protection-racing-helmet',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Casque / Racing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            406 => 
+            array (
+                'id' => 11644,
+                'name' => 'snowsport-allround-protection-back-protection',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Dorsale',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            407 => 
+            array (
+                'id' => 11645,
+                'name' => 'snowsport-allround-protection-google',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Masque',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            408 => 
+            array (
+                'id' => 11646,
+                'name' => 'snowsport-allround-protection-racing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Protection / Hivers / Racing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            409 => 
+            array (
+                'id' => 11647,
+                'name' => 'snowsport-allround-security',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Sécurité ski',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            410 => 
+            array (
+                'id' => 11648,
+                'name' => 'snowsport-allround-racing-wear-race-suit',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Combinaison',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            411 => 
+            array (
+                'id' => 11649,
+                'name' => 'snowsport-allround-racing-wear-pant&shorts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Pantalon et short',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            412 => 
+            array (
+                'id' => 11650,
+                'name' => 'snowsport-allround-racing-wear-jacket',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Racing / Veste',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            413 => 
+            array (
+                'id' => 11651,
+                'name' => 'snowsport-allround-racing-wear-gloves',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Gants / Racing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            414 => 
+            array (
+                'id' => 11652,
+                'name' => 'snowsport-allround-tecnical-wear-midlayer-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            415 => 
+            array (
+                'id' => 11653,
+                'name' => 'snowsport-allround-tecnical-wear-midlayer-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            416 => 
+            array (
+                'id' => 11654,
+                'name' => 'snowsport-allround-tecnical-wear-midlayer-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / 2e couche / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            417 => 
+            array (
+                'id' => 11655,
+                'name' => 'snowsport-allround-tecnical-wear-beanie',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Bonnet',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            418 => 
+            array (
+                'id' => 11656,
+                'name' => 'snowsport-allround-tecnical-wear-socks',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Chaussettes',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            419 => 
+            array (
+                'id' => 11657,
+                'name' => 'snowsport-allround-tecnical-wear-gloves',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Gants / Loisir',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            420 => 
+            array (
+                'id' => 11658,
+                'name' => 'snowsport-allround-tecnical-wear-pants-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            421 => 
+            array (
+                'id' => 11659,
+                'name' => 'snowsport-allround-tecnical-wear-pants-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            422 => 
+            array (
+                'id' => 11660,
+                'name' => 'snowsport-allround-tecnical-wear-pants-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Pantalon / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            423 => 
+            array (
+                'id' => 11661,
+                'name' => 'snowsport-allround-tecnical-wear-baselayer-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            424 => 
+            array (
+                'id' => 11662,
+                'name' => 'snowsport-allround-tecnical-wear-baselayer-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            425 => 
+            array (
+                'id' => 11663,
+                'name' => 'snowsport-allround-tecnical-wear-baselayer-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Sous-vetement / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            426 => 
+            array (
+                'id' => 11664,
+                'name' => 'snowsport-allround-tecnical-wear-jacket-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            427 => 
+            array (
+                'id' => 11665,
+                'name' => 'snowsport-allround-tecnical-wear-jacket-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            428 => 
+            array (
+                'id' => 11666,
+                'name' => 'snowsport-allround-tecnical-wear-jacket-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            429 => 
+            array (
+                'id' => 11667,
+                'name' => 'snowsport-ski-poles-racing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Batons / Course',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            430 => 
+            array (
+                'id' => 11668,
+                'name' => 'snowsport-ski-poles',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Batons / Loisir',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            431 => 
+            array (
+                'id' => 11669,
+                'name' => 'snowsport-ski-skiboots-bootfotting',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Chaussures / Bootfitting',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            432 => 
+            array (
+                'id' => 11670,
+                'name' => 'snowsport-ski-skiboots-piste&freeride',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Chaussures / Piste',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            433 => 
+            array (
+                'id' => 11671,
+                'name' => 'snowsport-ski-skiboots-pure-racing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Chaussures / Racing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            434 => 
+            array (
+                'id' => 11672,
+                'name' => 'snowsport-ski-skiboots-touring',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Chaussures / Randonnée',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            435 => 
+            array (
+                'id' => 11673,
+                'name' => 'snowsport-ski-tunning-wax',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Entretien / Fart',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            436 => 
+            array (
+                'id' => 11674,
+                'name' => 'snowsport-ski-tunning-tools',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Entretien / Outillage',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            437 => 
+            array (
+                'id' => 11675,
+                'name' => 'snowsport-ski-binding-alpine',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Fixations / Alpine',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            438 => 
+            array (
+                'id' => 11676,
+                'name' => 'snowsport-ski-binding-parts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Fixations / Pièces',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            439 => 
+            array (
+                'id' => 11677,
+                'name' => 'snowsport-ski-binding-touring',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Fixations / Randonnée',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            440 => 
+            array (
+                'id' => 11678,
+                'name' => 'snowsport-ski-skins',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Peaux',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            441 => 
+            array (
+                'id' => 11679,
+                'name' => 'snowsport-ski-skis-all-moutain&freeride',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Skis / All Mountain et Freeride',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            442 => 
+            array (
+                'id' => 11680,
+                'name' => 'snowsport-ski-skis-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Skis / Junior',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            443 => 
+            array (
+                'id' => 11681,
+                'name' => 'snowsport-ski-skis-piste',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Skis / Piste',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            444 => 
+            array (
+                'id' => 11682,
+                'name' => 'snowsport-ski-skis-pure-racing',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Skis / Racing',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            445 => 
+            array (
+                'id' => 11683,
+                'name' => 'snowsport-ski-skis-touring',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Ski alpin / Skis / Randonnée',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            446 => 
+            array (
+                'id' => 11684,
+                'name' => 'snowsport-ski-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse Ski',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            447 => 
+            array (
+                'id' => 11685,
+                'name' => 'snowsport-snowboard-boots-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Boots / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            448 => 
+            array (
+                'id' => 11686,
+                'name' => 'snowsport-snowboard-boots-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Boots / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            449 => 
+            array (
+                'id' => 11687,
+                'name' => 'snowsport-snowboard-binding-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Fixations / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            450 => 
+            array (
+                'id' => 11688,
+                'name' => 'snowsport-snowboard-binding-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Fixations / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            451 => 
+            array (
+                'id' => 11689,
+                'name' => 'snowsport-snowboard-package-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Pack / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            452 => 
+            array (
+                'id' => 11690,
+                'name' => 'snowsport-snowboard-package-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Pack / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            453 => 
+            array (
+                'id' => 11691,
+                'name' => 'snowsport-snowboard-package-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Pack / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            454 => 
+            array (
+                'id' => 11692,
+                'name' => 'snowsport-snowboard-parts',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Pièces détachées',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            455 => 
+            array (
+                'id' => 11693,
+                'name' => 'snowsport-snowboard-board-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Plateau / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            456 => 
+            array (
+                'id' => 11694,
+                'name' => 'snowsport-snowboard-board-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Plateau / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            457 => 
+            array (
+                'id' => 11695,
+                'name' => 'snowsport-snowboard-split&touring',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Snowboard / Split et Randonnée',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            458 => 
+            array (
+                'id' => 11696,
+                'name' => 'snowsport-snowboard-bag',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse Snow',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            459 => 
+            array (
+                'id' => 11697,
+                'name' => 'fashion-accessories',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Accessoires ',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            460 => 
+            array (
+                'id' => 11698,
+                'name' => 'fashion-caps',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Casquette',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            461 => 
+            array (
+                'id' => 11699,
+                'name' => 'fashion-pants-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            462 => 
+            array (
+                'id' => 11700,
+                'name' => 'fashion-pants-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            463 => 
+            array (
+                'id' => 11701,
+                'name' => 'fashion-pants-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Pantalon / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            464 => 
+            array (
+                'id' => 11702,
+                'name' => 'fashion-shorts-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            465 => 
+            array (
+                'id' => 11703,
+                'name' => 'fashion-shorts-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            466 => 
+            array (
+                'id' => 11704,
+                'name' => 'fashion-shorts-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Short / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            467 => 
+            array (
+                'id' => 11705,
+                'name' => 'fashion-sweat&shirt-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            468 => 
+            array (
+                'id' => 11706,
+                'name' => 'fashion-sweat&shirt-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            469 => 
+            array (
+                'id' => 11707,
+                'name' => 'fashion-sweat&shirt-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / Sweat / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            470 => 
+            array (
+                'id' => 11708,
+                'name' => 'fashion-te-shirts-kid',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Enfant',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            471 => 
+            array (
+                'id' => 11709,
+                'name' => 'fashion-te-shirts-women',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Femme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            472 => 
+            array (
+                'id' => 11710,
+                'name' => 'fashion-te-shirts-men',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Mode / T shirt / Homme',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
+            ),
+            473 => 
+            array (
+                'id' => 11711,
+                'name' => 'watersports-windsurf-windsurfer',
+                'comment' => NULL,
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Windsurf / Windsurfer',
+                'sort' => 0,
+                'created_at' => '2024-04-20 08:08:25',
+                'updated_at' => '2024-04-20 08:08:25',
             ),
         ));
         
