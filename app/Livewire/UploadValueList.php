@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use App\Imports\ImportHelpers;
 use App\Imports\ValueListImport;
-use http\Exception;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Attributes\Validate;
@@ -53,7 +53,7 @@ class UploadValueList extends Component
             Excel::import(new ValueListImport($this->table_name,$this->default_value),$fileName, 'datafile');
             $this->localFile = $fileName;
             $this->process_result = '<p><i class="fa-solid fa-circle-check text-green-400 text-xl"></i> Données importées correctement !</p>';
-        }  catch (Exception $e) {
+        }  catch (HttpException $e) {
             switch ($e->getStatusCode())
             {
                 case 404:

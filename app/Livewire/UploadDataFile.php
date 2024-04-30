@@ -6,7 +6,7 @@ use App\Imports\ImportHelpers;
 use App\Jobs\ConvertData2Odoo;
 use App\Jobs\IngestData;
 use App\Models\Product;
-use Exception;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
@@ -60,7 +60,7 @@ class UploadDataFile extends Component
             ImportHelpers::bulkImport($fileName, 'datafile');
             $this->localFile = $fileName;
             ImportHelpers::checkImportedData();
-        }  catch (Exception $e) {
+        }  catch (HttpException $e) {
             switch ($e->getStatusCode())
             {
                 case 404:

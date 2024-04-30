@@ -211,6 +211,21 @@ class ImportHelpers
         log::debug('Products detected and sorted');
     }
 
+    public static function numberOfDecimals($value)
+    {
+        if ((int)$value == $value)
+        {
+            return 0;
+        }
+        else if (! is_numeric($value))
+        {
+            // throw new Exception('numberOfDecimals: ' . $value . ' is not a number!');
+            return false;
+        }
+
+        return strlen($value) - strrpos($value, '.') - 1;
+    }
+
     public static function checkAttributesValues()
     {
         foreach (Attribute::all() as $attribute)
@@ -235,6 +250,28 @@ class ImportHelpers
                     self::registerError($value->id,'The numeric decimal separator should be "." instead of ","',$attribute->name,$value->{$attribute->name},'warning');
                     $value->{$attribute->name} = str_replace(',', '.', $value->{$attribute->name});
                 }
+
+                if (str_contains($attribute->dataType->validation_str,'decimal:0,2'))
+                {
+                    $data = $value->{$attribute->name};
+                    if (self::numberOfDecimals($data) > 2)
+                    {
+                        self::registerError($value->id,'The decimal part should have max 2 digit',$attribute->name,$value->{$attribute->name},'warning');
+                        $value->{$attribute->name}  = round($data,2);
+                    }
+                }
+
+                if (str_contains($attribute->dataType->name,'inch'))
+                {
+                    $data = $value->{$attribute->name};
+                    if (!str_contains($data,'"'))
+                    {
+                        self::registerError($value->id,'The inch value should contain " character',$attribute->name,$value->{$attribute->name},'warning');
+                        $value->{$attribute->name}  = $data.'"';
+                    }
+                }
+
+
                 $data = [$attribute->name => $value->{$attribute->name}];
                 $validator = Validator::make($data, $validationRules)->stopOnFirstFailure(false);
 

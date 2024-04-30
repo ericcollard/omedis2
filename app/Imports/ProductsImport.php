@@ -15,10 +15,11 @@ use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Events\ImportFailed;
 use Maatwebsite\Excel\Imports\HeadingRowFormatter;
+use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
 
 HeadingRowFormatter::default('none');
 
-class ProductsImport implements ToCollection, WithHeadingRow
+class ProductsImport implements ToCollection, WithHeadingRow, WithCalculatedFormulas
 {
     /**
     * @param Collection $collection

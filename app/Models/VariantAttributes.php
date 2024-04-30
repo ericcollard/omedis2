@@ -59,29 +59,25 @@ class VariantAttributes extends Model
                 }
                 break;
             case "string":
+            case "feet":
+            case "inch":
+            case "double":
                 if ($this->value_str)
                 {
                     return $this->value_str;
                 }
                 break;
             case "integer":
+            case "boolean":
+            case "year":
                 if ($this->value_int)
                 {
                     return $this->value_int;
                 }
                 break;
             case "float":
-                if ($this->value_float)
-                {
-                    return $this->value_float;
-                }
-                break;
-            case "boolean":
-                if ($this->value_int)
-                {
-                    return $this->value_int;
-                }
-                break;
+            case "percent":
+            case "float":
             case "money":
                 if ($this->value_float)
                 {
@@ -89,22 +85,14 @@ class VariantAttributes extends Model
                 }
                 break;
             case "text":
-                if ($this->value_txt)
-                {
-                    return $this->value_txt;
-                }
-                break;
             case "url":
                 if ($this->value_txt)
                 {
                     return $this->value_txt;
                 }
                 break;
-            case "year":
-                if ($this->value_int)
-                {
-                    return (int)$this->value_int;
-                }
+            default:
+                return 'getValue > unknown type';
                 break;
         }
         return null;
@@ -129,6 +117,9 @@ class VariantAttributes extends Model
 
                 break;
             case "string":
+            case "feet":
+            case "inch":
+            case "double":
                 if ($this->value_str)
                 {
                     $html .= $this->value_str;
@@ -136,6 +127,7 @@ class VariantAttributes extends Model
                 }
                 break;
             case "integer":
+            case "boolean":
                 if ($this->value_int)
                 {
                     $html .= $this->value_int;
@@ -149,11 +141,10 @@ class VariantAttributes extends Model
                     if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
                 }
                 break;
-            case "boolean":
-                if ($this->value_int)
+            case "percent":
+                if ($this->value_float)
                 {
-                    $html .= $this->value_int;
-                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                    $html .= (string)($this->value_float * 100.0).'%';
                 }
                 break;
             case "money":
@@ -180,6 +171,9 @@ class VariantAttributes extends Model
                     }
 
                 }
+                break;
+            default:
+                $html .= 'toString > unknown type';
                 break;
         }
         return $html;

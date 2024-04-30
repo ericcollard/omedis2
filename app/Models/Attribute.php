@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Rules\urllist;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
@@ -218,50 +219,48 @@ class Attribute extends Mymodel
                 $variantAttributeValueArr['value_int'] = $value_id;
                 break;
             case "string":
+            case "double":
                 $variantAttributeValueArr['value_str'] = (string)$bulk_value;
                 break;
             case "text":
-                $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
-                break;
-            case "integer":
-                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
-                break;
-            case "float":
-                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
-                break;
-            case "money":
-                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
-                break;
-            case "boolean":
-                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
-                break;
-            case "year":
-                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
-                break;
             case "url":
                 $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
                 break;
+            case "integer":
+            case "boolean":
+            case "year":
+                $variantAttributeValueArr['value_int'] = (int)$bulk_value;
+                break;
+            case "float":
+            case "percent":
+                $variantAttributeValueArr['value_float'] = round((float)$bulk_value,4);
+                break;
+            case "money":
+                $variantAttributeValueArr['value_float'] =round((float)$bulk_value,2);
+                break;
             case "feet":
-                $parts = explode('"',$bulk_value);
-                $feet = $parts[0];
+                $parts = explode("'",$bulk_value);
+                if ($parts === [])
+                    $feet = $bulk_value;
+                else
+                    $feet = $parts[0];
                 $inches = '0';
-                if (count($parts)>1)
+                if (count($parts)>1 and strlen($parts[1]) > 0)
                     $inches = $parts[1];
-                $variantAttributeValueArr['value_txt'] = $feet.'"'.$inches;
+                $variantAttributeValueArr['value_str'] = $feet."'".$inches;
                 break;
             case "inch":
-                $parts = explode("'",$bulk_value);
-                $inches = $parts[0];
+                $parts = explode('"',$bulk_value);
+                if ($parts === [])
+                    $inches = $bulk_value;
+                else
+                    $inches = $parts[0];
                 $dec = '0';
-                if (count($parts)>1)
+                if (count($parts)>1 and strlen($parts[1]) > 0)
                     $dec = $parts[1];
-                $variantAttributeValueArr['value_txt'] = $inches."'".$dec;
-                break;
-            case "double":
-                $variantAttributeValueArr['value_txt'] = (string)$bulk_value;
-                break;
-            case "percent":
-                $variantAttributeValueArr['value_float'] = (float)$bulk_value;
+                //log::debug($bulk_value."-".$inches."-".$dec);
+                $variantAttributeValueArr['value_str'] = $inches.'"'.$dec;
+
                 break;
             default:
                 abort(500, "loadValue : dataType ".$this->dataType->name." non pris en charge");
