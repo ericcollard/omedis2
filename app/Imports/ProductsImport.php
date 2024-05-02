@@ -63,7 +63,7 @@ class ProductsImport implements ToCollection, WithHeadingRow, WithCalculatedForm
             $data['created_at'] = Carbon::now();
             $data['updated_at'] = Carbon::now();
             foreach ($row as $attribute_name => $value) {
-                $data[$attribute_name] = $value;
+                $data[$attribute_name] = (string)$value;
                 log::debug($attribute_name.' < '.$value);
             }
             log::debug('Inserting bulk data - Insertion in DB');
