@@ -64,10 +64,10 @@ class IngestData implements ShouldQueue
                     if ($product_fields->{$attribute->name})
                     {
                         $value = $product_fields->{$attribute->name};
-                        log::debug('Ingest - From load :'.$attribute->name.' - '.$value);
+                        //log::debug('Ingest - From load :'.$attribute->name.' - '.$value);
 
                         $data = $attribute->getVariantAttributeValueData($value,$variant->id);
-                        log::debug($data);
+                        //log::debug($data);
 
                         $variantAttribute = VariantAttributes::create($data);
                         //log::debug('valeur attribut créé : '.$variantAttribute->id);

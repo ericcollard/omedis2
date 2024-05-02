@@ -34,7 +34,7 @@ class ProductsImport implements ToCollection, WithHeadingRow, WithCalculatedForm
 
         foreach ($rows as $key => $row)
         {
-            log::debug($row);
+            //log::debug($row);
             if ($key == 0)
             {
                 // check validity of attributes names
@@ -64,10 +64,10 @@ class ProductsImport implements ToCollection, WithHeadingRow, WithCalculatedForm
             $data['updated_at'] = Carbon::now();
             foreach ($row as $attribute_name => $value) {
                 $data[$attribute_name] = (string)$value;
-                log::debug($attribute_name.' < '.$value);
+                //log::debug($attribute_name.' < '.$value);
             }
             log::debug('Inserting bulk data - Insertion in DB');
-            log::debug($data);
+            //log::debug($data);
             DB::table('product_bulk_import')->insert($data);
 
         }
