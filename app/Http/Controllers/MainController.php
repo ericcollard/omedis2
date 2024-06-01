@@ -59,6 +59,9 @@ class MainController extends Controller
 
         return view('done',compact('errors'));
         */
+
+        ImportHelpers::checkMandatoryCombinedAttributes();
+
         return view('my_test');
 
     }

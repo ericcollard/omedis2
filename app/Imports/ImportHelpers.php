@@ -172,6 +172,25 @@ class ImportHelpers
         log::debug('Mandatory attributes checked');
     }
 
+    public static function checkMandatoryCombinedAttributes()
+    {
+        // vérification des combinés obligatoires
+        // sku + generic-ref
+        $invalids = DB::table('product_bulk_import')
+            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+            ->WhereNull('sku')
+            ->WhereNull('generic-ref')
+            ->get();
+        foreach ($invalids as $invalid)
+        {
+            $lineId = ((array)$invalid)['id'];
+            $error_report = 'Combinated requirement : <strong>sku</strong> and <strong>generic-ref</strong> not filled. Please supply one of each.';
+            ImportHelpers::registerError($lineId,$error_report,'sku or generic-ref','');
+        }
+
+        log::debug('Combinated Mandatory attributes checked');
+    }
+
     public static function detectProductsAndSort()
     {
         //select concat(brand,name,ifnull(season,'')) as ftt, `wholesale-price`,id from product_bulk_import order by ftt,`wholesale-price`,id
@@ -524,6 +543,7 @@ class ImportHelpers
     {
         self::resetError();
         self::checkMandatoryAttributes();
+        self::checkMandatoryCombinedAttributes();
         self::detectProductsAndSort();
         self::checkAttributesValues();
         self::checkUnicityOfValues();

@@ -133,23 +133,23 @@ class DataTypesTableSeeder extends Seeder
             array (
                 'id' => 12,
                 'name' => 'feet',
-                'comment' => NULL,
+            'comment' => 'The notation has to be with like N\'M where N is representing feets, and M subdivision (inches). M has to be between 0 and 11',
             'validation_str' => 'regex:/^\\d+\'(([0-9]\\|1[01])?)$/',
                 'user_id' => 1,
                 'sort' => 0,
                 'created_at' => '2024-03-27 22:58:31',
-                'updated_at' => '2024-03-28 00:02:28',
+                'updated_at' => '2024-04-20 16:45:06',
             ),
             11 => 
             array (
                 'id' => 13,
                 'name' => 'inch',
-                'comment' => NULL,
+                'comment' => 'The notation has to be with like N"M where N is representing inches, and M subdivision. M has to be between 0 and 11',
             'validation_str' => 'regex:/^\\d+"(([0-9]\\|1[01])?)$/',
                 'user_id' => 1,
                 'sort' => 0,
                 'created_at' => '2024-03-28 00:22:55',
-                'updated_at' => '2024-03-28 00:22:55',
+                'updated_at' => '2024-04-20 16:45:38',
             ),
             12 => 
             array (

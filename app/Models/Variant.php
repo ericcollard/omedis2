@@ -98,11 +98,46 @@ class Variant extends Model
             $ean = "";
 
             // Référence interne variante
+            // on prend en priorité le sku, et sinon le premier generic-ref agrémenté des attributs
+
             $variantAttributeValue = $this->getVariantAttributeValue('sku');
             if ($variantAttributeValue)
             {
                 OdooVariantValue::createFromModel( 'variant_internal_ref',$this->id,$variantAttributeValue);
                 $ean = $variantAttributeValue;
+            }
+            else
+            {
+                // cas du generic-ref agrémenté des attributs
+                $variantAttributeValue = $this->getVariantAttributeValue('generic-ref');
+                if ($variantAttributeValue)
+                {
+                    // recherche de tous les attributs var
+                    $attribute_ids = DB::table('attributes')
+                        ->select('attributes.id')
+                        ->join('variant_attributes', 'variant_attributes.attribute_id', '=', 'attributes.id')
+                        ->where('variant_attributes.variant_id','=',$this->id)
+                        ->Where(function ($query) {
+                            $query->whereNotNull('variant_attributes.value_str')
+                                ->orWhereNotNull('variant_attributes.value_txt')
+                                ->orWhereNotNull('variant_attributes.value_int')
+                                ->orWhereNotNull('variant_attributes.value_float');
+                        })
+                        ->Where('attributes.name', 'like', 'var%')
+                        ->pluck('id');
+
+                    // construction de la chaine
+                    $spec = "";
+                    foreach ($attribute_ids as $attribute_id)
+                    {
+                        $attrName = "";
+                        $value = $this->getVariantAttributeValueFromId($attribute_id);
+                        if ($value)
+                            $spec = $spec.(string)$value;
+                    }
+                    $spec= $variantAttributeValue.'-'.$spec;
+                    OdooVariantValue::createFromModel( 'variant_internal_ref',$this->id,$spec);
+                }
             }
 
             //Code barre variante (dans tous les cas, si vide, on met de sku)
@@ -231,7 +266,7 @@ class Variant extends Model
             $attribute_odoo_name = Attribute::getNameOrOdooNameFromId($attribute_id,$attrName);
             $value = $this->getVariantAttributeValueFromId($attribute_id);
             if ($value) {
-                // gestion des spécifictés de format pou chaque type de d'attribut
+                // gestion des spécificités de format pour chaque type de d'attribut
                 $name = Attribute::formatValue($attrName,$value);
                 if (strlen($name) > 0) {
                     OdooVariantValue::createFromModel( 'attribute',$this->id,$name,$attribute_odoo_name);

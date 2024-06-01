@@ -67,6 +67,9 @@ class Product extends Model
 
     public function toString($summary = 0,$odoo = 0)
     {
+
+
+
         $html = '';
         if ($odoo == 0)
         {
@@ -202,12 +205,22 @@ class Product extends Model
         //Référence interne
         if ($this->getVariantCount() == 1)
         {
+            // on prend en priorité le generic-ref, et sinon le premier sku
             $ean = "";
-            $variantAttributeValue = $first_variant->getVariantAttributeValue('sku');
-            if ($variantAttributeValue)
+            $genericRef = $first_variant->getVariantAttributeValue('generic-ref');
+            if ($genericRef)
             {
                 OdooProductValue::createFromModel('product_internal_ref', $this->id, $variantAttributeValue);
                 $ean = $variantAttributeValue;
+            }
+            else
+            {
+                $variantAttributeValue = $first_variant->getVariantAttributeValue('sku');
+                if ($variantAttributeValue)
+                {
+                    OdooProductValue::createFromModel('product_internal_ref', $this->id, $variantAttributeValue);
+                    $ean = $variantAttributeValue;
+                }
             }
 
             //Code barre

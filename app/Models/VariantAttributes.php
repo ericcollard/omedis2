@@ -128,6 +128,7 @@ class VariantAttributes extends Model
                 break;
             case "integer":
             case "boolean":
+            case "year":
                 if ($this->value_int)
                 {
                     $html .= $this->value_int;

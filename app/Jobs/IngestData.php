@@ -72,7 +72,7 @@ class IngestData implements ShouldQueue
                         $variantAttribute = VariantAttributes::create($data);
                         //log::debug('valeur attribut créé : '.$variantAttribute->id);
 
-                        // alimantation des champs produit
+                        // alimentation des champs produit
                         if ($variant_cnt == 1)
                         {
                             switch ($attribute->name)
