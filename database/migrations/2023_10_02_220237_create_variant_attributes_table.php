@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('value_str')->nullable();
             $table->text('value_txt')->nullable();
             $table->integer('value_int')->nullable();
-            $table->float('value_float')->nullable();
+            $table->double('value_float')->nullable();
             $table->timestamps();
         });
     }

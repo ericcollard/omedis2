@@ -11805,6 +11805,42 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-05-11 12:50:12',
                 'updated_at' => '2024-05-11 12:50:12',
             ),
+            482 => 
+            array (
+                'id' => 11896,
+                'name' => '42-50',
+                'comment' => '',
+                'attribute_list_id' => 10,
+                'user_id' => 1,
+                'odoo_name' => '42-50',
+                'sort' => 0,
+                'created_at' => '2024-07-20 16:34:20',
+                'updated_at' => '2024-07-20 16:34:20',
+            ),
+            483 => 
+            array (
+                'id' => 11897,
+                'name' => 'watersports-windfoil-bag',
+                'comment' => '',
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse planche Windfoil',
+                'sort' => 0,
+                'created_at' => '2024-07-23 15:40:41',
+                'updated_at' => '2024-07-23 15:40:41',
+            ),
+            484 => 
+            array (
+                'id' => 11898,
+                'name' => 'watersports-foil-bag',
+                'comment' => '',
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Housse foil',
+                'sort' => 0,
+                'created_at' => '2024-07-23 15:41:47',
+                'updated_at' => '2024-07-23 15:41:47',
+            ),
         ));
         
         

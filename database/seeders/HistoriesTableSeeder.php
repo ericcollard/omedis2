@@ -637,6 +637,39 @@ It will be used by programs for price updates</p>\',required: \'\',attribute_lis
                 'created_at' => '2024-06-01 09:19:45',
                 'updated_at' => '2024-06-01 09:19:45',
             ),
+            52 => 
+            array (
+                'id' => 102,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'42-50\',comment: \'\',attribute_list_id: \'10\',odoo_name: \'42-50\',sort: \'\'',
+                'created_at' => '2024-07-20 16:34:20',
+                'updated_at' => '2024-07-20 16:34:20',
+            ),
+            53 => 
+            array (
+                'id' => 103,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'watersports-windfoil-bag\',comment: \'\',attribute_list_id: \'2\',odoo_name: \'Tous / Bagagerie / Housse planche Windfoil\',sort: \'\'',
+                'created_at' => '2024-07-23 15:40:41',
+                'updated_at' => '2024-07-23 15:40:41',
+            ),
+            54 => 
+            array (
+                'id' => 104,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'watersports-foil-bag\',comment: \'\',attribute_list_id: \'2\',odoo_name: \'Tous / Bagagerie / Housse foil\',sort: \'\'',
+                'created_at' => '2024-07-23 15:41:47',
+                'updated_at' => '2024-07-23 15:41:47',
+            ),
         ));
         
         

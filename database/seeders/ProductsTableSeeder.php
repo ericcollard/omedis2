@@ -21,16 +21,16 @@ class ProductsTableSeeder extends Seeder
         \DB::table('products')->insert(array (
             0 => 
             array (
-                'id' => 794,
+                'id' => 818,
                 'user_id' => '1',
-                'name' => 'ROCKET WING',
-                'season' => '2023',
-                'brand' => 'fone',
-                'category' => 'watersports-wingfoil-board',
+                'name' => 'WINDFOIL BAG 8MM 85 BLACKLINE',
+                'season' => NULL,
+                'brand' => 'patlove',
+                'category' => 'watersports-windfoil-bag',
                 'sort' => 0,
                 'selected' => 1,
-                'created_at' => '2024-06-01 10:21:56',
-                'updated_at' => '2024-06-01 10:21:56',
+                'created_at' => '2024-07-23 16:09:05',
+                'updated_at' => '2024-07-23 16:09:05',
             ),
         ));
         

@@ -63,11 +63,11 @@
                     <div>
                         <h2 id="p4" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is OMEDIS ?</h2>
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            OMEDIS is defining a standard (langage) for data exchange between brands, distributors and retailers, related to product data.
+                            OMEDIS is defining like a langage for product related data exchange between brands, distributors and retailers.
                             This includes technical data like size or color, logistical data like weight and dimensions, business data like wholesale price or retail price,
                             marketing data like marketing description or pictures.
                             <br/>
-                            OMEDIS is based on a collective public repository that can be updated by the community, letting everyone be aware of updates.
+                            OMEDIS is stored on a collective public repository that can be updated by the community, letting everyone be aware of updates.
                             <br/>
                             OMEDIS is freely accessible, and will stay free lifetime, because standardisation of exchange is a win-win feature for all partners.
                         </p>
@@ -76,9 +76,10 @@
                     <div>
                         <h2 id="p5" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is not OMEDIS ?</h2>
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            OMEDIS is not a software, but only a standard definition. The current website is only the tool giving easy access to the standard definition.
-                            <br/>OMEDIS does nothing, except helping partners to exchange data with efficiency.
-                            <br/>OMEDIS will not manage the exchange of data. This stay the role of partners that can control the diffusion.
+                            OMEDIS is not a software, but only a standard definition. The current website is only the tool giving easy and free access to the standard definition.
+                            <br/>OMEDIS does nothing, except helping partners to exchange data with efficiency by defining how to exchange data.
+                            <br/>OMEDIS will not manage the exchange of data. This is the task of partners that can control the diffusion.
+                            <br/>OMEDIS will not store any product related data
                             <br/>OMEDIS is not a goal but only a middleware
                         </p>
                     </div>

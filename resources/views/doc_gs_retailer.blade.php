@@ -21,7 +21,7 @@
                             </h1>
                         </div>
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            You are a retailer, and you want feed your IT systems (ESR, gescom, website etc.) automatically
+                            You are a retailer, and you want feed your IT systems (ERP, gescom, website etc.) automatically
                             without entering manually all information (time waste, risk of mistakes). Each time your supplier
                             is updating these data, you want to automatically update your system.
                         </p>
@@ -47,7 +47,7 @@
                     <div>
                         <h2 id="p4" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Synopsis</h2>
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            The <strong>goal</strong> is to read data contained in a Omedis formatted file, and integrate them automatically in your IT system.
+                            The <strong>goal</strong> is to read data contained in an Omedis formatted file, and integrate them automatically in your IT system.
                             The way you can achieve this task in mainly dependant to your own system, but using OMEDIS file will ensure
                         </p>
                         <ul class="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
