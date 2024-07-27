@@ -86,7 +86,7 @@ class Variant extends Model
         return null;
     }
 
-    public function convert2odoo()
+    public function convert2odoo($discount_b2b_override,$discount_b2b_pc)
     {
         // Suppression des données déjà existantes
         foreach ($this->odooVariantValues as $odooProductValue) {
@@ -151,20 +151,37 @@ class Variant extends Model
 
             //Tarif achat
             $purchasePrice = false;
-            $discountedB2bPriceValue = $this->getVariantAttributeValue('discount-b2b');
-            if ($discountedB2bPriceValue)
+
+            // Tenir compte de l'override si nécessaire
+            if ($discount_b2b_override == 1)
             {
-                $purchasePrice = $discountedB2bPriceValue;
-            }
-            else
-            {
+                $discountedB2bPcValue = $discount_b2b_pc/100.0; // il est donné en %
                 $wholesalePriceValue = $this->getVariantAttributeValue('wholesale-price');
-                $discountedB2bPcValue = $this->getVariantAttributeValue('discount-b2b-pc');
                 if ($discountedB2bPcValue)
                     $purchasePrice = $wholesalePriceValue * (1-$discountedB2bPcValue);
                 else
                     $purchasePrice = $wholesalePriceValue;
             }
+            else
+            {
+                $discountedB2bPriceValue = $this->getVariantAttributeValue('discount-b2b');
+                if ($discountedB2bPriceValue)
+                {
+                    $purchasePrice = $discountedB2bPriceValue;
+                }
+                else
+                {
+                    $wholesalePriceValue = $this->getVariantAttributeValue('wholesale-price');
+                    $discountedB2bPcValue = $this->getVariantAttributeValue('discount-b2b-pc');
+                    if ($discountedB2bPcValue)
+                        $purchasePrice = $wholesalePriceValue * (1-$discountedB2bPcValue);
+                    else
+                        $purchasePrice = $wholesalePriceValue;
+                }
+            }
+
+
+
 
             // cout variante (sera mis à jour si stock null)
             if ($purchasePrice)

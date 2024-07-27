@@ -14,13 +14,16 @@ class ConvertData2Odoo implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     public $timeout = 60;
+    public $discount_b2b_override;
+    public $discount_b2b_pc;
 
     /**
      * Create a new job instance.
      */
-    public function __construct()
+    public function __construct($discount_b2b_override,$discount_b2b_pc)
     {
-        //
+        $this->discount_b2b_override = $discount_b2b_override;
+        $this->discount_b2b_pc = $discount_b2b_pc;
     }
 
     /**
@@ -33,7 +36,7 @@ class ConvertData2Odoo implements ShouldQueue
         foreach ($products as $product)
         {
             log::debug('Convert Product #'.$product->id);
-            $product->convert2odoo();
+            $product->convert2odoo($this->discount_b2b_override,$this->discount_b2b_pc);
         }
     }
 }

@@ -165,7 +165,10 @@
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
+                    <form wire:submit="convert">
                     <div class=" grid grid-cols-1 md:grid-cols-2  gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+
 
                         <div>
                             <div class="flex items-center">
@@ -174,14 +177,21 @@
                                 </h1>
                             </div>
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                This OMEDIS tool is integrating uploaded data in the OMEDIS database.
+                                This OMEDIS tool is converting OMEDIS data into Odoo data.
                             </p>
+                            <P class="mt-4 text-gray-500 dark:text-gray-400 text-md leading-relaxed">Override B2B discount value : </P>
+                            <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                Override
+                                <x-input type="checkbox" wire:model="discount_b2b_override" name="discount_b2b_override" />
+                                <x-input-error for="discount_b2b_override"/>
+                                with
+                                <x-input type="number" step="any" min="0" placeholder="ex. 45.98" max="100" wire:model="discount_b2b_pc" name="discount_b2b_pc" /> %
+                                <x-input-error for="discount_b2b_pc"/>
+                            </p>
+
                         </div>
 
                         <div>
-
-                            <form wire:submit="convert">
-
                                 <label for="uploadFile3"
                                        class="bg-gray-800 hover:bg-gray-700 text-white text-sm px-4 py-2.5 outline-none rounded w-max cursor-pointer mx-auto block font-[sans-serif]">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 fill-white inline" viewBox="0 0 32 32">
@@ -195,16 +205,23 @@
                                     Convert
                                     <input type="submit" id='uploadFile3' class="hidden" />
                                 </label>
-                            </form>
+                        </div>
 
+
+                    </div>
+                    </form>
+
+                    <div class=" grid grid-cols-1 md:grid-cols-2  gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+                        <div>
+
+                        </div>
+                        <div>
                             <div class="font-[sans-serif] max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 text-sm ">
                                 <div  class="flex items-center justify-between w-full">
                                     <livewire:receiver-component />
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="bg-gray-200 bg-opacity-25 grid grid-cols-2 md:grid-cols-2  gap-4 p-4 bg-grey">

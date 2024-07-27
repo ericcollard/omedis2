@@ -32,7 +32,7 @@ class VariantAttributes extends Model
         return $this->belongsTo(Variant::class);
     }
 
-    public function getValue()
+    public function getValue($odooValue = 1)
     {
         switch ($this->attribute->datatype->name)
         {
@@ -46,12 +46,12 @@ class VariantAttributes extends Model
                         ->first();
                     if ($attr_value)
                     {
-                        if ($attr_value->odoo_name) {
+                        if ($odooValue == 1 and $attr_value->odoo_name) {
                             return $attr_value->odoo_name;
                         }
                         else
                         {
-                            return $attr_value->name." *";
+                            return $attr_value->name;
                         }
                     }
                     else

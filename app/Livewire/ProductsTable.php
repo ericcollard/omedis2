@@ -3,13 +3,18 @@
 namespace App\Livewire;
 
 use App\Exports\AttributesExport;
+use App\Exports\ProductsExport;
+use App\Models\AttributeListValue;
 use App\Models\Product;
+use App\Models\VariantAttributes;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
+use Rappasoft\LaravelLivewireTables\Views\Filters\{DateFilter, MultiSelectFilter, SelectFilter};
+use Illuminate\Database\Eloquent\Builder;
 
 class ProductsTable extends DataTableComponent
 {
@@ -19,6 +24,7 @@ class ProductsTable extends DataTableComponent
     {
         $this->setPrimaryKey('id');
         $this->setDefaultReorderSort('sort', 'asc');
+        $this->setFilterLayout('slide-down');
         $this->setHideReorderColumnUnlessReorderingEnabled();
         $this->setReorderEnabled();
         $this->setDefaultSort('sort', 'asc');
@@ -49,7 +55,7 @@ class ProductsTable extends DataTableComponent
                 ->sortable()
                 ->collapseOnMobile()
                 ->excludeFromColumnSelect(),
-            BooleanColumn::make("Selected", "selected"),
+            BooleanColumn::make("API", "selected"),
             Column::make("Name", "name")
                 ->sortable()->searchable()->excludeFromColumnSelect(),
             Column::make("Season", "season")
@@ -82,13 +88,60 @@ class ProductsTable extends DataTableComponent
         ];
     }
 
+    public function filters(): array
+    {
+        return [
+            MultiSelectFilter::make('Brand')
+                ->options(
+                    AttributeListValue::query()
+                        ->orderBy('name')
+                        ->where('attribute_list_id','=',3)
+                        ->whereIn('id',VariantAttributes::where('attribute_id','=',1) ->pluck('value_int'))
+                        ->get()
+                        ->keyBy('name')
+                        ->map(fn($tag) => $tag->name)
+                        ->toArray()
+                )->filter(function(Builder $builder, array $values) {
+                    $builder->whereIn('brand', $values);
+                }),
+            MultiSelectFilter::make('Category')
+                ->options(
+                    AttributeListValue::query()
+                        ->orderBy('name')
+                        ->where('attribute_list_id','=',2)
+                        ->whereIn('id',VariantAttributes::where('attribute_id','=',6) ->pluck('value_int'))
+                        ->get()
+                        ->keyBy('name')
+                        ->map(fn($tag) => $tag->name)
+                        ->toArray()
+                )->filter(function(Builder $builder, array $values) {
+                    $builder->whereIn('category', $values);
+                }),
+            MultiSelectFilter::make('Season')
+                ->options(
+                    VariantAttributes::query()
+                        ->orderBy('value_int')
+                        ->where('attribute_id','=',2)
+                        ->get()
+                        ->keyBy('value_int')
+                        ->map(fn($tag) => $tag->value_int)
+                        ->toArray()
+                )->filter(function(Builder $builder, array $values) {
+                    $builder->whereIn('season', $values);
+                }),
+        ];
+    }
+
+
     public function bulkActions(): array
     {
         return [
-            'export' => 'Export',
-            'select' => 'Select',
+            'export' => 'Export Omedis File',
+            'select' => 'Select for API Export',
+            'delete' => 'Delete',
         ];
     }
+
     public function select()
     {
         $items = $this->getSelected();
@@ -97,19 +150,26 @@ class ProductsTable extends DataTableComponent
             $product = Product::find($item);
             $product->selected= true;
             $product->save();
-            log::debug($item);
         }
         $this->clearSelected();
     }
 
+    public function delete()
+    {
+        $items = $this->getSelected();
+        foreach ($items as $item)
+        {
+            $product = Product::find($item);
+            $product->delete();
+        }
+        $this->clearSelected();
+    }
 
     public function export()
     {
         $items = $this->getSelected();
-
         $this->clearSelected();
-
-        return Excel::download(new AttributesExport($items), 'units.xlsx');
+        return Excel::download(new ProductsExport($items), 'products.xlsx');
     }
 
 }

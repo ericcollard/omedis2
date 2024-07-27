@@ -24,7 +24,8 @@ class UploadDataFile extends Component
     public $ingest_data = '';
     public $formatted_product_data = '';
     public $odoo_data = '';
-
+    public $discount_b2b_pc;
+    public $discount_b2b_override;
     public function ingest()
     {
         log::debug('ingest');
@@ -34,8 +35,18 @@ class UploadDataFile extends Component
 
     public function convert()
     {
+        log::debug($this->discount_b2b_override);
+
+
+        if ($this->discount_b2b_override == 1)
+        {
+            log::debug($this->discount_b2b_pc);
+            if (! $this->discount_b2b_pc)
+                abort(404, "B2B discount has to be filled");
+        }
+
         log::debug('convert');
-        ConvertData2Odoo::dispatch();
+        ConvertData2Odoo::dispatch($this->discount_b2b_override,$this->discount_b2b_pc);
         log::debug('convert ended');
     }
 

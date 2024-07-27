@@ -184,7 +184,7 @@ class Product extends Model
 
     }
 
-    public function convert2odoo()
+    public function convert2odoo($discount_b2b_override,$discount_b2b_pc)
     {
         // Suppression des données déjà existantes
         foreach($this->odooProductValues as $odooProductValue) {
@@ -272,6 +272,13 @@ class Product extends Model
         {
             // appliquer la remise b2b !!!
             $discountedB2bPcValue = $first_variant->getVariantAttributeValue('discount-b2b-pc');
+
+            // Tenir compte de l'override si nécessaire
+            if ($discount_b2b_override == 1)
+            {
+                $discountedB2bPcValue = $discount_b2b_pc/100.0; // il est donné en %
+            }
+
             $variantAttributeValue = $first_variant->getVariantAttributeValue('wholesale-price');
             if ($discountedB2bPcValue)
                 $variantAttributeValue =  $variantAttributeValue * (1-$discountedB2bPcValue);
@@ -343,7 +350,7 @@ class Product extends Model
         $variants = $this->variants()->get();
         foreach($variants as $variant)
         {
-            $variant->convert2odoo();
+            $variant->convert2odoo($discount_b2b_override,$discount_b2b_pc);
         }
     }
 

@@ -34,7 +34,7 @@ class IngestData implements ShouldQueue
     public function handle(): void
     {
         $attributes = Attribute::all();
-        Product::truncate();
+        //Product::truncate();
 
         foreach (ImportHelpers::getProductsIds() as $product_id) {
 
