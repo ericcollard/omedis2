@@ -207,8 +207,8 @@ class Product extends Model
         {
             // on prend en priorité le generic-ref, et sinon le premier sku
             $ean = "";
-            $genericRef = $first_variant->getVariantAttributeValue('generic-ref');
-            if ($genericRef)
+            $variantAttributeValue = $first_variant->getVariantAttributeValue('generic-ref');
+            if ($variantAttributeValue)
             {
                 OdooProductValue::createFromModel('product_internal_ref', $this->id, $variantAttributeValue);
                 $ean = $variantAttributeValue;
