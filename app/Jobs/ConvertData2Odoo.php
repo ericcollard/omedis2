@@ -32,7 +32,7 @@ class ConvertData2Odoo implements ShouldQueue
     public function handle(): void
     {
         log::debug('ConvertData2Odoo handle');
-        $products = Product::all();
+        $products = Product::getSelected();
         foreach ($products as $product)
         {
             log::debug('Convert Product #'.$product->id);

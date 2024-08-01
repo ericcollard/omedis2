@@ -202,7 +202,7 @@
                                             d="M20.293 19.707a1 1 0 0 0 1.414-1.414l-5-5a1 1 0 0 0-1.414 0l-5 5a1 1 0 0 0 1.414 1.414L15 16.414V29a1 1 0 0 0 2 0V16.414z"
                                             data-original="#000000" />
                                     </svg>
-                                    Convert
+                                    Convert selected products
                                     <input type="submit" id='uploadFile3' class="hidden" />
                                 </label>
                         </div>

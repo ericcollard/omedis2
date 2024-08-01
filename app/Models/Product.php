@@ -439,4 +439,8 @@ class Product extends Model
     {
         DB::table('products')->update(array('selected' => false));
     }
+
+    public static function getSelected() {
+       return Product::where('selected','=',1)->get();
+    }
 }
