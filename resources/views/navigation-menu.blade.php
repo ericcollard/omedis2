@@ -129,6 +129,9 @@
                             <x-dropdown-link href="{{ route('products') }}">
                                 Products
                             </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('datafiles') }}">
+                                Datafiles
+                            </x-dropdown-link>
                             <x-dropdown-link href="/api/products">
                                 API/index
                             </x-dropdown-link>

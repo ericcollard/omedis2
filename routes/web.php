@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\AttributeController;
+use App\Http\Controllers\DatafileController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\API\ProductController;
 use App\Livewire\AttributeComponent;
 use App\Livewire\AttributeListComponent;
 use App\Livewire\AttributeListValueComponent;
+use App\Livewire\DatafileComponent;
 use App\Livewire\DataTypeComponent;
 use App\Livewire\ProductComponent;
 use App\Livewire\UnitComponent;
@@ -48,6 +50,7 @@ Route::middleware([
 
     Route::get('/test', [MainController::class, 'test'])->name('test');
     Route::get('/products', ProductComponent::class)->name('products');
+    Route::get('/datafiles', DatafileComponent::class)->name('datafiles');
     Route::get('/product_odoo_data/{product_id}', [MainController::class, 'product_odoo_data'])->name('product_odoo_data');
     Route::get('/my_test', [MainController::class, 'my_test'])->name('my_test');
     Route::get('/import_csv', [MainController::class, 'import_csv'])->name('import_csv');

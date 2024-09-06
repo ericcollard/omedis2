@@ -4,9 +4,12 @@ namespace App\Livewire;
 
 use App\Exports\AttributesExport;
 use App\Exports\ProductsExport;
+use App\Imports\ImportHelpers;
 use App\Models\AttributeListValue;
+use App\Models\Datafile;
 use App\Models\Product;
 use App\Models\VariantAttributes;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
@@ -137,6 +140,7 @@ class ProductsTable extends DataTableComponent
     {
         return [
             'export' => 'Export Omedis File',
+            'store' => 'Store Omedis File',
             'select' => 'Select for API Export',
             'delete' => 'Delete',
         ];
@@ -170,6 +174,45 @@ class ProductsTable extends DataTableComponent
         $items = $this->getSelected();
         $this->clearSelected();
         return Excel::download(new ProductsExport($items), 'products.xlsx');
+    }
+
+    public function store()
+    {
+        $items = $this->getSelected();
+
+        // Determine file name
+        $product_brands = DB::table('products')
+            ->wherein('id',$items)
+            ->select('brand',DB::raw('COUNT(*) as Nb'))
+            ->groupBy('brand')
+            ->get();
+        $main_brand = "";
+        $main_brand_cnt_max = 0;
+        foreach ($product_brands as $item)
+        {
+            if ($item->Nb > $main_brand_cnt_max)
+            {
+                $main_brand = $item->brand;
+                $main_brand_cnt_max = $item->Nb;
+            }
+        }
+        if ($main_brand == "")
+            $main_brand = "divers";
+
+        $this->clearSelected();
+
+        $filename = "omedis-".$main_brand."-".date('d-m-Y-U').".xlsx";
+        //log::debug($filename);
+
+        Datafile::create([
+            'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
+            'name' => 'Store for '.$main_brand,
+            'supplier' => $main_brand,
+            'filepath' => $filename
+        ]);
+
+        Excel::store(new ProductsExport($items),$filename,'omedisdatafile');
+        $this->redirectRoute('datafiles');
     }
 
 }

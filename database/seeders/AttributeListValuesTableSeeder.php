@@ -11841,6 +11841,18 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-07-23 15:41:47',
                 'updated_at' => '2024-07-23 15:41:47',
             ),
+            485 => 
+            array (
+                'id' => 11899,
+                'name' => 'snowsport-racing-bag',
+                'comment' => '',
+                'attribute_list_id' => 2,
+                'user_id' => 1,
+                'odoo_name' => 'Tous / Bagagerie / Ski Racing',
+                'sort' => 0,
+                'created_at' => '2024-09-04 11:47:33',
+                'updated_at' => '2024-09-04 11:48:38',
+            ),
         ));
         
         
