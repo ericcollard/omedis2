@@ -255,6 +255,23 @@ class Product extends Model
 
         //Description
         $variantAttributeValue = $first_variant->getVariantAttributeValue('description-short-fr');
+        if (!$variantAttributeValue)
+        {
+            $descriptions = DB::table('variant_attributes')
+                ->select('value_txt')
+                ->join('variants','variant_attributes.variant_id','=','variants.id')
+                ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
+                ->where('variants.product_id','=',$this->id)
+                ->where('attributes.name','=','description-short-fr')
+                ->whereNotNull('value_txt')
+                ->distinct()->get();
+            $nb_descriptions = count($descriptions);
+
+            if ($nb_descriptions > 0) {
+                // on prend le premier
+                $variantAttributeValue = $descriptions[0]->value_txt;
+            }
+        }
         if ($variantAttributeValue)
         {
             if (strlen($variantAttributeValue) > 30)
