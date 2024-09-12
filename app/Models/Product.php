@@ -184,6 +184,23 @@ class Product extends Model
 
     }
 
+    public function getVariantsLongestAttributeValue($attribute_name)
+    {
+        $longest_description_obj = DB::table('variant_attributes')
+            ->select('value_txt')
+            ->join('variants','variant_attributes.variant_id','=','variants.id')
+            ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
+            ->where('variants.product_id','=',$this->id)
+            ->where('attributes.name','=',$attribute_name)
+            ->whereNotNull('value_txt')
+            ->orderBy(DB::raw("LENGTH(value_txt)"),'desc')
+            ->first();
+        if ($longest_description_obj)
+            return $longest_description_obj->value_txt;
+        else
+            return null;
+    }
+
     public function convert2odoo($discount_b2b_override,$discount_b2b_pc)
     {
         // Suppression des données déjà existantes
@@ -254,24 +271,7 @@ class Product extends Model
             OdooProductValue::createFromModel('brand_name', $this->id, $brandName);
 
         //Description
-        $variantAttributeValue = $first_variant->getVariantAttributeValue('description-short-fr');
-        if (!$variantAttributeValue)
-        {
-            $descriptions = DB::table('variant_attributes')
-                ->select('value_txt')
-                ->join('variants','variant_attributes.variant_id','=','variants.id')
-                ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
-                ->where('variants.product_id','=',$this->id)
-                ->where('attributes.name','=','description-short-fr')
-                ->whereNotNull('value_txt')
-                ->distinct()->get();
-            $nb_descriptions = count($descriptions);
-
-            if ($nb_descriptions > 0) {
-                // on prend le premier
-                $variantAttributeValue = $descriptions[0]->value_txt;
-            }
-        }
+        $variantAttributeValue = $this->getVariantsLongestAttributeValue('description-short-fr');
         if ($variantAttributeValue)
         {
             if (strlen($variantAttributeValue) > 30)
@@ -279,7 +279,7 @@ class Product extends Model
             OdooProductValue::createFromModel('sale_description', $this->id, $variantAttributeValue);
         }
 
-        $variantAttributeValue = $first_variant->getVariantAttributeValue('description-long-fr');
+        $variantAttributeValue = $this->getVariantsLongestAttributeValue('description-long-fr');
         if ($variantAttributeValue)
             OdooProductValue::createFromModel('website_description', $this->id, $variantAttributeValue);
 
