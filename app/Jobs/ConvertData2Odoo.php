@@ -2,6 +2,8 @@
 
 namespace App\Jobs;
 
+use App\Events\TriggerEvent;
+use App\Imports\ImportHelpers;
 use App\Models\Product;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -31,12 +33,20 @@ class ConvertData2Odoo implements ShouldQueue
      */
     public function handle(): void
     {
-        log::debug('ConvertData2Odoo handle');
+        set_time_limit(60);
+        //log::debug('ConvertData2Odoo handle');
         $products = Product::getSelected();
+
+        $totalNb = $products->Count();
+        $currentIndex = 1;
+
         foreach ($products as $product)
         {
-            log::debug('Convert Product #'.$product->id);
+            TriggerEvent::dispatch('Produit '.$currentIndex.'/'.$totalNb);
+            //log::debug('Convert Product #'.$product->id);
             $product->convert2odoo($this->discount_b2b_override,$this->discount_b2b_pc);
+            $currentIndex++;
         }
+        TriggerEvent::dispatch('Terminé');
     }
 }

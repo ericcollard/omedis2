@@ -343,6 +343,11 @@ class ImportHelpers
         }
     }
 
+    public static function getBulkProductCount()
+    {
+        return DB::table('product_bulk_import')->distinct()->count('product_id');
+    }
+
     public static function getProductsIds()
     {
         // pour chaque produit

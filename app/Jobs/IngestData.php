@@ -33,11 +33,16 @@ class IngestData implements ShouldQueue
      */
     public function handle(): void
     {
+        set_time_limit(60);
         $attributes = Attribute::all();
-        //Product::truncate();
+        Product::truncate();
+        TriggerEvent::dispatch('Base produit nettoyée avant import');
+
+        $totalNb = ImportHelpers::getBulkProductCount();
+        $currentIndex = 1;
 
         foreach (ImportHelpers::getProductsIds() as $product_id) {
-
+            TriggerEvent::dispatch('Produit '.$currentIndex.'/'.$totalNb);
             $product = Product::create([
                 'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
                 'selected' => 1,
@@ -97,8 +102,9 @@ class IngestData implements ShouldQueue
                 }
             }
 
+            $currentIndex++;
         }
-
+        TriggerEvent::dispatch('Terminé');
     }
 
     public function wait()

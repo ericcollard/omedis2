@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class ReceiverComponent extends Component
+class ReceiverComponentIngest extends Component
 {
     protected $listeners = ['echo:public-events,TriggerEvent' => 'responseToEvent'];
 
@@ -12,7 +12,7 @@ class ReceiverComponent extends Component
 
     public function render()
     {
-        return view('livewire.receiver-component');
+        return view('livewire.receiver-component-ingest');
     }
 
     public function responseToEvent($event)
