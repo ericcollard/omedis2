@@ -164,6 +164,11 @@ class Attribute extends Mymodel
                 }
             }
         }
+        elseif (in_array($attribute_name, ['var-boot-size-mondo']))
+        {
+            $numeric_value = (float)$value;
+            $name = number_format($numeric_value, 1, '.', '');
+        }
         else
         {
             $name = (string)$value;
